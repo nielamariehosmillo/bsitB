@@ -1,0 +1,31 @@
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
+*{
+font-family: "Roboto", sans-serif;;
+}
+body{
+	background-image: url('bsitB/bolinas-leynes/image/websitebg.png');
+	background-repeat: no-repeat;
+  	background-attachment: fixed; 
+ 	background-size: 100% 100%;
+}
+.navbar{
+	background: #00FFFF;
+	opacity: 0.8;
+}
+.navbar .navbar-nav{
+	margin-left: 750px;
+}
+.navbar .navbar-nav a{
+	margin-left: 90px;
+	color: #000;
+}
+.products{
+	padding: 100px 400px 30px 0;
+	margin: 50px;
+	color: #000;
+}
+.products a{
+	text-decoration: none;  
+	color: #000;
+}
