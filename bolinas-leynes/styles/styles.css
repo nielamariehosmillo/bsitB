@@ -14,8 +14,8 @@ body{
 	opacity: 0.8;
 }
 .navbar img{
- height: 100px;
- width: 250px;
+	height: 40px;
+	width: 120px;
 }
 }
 .navbar .navbar-nav{
