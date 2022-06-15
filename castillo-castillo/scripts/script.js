@@ -7,6 +7,6 @@ const supabase = createClient('https://zzivlqstynxhbfabxhpi.supabase.co', 'eyJhb
 
 $(document).ready(function(){
 
-    // jQuery methods go here...
+    // jQuery methods go here
   
   });
