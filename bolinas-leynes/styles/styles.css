@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
+*{
+font-family: "Roboto", sans-serif;;
+}
+body{
+	background-image: url("image/websitebg.png");
+}
+.navbar{
+	background: #00FFFF;
+    opacity: 0.8;
+}
+.navbar .navbar-nav{
+	margin-left: 750px;
+}
+.navbar .navbar-nav a{
+	margin-left: 90px;
+    color: #000;
+}
+.products{
+	padding: 30px 400px 30px 0;
+    margin-left: 10px;
+    color: #000;
+}
+.products h1{
+	margin-top: 50px;
+}
+.products a{
+    text-decoration: none;  
+    color: #000;
+}
