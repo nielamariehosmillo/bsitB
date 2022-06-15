@@ -4,7 +4,7 @@
 font-family: "Roboto", sans-serif;;
 }
 body{
-	background-image: url("image/websitebg.png");
+	background-image: url("./image/websitebg.png");
 }
 .navbar{
 	background: #00FFFF;
