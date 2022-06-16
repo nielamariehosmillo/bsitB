@@ -4,7 +4,7 @@
 font-family: "Roboto", sans-serif;;
 }
 body{
-	background-image: url(../image/websitebg.png);
+	background-image: url(../assets/websitebg.png);
 	background-repeat: no-repeat;
   	background-attachment: fixed; 
  	background-size: 100% 100%;
