@@ -16,7 +16,7 @@ body {
 
 .sign {
     padding-top: 40px;
-    color: #8C55AA;
+    color: #0b8347;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 23px;
@@ -32,7 +32,7 @@ color: rgb(38, 50, 56);
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
-background: rgba(136, 126, 126, 0.04);
+background: #2b6e0c0a;
 padding: 10px 20px;
 border: none;
 border-radius: 20px;
@@ -72,7 +72,7 @@ font-family: 'Ubuntu', sans-serif;
 
 
 .un:focus, .pass:focus {
-    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    border: 2px solid #00df64 !important;
     
 }
 
