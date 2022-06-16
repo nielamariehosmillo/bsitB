@@ -1,3 +1,5 @@
+style.css
+
 body {
     background-color: #F3EBF6;
     font-family: 'Ubuntu', sans-serif;
@@ -18,6 +20,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 23px;
+}
+
+.align { 
+    text-align: center;
 }
 
 .un {
@@ -88,13 +94,13 @@ font-family: 'Ubuntu', sans-serif;
 
 .forgot {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
+    color: #000000;
     padding-top: 15px;
 }
 
 a {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
+    color: #000000;
     text-decoration: none
 }
 
