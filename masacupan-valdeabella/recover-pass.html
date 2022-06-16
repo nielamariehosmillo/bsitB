@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VBella</title>
+    <link
+      rel="shortcut icon"
+      href="/masacupan-valdeabella/assets/vbella_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/masacupan-valdeabella/styles/custom.css" />
+    <link rel="stylesheet" href="/masacupan-valdeabella/styles/style.css" />
+  </head>
+  
+  <body>
+    <div class="navbar navbar-dark fixed-top mb-5 mt-0 top">
+      <div class="container-fluid align-items-baseline">
+        <button class="btn btn-light btn-sm rounded-0 menu-btn">
+          <i class="bi bi-list fs-4 fw-bolder"></i>
+        </button>
+        <div class="side-menu">
+          <div class="wrapper">
+            <button
+              class="align-self-baseline btn btn-light btn-sm rounded-0 menu-btn"
+            >
+              <i class="bi bi-x fs-4 fw-bold"></i>
+            </button>
+            <!-- menu -->
+            <div class="menu">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <div class="line"></div>
+                    <a href="#" class="nav-link fs-1">Demos</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="line"></div>
+                    <a href="#" class="nav-link fs-1">Category</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="line"></div>
+                    <a href="#products" class="nav-link fs-1">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="line"></div>
+                    <a
+                      href="#about-menu"
+                      id="menu-about-link"
+                      class="menu-link nav-link fs-1"
+                      >About
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                      <div class="line"></div>
+                      <a href="/masacupan-valdeabella/contact-us.html" class="nav-link fs-1">Contact Us</a>
+                      <li class="nav-item mx-lg-4 mx-2 nav-link fs-4 text-white
+                      header__action-item-link hidden-pocket hidden-lap">
+                          </a>
+                        </li>
+                    </li>
+                </ul>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white fs-2">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white fs-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white fs-2">
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white fs-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white fs-2">
+                      <i class="bx bxl-snapchat"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white fs-2">
+                      <i class="bx bxl-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end of menu -->
+            <div id="about-menu" class="sub-menu">
+              <div class="slider">
+                <button class="btn btn-link text-white control" id="prev">
+                  <i class="bx bx-chevron-left"></i>
+                </button>
+                <div class="content">
+                  <div class="slide active">
+                    <h1 class="fw-bolder">ABOUT</h1>
+                    <h4>One of the greatest embroidery in Philippines.</h4>
+                  </div>
+                  <div class="slide">
+                    <h4>
+                      Vbella's Embroidery, is a business that has been
+                      innovating Men and Women's Barong attire.
+                    </h4>
+                    <h4>
+                      The Vbella's are consistent in seeking the desire of
+                      making Barong Tagalog and Ladies Barong, as well as the
+                      same kind of kiddy Barong attrire with the unique heritage
+                      apparel Vbella's innovation particulary in the Barong
+                      lines, have carved an enviable reputation as a trend for
+                      barong attire.
+                    </h4>
+                  </div>
+                </div>
+                <button class="btn btn-link text-white control" id="next">
+                  <i class="bx bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="nav flex-row align-self-baseline">
+          <li class="nav-item">
+            <div class="language-dropdown">
+              <a
+                class="btn btn-light btn-sm p-1 rounded-0 toggler"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                <img
+                  src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                  class="my-0"
+                  width="40"
+                  height="30"
+                  alt=""
+                />
+              </a>
+              <ul class="">
+                <li class="my-2">
+                  <a class="" href="#">
+                    <img
+                      src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                      class="my-0"
+                      width="40"
+                      height="30"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a class="" href="#">
+                    <img
+                      src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                      class="my-0"
+                      width="40"
+                      height="30"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a class="" href="#">
+                    <img
+                      src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                      class="my-0"
+                      width="40"
+                      height="30"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="#" class="nav-link text-white p-0"></a>
+            <div class="dropdown login-dropdown" id="login-dropdown">
+              <button
+                class="btn text-white p-0 btn-link"
+                type="button"
+                id="login-dropdown-toggler"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bx bxs-user-circle bx-md"></i>
+              </button>
+              <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="login-dropdown-toggler"
+            >
+            <li class="nav-item ms-2">
+                <a href="#recover-pass" class="nav-link text-white p-0"></a>
+                <div class="dropdown login-dropdown" id="login-dropdown">
+                  <button
+                    class="btn text-white p-0 btn-link"
+                    type="button"
+                    id="login-dropdown-toggler"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bx bxs-user-circle bx-md"></i>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="login-dropdown-toggler"
+                  >
+                    <li>
+                      <div class="">
+                  <div class="container-fluid text-center">
+                    <h4 class="text-info fw-bold">Find your Password/h4>
+                    <p>Enter your phone number or recovery email</p>
+                    <div class="mb-3">
+                      <input
+                        placeholder="EMAIL"
+                        type="email"
+                        class="form-control"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                    <div class="mb-3 d-grid">
+                      <button class="btn btn-dark" type="button">
+                        RESET PASSWORD
+                      </button>
+                        </div>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="#" class="nav-link text-white p-0"
+              ><i class="bx bxs-cart bx-md"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="navbar navbar-dark navbar-expand-lg text-white position-fixed d-flex justify-content-center w-100 main-nav"
+    >
+      <div class="container">
+        <div
+          class="d-flex align-items-center mt-5 flex-wrap justify-content-center"
+        >
+          <a href="index.html" class="navbar-brand me-lg-5 text-center ms-lg-5">
+            <img
+              src="/masacupan-valdeabella/assets/VBella.png"
+              width="110"
+              height="110"
+              alt=""
+            />
+          </a>
+          <ul class="navbar-nav flex-row flex-wrap justify-content-center">
+            <li class="nav-item mx-lg-4 mx-2 scoll-link">
+              <a href="masacupan-valdeabella/index.html" class="nav-link fs-4 text-white">Home</a>
+            </li>
+            <li class="nav-item mx-lg-4 mx-2 scoll-link">
+              <a
+                href="/masacupan-valdeabella/pages/products/product.html"
+                class="nav-link fs-4 text-white"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item mx-lg-4 mx-2 scoll-link">
+              <a href="#" class="nav-link fs-4 text-white">Gallery</a>
+            </li>
+            <li class="nav-item mx-lg-4 mx-2">
+              <a href="#about" class="nav-link fs-4 main-about-link text-white"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-lg-4 mx-2 scoll-link">
+              <a href="/masacupan-valdeabella/contact-us.html"
+              class="nav-link fs-4 text-white
+                    header__action-item-link hidden-pocket hidden-lap">
+                    Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   <!-- create account -->
+   <section class="" id="create-account">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center text-white">
+          <h3 class="text-info">Create My Account</h3>
+          <p>Please fill in the information below:</p>
+          <div>
+            <div class="mb-3">
+              <input
+                placeholder="FIRST NAME"
+                type="text"
+                class="form-control rounded-0"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                placeholder="LAST NAME"
+                type="text"
+                class="form-control rounded-0"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                placeholder="EMAIL"
+                type="email"
+                class="form-control rounded-0"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                placeholder="PASSWORD"
+                type="password"
+                class="form-control rounded-0"
+              />
+            </div>
+            <div class="d-grid mb-3">
+              <button class="btn btn-dark rounded-0" type="button">
+                CREATE MY ACCOUNT
+              </button>
+            </div>
+            <div class="mb-3">
+              <p>
+                This site is protected by reCAPTCHA and the Google Privacy
+                Policy and Terms of Service apply.
+              </p>
+            </div>
+            <p>
+              Already have an account?
+              <a href="#" class="login-here-link">Login Here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-5 text-center">
+              <h1 class="fw-bold">VBL Newsletter</h1>
+              <h3>Sign up for our exclusive discount codes and news.</h3>
+              <div class="d-flex">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  class="form-control rounded-0"
+                />
+                <button class="btn text-white ms-2" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <footer class="footer mt-5">
+            <div class="row gx-1">
+              <div class="col-md-3">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="me-3">
+                        <img
+                          src="/masacupan-valdeabella/assets/footer/726455.png"
+                          width="100"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-warning">We ship nationwide</p>
+                        <p>Shipping starts at US $1.52 within Region IV-A</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="me-3">
+                        <img
+                          src="/masacupan-valdeabella/assets/footer/Return-and-exchange-512.webp"
+                          width="100"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-warning">Satisfied or exchange</p>
+                        <p>Exchange your onworn items within 30 days.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="me-3">
+                        <img
+                          src="/masacupan-valdeabella/assets/footer/pngkey.com-tech-support-icon-png-3095068.png"
+                          width="100"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-warning">Get in touch / Support</p>
+                        <p>
+                          <small
+                            >Email: markjiggermasacupan.ph@gmail.com or call
+                            toll-free +63185629602</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="me-3">
+                        <img
+                          src="/masacupan-valdeabella/assets/footer/payment.png"
+                          width="150"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-warning">Secure payments</p>
+                        <p>
+                          Our site is encrypted and we dont't store any of your
+                          payment info.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-3">
+              <p><i class="bx bx-copyright"></i> VBELLA EMBROIDERY</p>
+              <ul class="nav flex-row justify-content-center">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5">
+                    <i class="bx bxl-snapchat"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5">
+                    <i class="bx bxl-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="text-center">
+                <button
+                  class="btn-light mx-auto btn-sm btn py-0 fs-6 text-center fw-bold d-flex justify-content-center align-items-center"
+                  type="button"
+                >
+                  WE ACCEPT
+                  <img
+                    src="/masacupan-valdeabella/assets/footer/dc84ca692b6fd9bc37e215f87ca6e97d.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/masacupan-valdeabella/scripts/scripts.js"></script>
+  </body>
+</html>
