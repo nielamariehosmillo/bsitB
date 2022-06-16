@@ -1,0 +1,280 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url("https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css");
+
+$red:rgb(128, 21, 21);
+$purple:rgb(139, 7, 139);
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.text-purple{
+    color: $purple;
+}
+main{
+    // padding-top: 100px;
+}
+section{
+    padding-top: 30vh;
+    padding-bottom: 13vh;
+    min-height: 85vh;
+    color: white;
+   
+    //background image for hero main and register 
+    &#hero-main,&#create-account{
+        background: url("../assets/background_img.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &#hero-main{
+        padding: 0;
+    }
+    &#create-account{
+        padding-top: 25vh;
+    }
+    //background image products
+    &#products{
+        background: url("../assets/products-bg.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: black;
+    }
+    // background image for contact us
+    &#contact-us{
+        background: url("../assets/contact-us-bg.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    // background image for newsletter section
+    &#newsletter{
+        background: url("../assets/contact-us-bg.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // padding: 13vh 0;
+
+    }
+    &#hero-main{
+        padding-top: 30vh;
+    }
+   
+}
+.description-label{
+    width: min-content;
+    margin: auto;
+    border-top: 4px solid $red;
+    padding: 5px 10px;
+}
+button.menu-btn{
+    cursor: pointer;
+}
+.main-nav{
+    z-index: 100;
+}
+.side-menu{
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    height: 0;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    box-sizing: border-box;
+    transition: 200ms;
+    overflow: hidden;
+    .wrapper{
+        background: url('../assets/background_img.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // transition: 100ms ease-in;
+        height: 100vh;
+        padding: 10px;
+        position: relative;
+        box-sizing: border-box;
+        &.covered{
+            background: url("../assets/diytailoring_edited.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+      .menu{
+        &.covered{
+            display: none;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        z-index: 3;
+        
+        .flex-column{
+            li{
+                position: relative;
+                display: flex;
+                align-items: center;
+                .line{
+                    width: 4rem;
+                    height: 5px;
+                    background: white;
+                }
+                a{
+                    color: white;
+                }
+              
+            }
+        }
+      }
+      .sub-menu{
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        z-index: 2;
+        opacity: 0;
+        transition: 200ms;
+        &.open{
+            opacity: 1;
+        }
+
+        // slider
+        .slider{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            .control{
+                font-size: 5rem;
+                cursor: pointer;
+            }
+            .content{
+                max-width: 100%;
+                overflow: hidden;
+                position: relative;
+                .slide{
+                    display: none;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                    &.active{
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+    }
+    }
+    &.open{
+        // visibility: visible;
+        opacity: 1;
+        height: 100vh;
+    }
+    
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.quantity-group{
+    width: 120px;
+}
+
+.language-dropdown{
+    background: white;  
+    overflow: hidden;
+    ul{
+       
+        &.open{
+            height: unset;
+            padding: 5px;
+        }
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+        li{
+            padding: 0;
+        }
+       
+    }
+}
+.login-dropdown{
+   .dropdown-menu{
+    margin-top: 10px;
+    border-radius: 0;
+    width: 330px;
+    padding: 20px 10px;
+    &::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -5px;
+        right: 12px;
+        transform: rotate(225deg);
+        width:15px;
+        height: 15px;
+        background:white;
+        
+    }
+   }
+}
+
+#products{
+    .categories{
+        text-align: center;
+        ul{
+            justify-content: center;
+            li{
+                margin: 0 15px;
+                a{
+                    padding: 2px;
+                    color: white;
+                    border-bottom: 3px solid aqua;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .login-dropdown{
+        .dropdown-menu{
+            width: 200px;
+        }
+    }
+    section#hero-main{
+        padding-top: 40vh;
+    }
+}
+
+@media screen and (max-width:800px) {
+    main{
+        // padding-top: 230px;
+    }
+    section#hero-main{
+        padding-top: 40vh;
+    }
+    .login-dropdown{
+        .dropdown-menu{
+            width: 280px;
+        }
+    }
+    
+}
+
