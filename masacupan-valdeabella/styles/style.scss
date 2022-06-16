@@ -15,8 +15,8 @@ body{
 .text-purple{
     color: $purple;
 }
-main {
-    padding-top: 100px;
+main{
+    // padding-top: 100px;
 }
 section{
     padding-top: 30vh;
@@ -264,8 +264,8 @@ button.menu-btn{
 }
 
 @media screen and (max-width:800px) {
-    main {
-        padding-top: 230px;
+    main{
+        // padding-top: 230px;
     }
     section#hero-main{
         padding-top: 40vh;
