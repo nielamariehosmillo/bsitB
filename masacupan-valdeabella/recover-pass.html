@@ -205,47 +205,43 @@
                 <i class="bx bxs-user-circle bx-md"></i>
               </button>
               <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="login-dropdown-toggler"
-              >
-                <li>
-                  <div class="">
-                    <div class="container-fluid text-center">
-                      <h4 class="text-info fw-bold">Login to my Account</h4>
-                      <p>Enter your email address and password</p>
-                      <div class="mb-3">
-                        <input
-                          placeholder="EMAIL"
-                          type="email"
-                          class="form-control"
-                          name=""
-                          id=""
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <input
-                          placeholder="PASSWORD"
-                          type="email"
-                          class="form-control"
-                          name=""
-                          id=""
-                        />
-                      </div>
-                      <div class="mb-3 d-grid">
-                        <button class="btn btn-dark" type="button">
-                          LOGIN
-                        </button>
-                      </div>
-                      <p>
-                        New customer?
-                        <a
-                          href="/masacupan-valdeabella/registration.html"
-                          class="header__action-item-link hidden-pocket hidden-lap"
-                          >Create your account</a
-                        >
-                      </p>
-                      <p>Lost password? <a href="/masacupan-valdeabella/recover-pass.html">Recover Password</a></p>
-                      
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="login-dropdown-toggler"
+            >
+            <li class="nav-item ms-2">
+                <a href="#recover-pass" class="nav-link text-white p-0"></a>
+                <div class="dropdown login-dropdown" id="login-dropdown">
+                  <button
+                    class="btn text-white p-0 btn-link"
+                    type="button"
+                    id="login-dropdown-toggler"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bx bxs-user-circle bx-md"></i>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="login-dropdown-toggler"
+                  >
+                    <li>
+                      <div class="">
+                  <div class="container-fluid text-center">
+                    <h4 class="text-info fw-bold">Find your Password/h4>
+                    <p>Enter your phone number or recovery email</p>
+                    <div class="mb-3">
+                      <input
+                        placeholder="EMAIL"
+                        type="email"
+                        class="form-control"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                    <div class="mb-3 d-grid">
+                      <button class="btn btn-dark" type="button">
+                        RESET PASSWORD
+                      </button>
                         </div>
                       </li>
                     </ul>
