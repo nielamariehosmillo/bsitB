@@ -10,29 +10,43 @@ body{
  	background-size: 100% 100%;
 }
 .navbar{
-	background: #00FFFF;
-	opacity: 0.8;
+	background: #3A3B3C;
+	opacity: 0.9;
 }
 .navbar img{
-	height: 40px;
-	width: 120px;
+	height: 60px;
+	width: 130px;
+	margin-left: 20px;
 }
+.navbar .form-control{
+	height: 60px;
+	width: 350px;
+	margin-left: 20px;
 }
-.navbar .navbar-nav{
-	margin-left: 750px;
+.navbar .btn, .navbar-toggler{
+	border: 2px solid black;
+	outline-style: outset;
+	outline-color: #00A098;
 }
 .navbar .navbar-nav a{
-	margin-left: 120px;
-	color: #000;
+	margin-left: 100px;
+	color: #00A098;
 }
 .products{
 	padding: 100px 400px 30px 0;
-	margin: 0 400px 30px 10px;
 }
 .products a{
 	text-decoration: none;  
-	color: #000;
+	color: #00A098;
 }
 .products .featured, .flash, .hot{
+	color: #04ACE4;
 	margin-bottom: 50px;
+}
+.products img{
+	height: 150px;
+	width: 150px;
+	border: 2px solid black;
+	outline-style: outset;
+	outline-color: grey;
 }
