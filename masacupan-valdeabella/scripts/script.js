@@ -110,3 +110,37 @@ $(function(){
     })
     
 })
+
+$(function(){
+    const slider = $("#hero-product-slider .slider");
+    const products = $("#hero-product-slider .products a");
+    const slides = $("#hero-product-slider .slides");
+    var slideIndex = 0;
+    products.on("click",function(e){
+        e.preventDefault();
+        slideTo($(this).data("slide"));
+
+    })
+
+    function slideTo(index){
+        console.log(index)
+        let width = $(".slides").width();
+        $(".slides .slide").removeClass("active");
+        $($(".slides .slide")[index]).addClass("active")
+        slides[0].style.left = index * -(width /3) + "px";
+    }
+    function slideRightTo(index){
+        console.log(index)
+        
+        $(slides[index]).css("left","500px")
+    }
+
+    function indexOf(slides,slide){
+        for(let x=0;x<slides.length;x++){
+            if(slides[x] === slide){
+                return x;
+            }
+        }
+        return -1;
+    }
+})
