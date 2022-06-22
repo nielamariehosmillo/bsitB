@@ -55,17 +55,16 @@ async function getStudent() {
   let loading = $("#loading");
   let tr = "";
   loading.text("Loading....")
-  const res = await connection.from("students").select("*");
-  if (res) {
-      for (var i in res.data) {
+  const { data, error } = await connection.from("students").select("*");
+  if (data) {
+      for (var i in data) {
           tr += `<tr>
-       <td>${res.data[i].id}</td>
-       <td>${res.data[i].first_name}</td>
-       <td>${res.data[i].last_name}</td>
-       <td>${res.data[i].email}</td>
-       <td><img src="${res.data[i].image_url}" height="100" width="100"></td>
-       </tr>`;
-      }
+            <td>${data[i].id}</td>
+            <td>${data[i].first_name}</td>
+            <td>${data[i].last_name}</td>
+            <td>${data[i].user_name}</td>
+            </tr>`;
+            }
       tbody.html(tr);
       loading.text("")
 
