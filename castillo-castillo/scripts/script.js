@@ -9,7 +9,7 @@ async function saveImage(){
   
   let fname = $('#first-name').val();
   let lname = $('#last-name').val();
-  let username = $('#user-name').val();
+  let username = $('#username').val();
   let pic = $('#profile-pic').prop('files');
   let fileName = fname.replace(" ","").toLowerCase() + "_" +lname.replace(" ","").toLowerCase();
 
@@ -19,8 +19,10 @@ async function saveImage(){
   })
  
   if(data) {      
+    
+    console.log(error)
     //picPath = `${PROJECT}/storage/v1/object/public/${data["Key"]}`
-    picPath = `${PROJECT_URL}/storage/v1/object/${data["Key"]}`
+    picPath = `${PROJECT_URL}/storage/v1/object/public/${data["Key"]}`
     saveStudent(fname,lname,username,picPath)
 
   }
@@ -78,14 +80,12 @@ $(document).ready(function(){
     // jQuery methods go here
     $( "#registration" ).submit(function( event ) {
       event.preventDefault();
-      let fname = $('#first-name').val();
-      let lname = $('#last-name').val();
-      let username = $('#username').val();
       saveImage();
 
     });
 
     $( "#get-students" ).click(function( event ) {
+      event.preventDefault();
         getStudents();
     })
   });
