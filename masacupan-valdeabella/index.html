@@ -5,39 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VBella</title>
-    <link
-      rel="shortcut icon"
-      href="/masacupan-valdeabella/assets/vbella_logo.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/VBella.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/masacupan-valdeabella/styles/custom.css" />
-    <link rel="stylesheet" href="/masacupan-valdeabella/styles/style.css" />
+    <link rel="stylesheet" href="./styles/custom.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body>
     <div class="navbar navbar-dark fixed-top mb-5 mt-0 top">
       <div class="container-fluid align-items-baseline">
         <button class="btn btn-light btn-sm rounded-0 menu-btn">
-          <i class="bi bi-list fs-4 fw-bolder"></i>
+          <i class="bi bi-list fs-4"></i>
         </button>
         <div class="side-menu">
           <div class="wrapper">
             <button
               class="align-self-baseline btn btn-light btn-sm rounded-0 menu-btn"
             >
-              <i class="bi bi-x fs-4 fw-bold"></i>
+              <i class="bi bi-x fs-4"></i>
             </button>
             <!-- menu -->
             <div class="menu">
@@ -141,7 +131,7 @@
                 aria-expanded="false"
               >
                 <img
-                  src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                  src="./assets/PH-Philippines-Flag-icon.png"
                   class="my-0"
                   width="40"
                   height="30"
@@ -152,7 +142,7 @@
                 <li class="my-2">
                   <a class="" href="#">
                     <img
-                      src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                      src="./assets/PH-Philippines-Flag-icon.png"
                       class="my-0"
                       width="40"
                       height="30"
@@ -163,7 +153,7 @@
                 <li class="my-2">
                   <a class="" href="#">
                     <img
-                      src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                      src="./assets/PH-Philippines-Flag-icon.png"
                       class="my-0"
                       width="40"
                       height="30"
@@ -174,7 +164,7 @@
                 <li class="my-2">
                   <a class="" href="#">
                     <img
-                      src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png"
+                      src="./assets/PH-Philippines-Flag-icon.png"
                       class="my-0"
                       width="40"
                       height="30"
@@ -198,8 +188,7 @@
                 <i class="bx bxs-user-circle bx-md"></i>
               </button>
               <ul
-                class="dropdown-menu dropdown-menu-end"cd c:
-                
+                class="dropdown-menu dropdown-menu-end"
                 aria-labelledby="login-dropdown-toggler"
               >
                 <li>
@@ -232,21 +221,11 @@
                       </div>
                       <p>
                         New customer?
-                        <a
-                          href="/masacupan-valdeabella/registration.html"
-                          class="header__action-item-link hidden-pocket hidden-lap"
+                        <a href="#create-account" class="scroll-link"
                           >Create your account</a
                         >
                       </p>
-                      <p>
-                        Lost password?
-                        <a
-                          href="/masacupan-valdeabella/recover-pass.html"
-                          class="header__action-item-link hidden-pocket hidden-lap"
-                        >
-                          Recover Password</a
-                        >
-                      </p>
+                      <p>Lost password? <a href="#">Recover Password</a></p>
                     </div>
                   </div>
                 </li>
@@ -269,30 +248,22 @@
           class="d-flex align-items-center mt-5 flex-wrap justify-content-center"
         >
           <a href="index.html" class="navbar-brand me-lg-5 text-center ms-lg-5">
-            <img
-              src="/masacupan-valdeabella/assets/VBella.png"
-              width="110"
-              height="110"
-              alt=""
-            />
+            <img src="./assets/VBella.png" width="110" height="110" alt="" />
           </a>
           <ul class="navbar-nav flex-row flex-wrap justify-content-center">
-            <li class="nav-item mx-lg-4 mx-2 scoll-link">
+            <li class="nav-item mx-lg-4 mx-2">
               <a href="#hero-main" class="nav-link fs-4 text-white">Home</a>
             </li>
-            <li class="nav-item mx-lg-4 mx-2 scoll-link">
-              <a
-                href="#/masacupan-valdeabella/pages/products/product.html"
-                class="nav-link fs-4 text-white"
-                >Products</a
-              >
+            <li class="nav-item mx-lg-4 mx-2">
+              <a href="#products" class="nav-link fs-4 text-white">Products</a>
             </li>
             <li class="nav-item mx-lg-4 mx-2">
-              <a href="#about" class="nav-link fs-4 main-about-link text-white"
-                >About</a
-              >
+              <a href="#" class="nav-link fs-4 text-white">Gallery</a>
             </li>
-            <li class="nav-item mx-lg-4 mx-2 scoll-link">
+            <li class="nav-item mx-lg-4 mx-2">
+              <a href="#about" class="nav-link fs-4 text-white">About</a>
+            </li>
+            <li class="nav-item mx-lg-4 mx-2">
               <a href="#contact-us" class="nav-link fs-4 text-white"
                 >Contact Us</a
               >
@@ -314,7 +285,7 @@
                   <div class="card">
                     <div class="card-body">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -325,7 +296,7 @@
                   <div class="card">
                     <div class="card-body">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -336,7 +307,7 @@
                   <div class="card">
                     <div class="card-body">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -351,7 +322,7 @@
                   <div class="card">
                     <div class="card-body">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -385,12 +356,8 @@
                   <button type="button" class="btn btn-light fw-bold rounded-0">
                     <i class="bi-dash fs-5"></i>
                   </button>
-                  <input
-                    type="text name="
-                    class="form-control form-control-sm rounded-0 text-center"
-                    value="1"
-                    id=""
-                  />
+                  <input type="text name="" class=" form-control form-control-sm
+                  rounded-0 text-center" value="1" id="">
                   <button type="button" class="btn btn-light fw-bold rounded-0">
                     <i class="bi-plus fs-5"></i>
                   </button>
@@ -412,24 +379,62 @@
           </div>
         </div>
       </section>
-
-      <!-- Description Tabs -->
-      <div class="woocommerce-tabs">
-        <div class="row">
-          <div class="large-12 large-centered columns">
-            <ul class="tabs">
-              <li class="description_tab active">
-                <a href="#tab-description">Description</a>
-              </li>
-
-              <li class="additional_information_tab">
-                <a href="#tab-additional_information">Additional information</a>
-              </li>
-            </ul>
+      <!-- create account -->
+      <section class="" id="create-account">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4 text-center text-white">
+              <h3 class="text-info">Create My Account</h3>
+              <p>Please fill in the information below:</p>
+              <div>
+                <div class="mb-3">
+                  <input
+                    placeholder="FIRST NAME"
+                    type="text"
+                    class="form-control rounded-0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    placeholder="LAST NAME"
+                    type="text"
+                    class="form-control rounded-0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    placeholder="EMAIL"
+                    type="email"
+                    class="form-control rounded-0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    placeholder="PASSWORD"
+                    type="password"
+                    class="form-control rounded-0"
+                  />
+                </div>
+                <div class="d-grid mb-3">
+                  <button class="btn btn-dark rounded-0" type="button">
+                    CREATE MY ACCOUNT
+                  </button>
+                </div>
+                <div class="mb-3">
+                  <p>
+                    This site is protected by reCAPTCHA and the Google Privacy
+                    Policy and Terms of Service apply.
+                  </p>
+                </div>
+                <p>
+                  Already have an account?
+                  <a href="#" class="login-here-link">Login Here</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
+      </section>
       <!-- products -->
       <section id="products">
         <div class="container">
@@ -457,7 +462,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -472,7 +477,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -487,7 +492,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -502,7 +507,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -517,7 +522,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -532,7 +537,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -547,7 +552,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -562,7 +567,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10">
                       <img
-                        src="/masacupan-valdeabella/pages/products/images/158690809_770492340274793_5829204987395175453_n.png"
+                        src="./assets/Products/186067241_372310520889261_8622207426653398583_n.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -646,7 +651,7 @@
                     <div class="d-flex align-items-center">
                       <div class="me-3">
                         <img
-                          src="/masacupan-valdeabella/assets/footer/726455.png"
+                          src="./assets/footer/726455.png"
                           width="100"
                           alt=""
                           class="img-fluid"
@@ -666,7 +671,7 @@
                     <div class="d-flex align-items-center">
                       <div class="me-3">
                         <img
-                          src="/masacupan-valdeabella/assets/footer/Return-and-exchange-512.webp"
+                          src="./assets/footer/Return-and-exchange-512.webp"
                           width="100"
                           alt=""
                           class="img-fluid"
@@ -686,7 +691,7 @@
                     <div class="d-flex align-items-center">
                       <div class="me-3">
                         <img
-                          src="/masacupan-valdeabella/assets/footer/pngkey.com-tech-support-icon-png-3095068.png"
+                          src="./assets/footer/pngkey.com-tech-support-icon-png-3095068.png"
                           width="100"
                           alt=""
                           class="img-fluid"
@@ -711,7 +716,7 @@
                     <div class="d-flex align-items-center">
                       <div class="me-3">
                         <img
-                          src="/masacupan-valdeabella/assets/footer/payment.png"
+                          src="./assets/footer/payment.png"
                           width="150"
                           alt=""
                           class="img-fluid"
@@ -727,55 +732,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="text-center mt-3">
-              <p><i class="bx bx-copyright"></i> VBELLA EMBROIDERY</p>
-              <ul class="nav flex-row justify-content-center">
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-white fs-5">
-                    <i class="bx bxl-twitter"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-white fs-5">
-                    <i class="bx bxl-facebook"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-white fs-5">
-                    <i class="bx bxl-instagram"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-white fs-5">
-                    <i class="bx bxl-linkedin"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-white fs-5">
-                    <i class="bx bxl-snapchat"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-white fs-5">
-                    <i class="bx bxl-youtube"></i>
-                  </a>
-                </li>
-              </ul>
-              <div class="text-center">
-                <button
-                  class="btn-light mx-auto btn-sm btn py-0 fs-6 text-center fw-bold d-flex justify-content-center align-items-center"
-                  type="button"
-                >
-                  WE ACCEPT
-                  <img
-                    src="/masacupan-valdeabella/assets/footer/dc84ca692b6fd9bc37e215f87ca6e97d.png"
-                    width="40"
-                    height="40"
-                    alt=""
-                  />
-                </button>
               </div>
             </div>
           </footer>
@@ -795,6 +751,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script src="/masacupan-valdeabella/scripts/scripts.js"></script>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
