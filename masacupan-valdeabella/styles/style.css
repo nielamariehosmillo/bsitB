@@ -244,6 +244,11 @@ button.menu-btn {
   background: white;
 }
 
+.woocommerce-tabs > .row
+.woocommerce-tabs > .row:nth-of-type(1)
+
+
+
 #products .categories {
   text-align: center;
 }
