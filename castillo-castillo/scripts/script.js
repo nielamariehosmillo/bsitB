@@ -29,21 +29,21 @@ async function saveImage(){
   }
 
 }
-async function saveStudent(fname, lname, email, picPath){
+async function saveStudent(fname, lname, username){
+
   const { data, error } = await connection.from("students").insert({
     first_name: fname,
     last_name: lname,
-    email: email,
-    image_url: picPath
+    user_name: username,
 })
   if(data) {
     console.log(data)
-    getStudent();
+    //getStudent();
 
   }
   if(error) {
     console.log(error)
-    return null
+    //return null
 
   }
 
@@ -77,7 +77,10 @@ $(document).ready(function(){
     // jQuery methods go here
     $( "#registration" ).submit(function( event ) {
       event.preventDefault();
-      saveImage()
+      let fname = $('#first-name').val();
+      let lname = $('#last-name').val();
+      let username = $('#username').val();
+      saveStudent(fname,lname,username);
 
     });
   });
