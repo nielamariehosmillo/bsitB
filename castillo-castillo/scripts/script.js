@@ -49,7 +49,7 @@ async function saveStudent(fname, lname, username){
 
 }
 
-async function getStudent() {
+async function getStudents() {
   $('#students-table').show();
   let tbody = $("#tbody");
   let loading = $("#loading");
@@ -82,4 +82,8 @@ $(document).ready(function(){
       saveStudent(fname,lname,username);
 
     });
+
+    $( "#get-students" ).click(function( event ) {
+        getStudents();
+    })
   });
