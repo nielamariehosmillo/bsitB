@@ -9,19 +9,19 @@ async function saveImage(){
   
   let fname = $('#first-name').val();
   let lname = $('#last-name').val();
-  let email = $('#email').val();
+  let username = $('#user-name').val();
   let pic = $('#profile-pic').prop('files');
-  let fileName = fname.replace(" ","").toLowerCase() +"_" +lname.replace(" ","").toLowerCase();
+  let fileName = fname.replace(" ","").toLowerCase() + "_" +lname.replace(" ","").toLowerCase();
 
-  const { data, error } = await connection.storage.from('products')
+  const { data, error } = await connection.storage.from('images')
   .upload(`public/${fileName}.jpg`, pic[0], {
     upsert: true
   })
  
   if(data) {      
     //picPath = `${PROJECT}/storage/v1/object/public/${data["Key"]}`
-    picPath = 'https://zzivlqstynxhbfabxhpi.supabase.co/storage/v1/object/'+data["Key"]
-    register(fname,lname,email,picPath)
+    picPath = `${PROJECT_URL}/storage/v1/object/${data["Key"]}`
+    saveStudent(fname,lname,username,picPath)
 
   }
   if(error) {
@@ -29,12 +29,13 @@ async function saveImage(){
   }
 
 }
-async function saveStudent(fname, lname, username){
+async function saveStudent(fname, lname, username,picPath){
 
   const { data, error } = await connection.from("students").insert({
     first_name: fname,
     last_name: lname,
     user_name: username,
+    profile_pic: picPath
 })
   if(data) {
     console.log(data)
@@ -63,6 +64,7 @@ async function getStudents() {
             <td>${data[i].first_name}</td>
             <td>${data[i].last_name}</td>
             <td>${data[i].user_name}</td>
+            <td><img src='${data[i].profile_pic}' height='100' width='100' ></td>
             </tr>`;
             }
       tbody.html(tr);
@@ -79,7 +81,7 @@ $(document).ready(function(){
       let fname = $('#first-name').val();
       let lname = $('#last-name').val();
       let username = $('#username').val();
-      saveStudent(fname,lname,username);
+      saveImage();
 
     });
 
