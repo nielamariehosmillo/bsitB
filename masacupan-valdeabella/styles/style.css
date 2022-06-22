@@ -21,24 +21,24 @@ section {
   color: white;
 }
 section#hero-main, section#create-account {
-  background: url("../assets/background_img.png");
+  background: url("/masacupan-valdeabella/assets/background_img.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 section#products {
-  background: url("../assets/products-bg.jpg");
+  background: url("/masacupan-valdeabella/assets/products-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
 }
 section#contact-us {
-  background: url("../assets/contact-us-bg.jpg");
+  background: url("/masacupan-valdeabella/assets/contact-us-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 section#newsletter {
-  background: url("../assets/contact-us-bg.jpg");
+  background: url("/masacupan-valdeabella/assets/contact-us-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -99,8 +99,8 @@ button.menu-btn {
   transition: 200ms;
   overflow: hidden;
 }
-.side-menu .wrapper {
-  background: url("../assets/background_img.png");
+.side-menu .wrapper .wrapper.covered {
+  background: url("/masacupan-valdeabella/assets/background_img.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,12 +108,6 @@ button.menu-btn {
   padding: 10px;
   position: relative;
   box-sizing: border-box;
-}
-.side-menu .wrapper.covered {
-  background: url("../assets/diytailoring_edited.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .side-menu .wrapper .menu {
   display: flex;
