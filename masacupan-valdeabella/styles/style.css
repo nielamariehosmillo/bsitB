@@ -68,15 +68,8 @@ section#product-info ul li:hover {
 
 section#hero-main,
 section#product-info,
-section#create-account {
-    background: url("/masacupan-valdeabella/assets/background_img.png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 section#products {
-    background: url("/masacupan-valdeabella/assets/background_img.png");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,7 +134,6 @@ section#create-account {
 }
 
 section#about-us {
-    background: url("/masacupan-valdeabella/assets/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -193,13 +185,13 @@ section#about-us .about-slider .content .slide.active {
     display: block;
 }
 
-section#contact-us {
-    background: url("/masacupan-valdeabella/assets/background_img.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section#newsletter {
+section#products
+section#about-us
+section#contact-us
+section#newsletter
+section#about-us
+.side-menu .wrapper
+.side-menu .wrapper.covered {
     background: url("/masacupan-valdeabella/assets/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -444,7 +436,6 @@ button.menu-btn {
 }
 
 .side-menu .wrapper {
-    background: url("../assets/background_img.png");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -455,7 +446,6 @@ button.menu-btn {
 }
 
 .side-menu .wrapper.covered {
-    background: url("../assets/diytailoring_edited.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
