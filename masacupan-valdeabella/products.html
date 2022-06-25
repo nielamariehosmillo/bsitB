@@ -1,512 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VBella</title>
-    <link rel="shortcut icon" href="./assets/VBella.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/custom.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
 
-  <body class="bg-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBella</title>
+    <link rel="shortcut icon" href="./assets/VBella.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body class="bg-dark">
     <!-- top navbar -->
     <div
-      class="navbar navbar-dark navbar-expand-lg bg-dark text-white shadow fixed-top flex-column w-100 main-nav pb-0"
-    >
-      <div class="container justify-content-center">
-        <a href="index.html" class="navbar-brand text-center me-auto">
-          <img src="./assets/VBella.png" class="img-logo" alt="" />
-        </a>
-        <a
-          href="#login-modal"
-          data-bs-toggle="modal"
-          class="d-block d-lg-none btn btn-link text-white px-0"
-          ><i class="bx bxs-user-circle fs-2"></i
-        ></a>
-        <a
-          href="#"
-          role="button"
-          data-open="false"
-          class="mobile-menu-btn d-block d-lg-none btn btn-link text-white"
-          ><i class="bx bx-menu bx-sm"></i
-        ></a>
-        <ul
-          class="align-self-end navbar-nav flex-row flex-wrap justify-content-center d-none d-lg-flex me-lg-auto"
-        >
-          <li class="nav-item mx-lg-4 mx-2">
-            <a href="index.html" class="nav-link fs-6 text-uppercase text-white"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item mx-lg-4 mx-2">
-            <form action="#">
-              <div class="input-group mb-3 rounded-0">
-                <input
-                  type="text"
-                  class="form-control rounded-0"
-                  placeholder="Search..."
-                  aria-label="Text input with dropdown button"
-                />
-                <button
-                  class="btn btn-light rounded-0 border-start"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  All Categories <i class="bx bx-chevron-down"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">All Categories</a></li>
-                  <li><a class="dropdown-item" href="#">Accessories</a></li>
-                  <li><a class="dropdown-item" href="#">Barong Tagalog</a></li>
-                  <li><a class="dropdown-item" href="#">Barong Tagalog</a></li>
-                  <li><a class="dropdown-item" href="#">Blazer</a></li>
-                  <li><a class="dropdown-item" href="#">Blouse</a></li>
-                </ul>
-                <button class="btn btn-danger rounded-0" type="button">
-                  <i class="bx bx-search"></i>
-                </button>
-              </div>
-            </form>
-          </li>
-        </ul>
-        <ul class="nav flex-row d-none d-lg-flex">
-          <li class="nav-item me-2">
-            <div class="language-dropdown">
-              <a
-                class="btn btn-light btn-sm p-1 rounded-0 toggler"
-                href="#"
-                role="button"
-                aria-expanded="false"
-              >
-                <img
-                  src="./assets/PH-Philippines-Flag-icon.png"
-                  class="my-0"
-                  width="30"
-                  height="20"
-                  alt=""
-                />
-              </a>
-              <ul class="bg-white position-absolute">
-                <li class="my-2">
-                  <a class="" href="#">
-                    <img
-                      src="./assets/PH-Philippines-Flag-icon.png"
-                      class="my-0"
-                      width="30"
-                      height="20"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li class="my-2">
-                  <a class="" href="#">
-                    <img
-                      src="./assets/PH-Philippines-Flag-icon.png"
-                      class="my-0"
-                      width="30"
-                      height="20"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li class="my-2">
-                  <a class="" href="#">
-                    <img
-                      src="./assets/PH-Philippines-Flag-icon.png"
-                      class="my-0"
-                      width="30"
-                      height="20"
-                      alt=""
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item ms-2">
-            <a
-              href="#login-modal"
-              data-bs-toggle="modal"
-              class="nav-link text-white p-0"
-              ><i class="bx fs-2 bxs-user-circle"></i
-            ></a>
-          </li>
-          <li class="nav-item ms-2">
-            <a href="#" class="nav-link text-white p-0"
-              ><i class="bx bxs-cart fs-2"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <!-- nav footer -->
-      <div class="w-100 pt-lg-2 pb-0 mt-lg-3">
-        <div class="container pb-0">
-          <div class="text-center d-block d-lg-none pb-3">
-            <a
-              role="button"
-              href="#"
-              class="py-0 link-light category-btn d-flex flex-column"
-              data-open="false"
-              type="button"
-            >
-              <i class="bx bx-sm bx-chevron-up"></i>
+        class="navbar navbar-dark navbar-expand-lg bg-dark text-white shadow fixed-top flex-column w-100 main-nav pb-0">
+        <div class="container  justify-content-center ">
+
+            <a href="index.html" class="navbar-brand text-center me-auto ">
+                <img src="./assets/VBella.png" class="img-logo" alt="">
             </a>
-          </div>
-          <!-- desktop category menu -->
-          <div class="d-none d-md-block">
-            <ul class="nav categories-nav">
-              <li class="nav-item">
-                <a href="men.html" class="top-link nav-link link-light"
-                  >MEN <i class="bx bx-chevron-down"></i
-                ></a>
-                <div class="menu-wrapper">
-                  <ul class="menu">
-                    <span class="arrow"></span>
+            <a href="#login-modal" data-bs-toggle="modal" class="d-block d-lg-none btn btn-link text-white px-0"><i
+                class="bx bxs-user-circle fs-2"></i></a>
+            <a href="#" role="button" data-open="false"
+                class="mobile-menu-btn d-block d-lg-none btn btn-link text-white"><i class="bx bx-menu bx-sm"></i></a>
+            <ul class="align-self-end navbar-nav flex-row flex-wrap justify-content-center d-none d-lg-flex me-lg-auto">
+                <li class="nav-item mx-lg-4 mx-2">
+                    <a href="index.html" class="nav-link fs-6 text-uppercase text-white">Home</a>
+                </li>
+                <li class="nav-item mx-lg-4 mx-2">
+                    <form action="#">
+                        <div class="input-group mb-3 rounded-0">
+                            <input type="text" class="form-control rounded-0" placeholder="Search..."
+                                aria-label="Text input with dropdown button">
+                            <button class="btn btn-light rounded-0 border-start" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">All Categories <i class="bx bx-chevron-down"></i></button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">All Categories</a></li>
+                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                <li><a class="dropdown-item" href="#">Barong Tagalog</a></li>
+                                <li><a class="dropdown-item" href="#">Barong Tagalog</a></li>
+                                <li><a class="dropdown-item" href="#">Blazer</a></li>
+                                <li><a class="dropdown-item" href="#">Blouse</a></li>
+                            </ul>
+                            <button class="btn btn-danger rounded-0" type="button"><i class="bx bx-search"></i></button>
+                        </div>
+                    </form>
+                </li>
 
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="women.html" class="top-link nav-link link-light"
-                  >WOMEN <i class="bx bx-chevron-down"></i
-                ></a>
-                <div class="menu-wrapper">
-                  <ul class="menu">
-                    <span class="arrow"></span>
-
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="kids.html" class="top-link nav-link link-light"
-                  >KIDS <i class="bx bx-chevron-down"></i
-                ></a>
-                <div class="menu-wrapper">
-                  <ul class="menu">
-                    <span class="arrow"></span>
-
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="top-link nav-link link-light"
-                  >WEDDING <i class="bx bx-chevron-down"></i
-                ></a>
-                <div class="menu-wrapper">
-                  <ul class="menu">
-                    <span class="arrow"></span>
-
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="top-link nav-link link-light"
-                  >FILIPINO GOODS <i class="bx bx-chevron-down"></i
-                ></a>
-                <div class="menu-wrapper">
-                  <ul class="menu">
-                    <span class="arrow"></span>
-
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="top-link nav-link link-light"
-                  >SIZE CHARTS <i class="bx bx-chevron-down"></i
-                ></a>
-                <div class="menu-wrapper">
-                  <ul class="menu">
-                    <span class="arrow"></span>
-
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="top-link nav-link link-light"
-                  >TESTIMONIALS <i class="bx bx-chevron-down"></i
-                ></a>
-                <div class="menu-wrapper">
-                  <ul class="menu">
-                    <span class="arrow"></span>
-
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="nav-link link-light">Formal Barong</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link link-light"
-                  >HOW TO MEASURE <i class="bx bx-chevron-down"></i
-                ></a>
-              </li>
             </ul>
-          </div>
-          <!-- mobile category menu -->
-          <div class="mobile-categories-wrapper" id="mobile-category-menu">
-            <div class="top-arrow"></div>
-            <ul class="nav mobile-categories-nav flex-column">
-              <li class="nav-item">
-                <div class="d-flex align-items-center">
-                  <a href="men.html" class="nav-link link-light">MEN</a>
-                  <a
-                    href="#men-menu"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="p-0 link-light"
-                    ><i class="bx bx-chevron-down"></i
-                  ></a>
-                </div>
-                <ul class="nav collapse" id="men-menu">
-                  <span class="arrow"></span>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <div class="d-flex align-items-center">
-                  <a href="women.html" class="nav-link link-light">WOMEN</a>
-                  <a
-                    href="#women-menu"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="p-0 link-light"
-                    ><i class="bx bx-chevron-down"></i
-                  ></a>
-                </div>
-                <ul class="nav collapse" id="women-menu">
-                  <span class="arrow"></span>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <div class="d-flex align-items-center">
-                  <a href="kids.html" class="nav-link link-light">KIDS</a>
-                  <a
-                    href="#kids-menu"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="p-0 link-light"
-                    ><i class="bx bx-chevron-down"></i
-                  ></a>
-                </div>
-                <ul class="nav collapse" id="kids-menu">
-                  <span class="arrow"></span>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <div class="d-flex align-items-center">
-                  <a href="#" class="nav-link link-light">WEDDING</a>
-                  <a
-                    href="#wedding-menu"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="p-0 link-light"
-                    ><i class="bx bx-chevron-down"></i
-                  ></a>
-                </div>
-                <ul class="nav collapse" id="wedding-menu">
-                  <span class="arrow"></span>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <div class="d-flex align-items-center">
-                  <a href="#" class="nav-link link-light">FILIPINO GOODS</a>
-                  <a
-                    href="#filipino-goods-menu"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="p-0 link-light"
-                    ><i class="bx bx-chevron-down"></i
-                  ></a>
-                </div>
-                <ul class="nav collapse" id="filipino-goods-menu">
-                  <span class="arrow"></span>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link link-light"
-                      ><i class="bx bx-chevron-right me-1"></i> Formal Barong</a
-                    >
-                  </li>
-                  <li class="nav-item"></li>
-                </ul>
-              </li>
+            <ul class="nav flex-row d-none d-lg-flex">
+                <li class="nav-item me-2">
+                    <div class="language-dropdown">
+                        <a class="btn btn-light btn-sm p-1 rounded-0 toggler" href="#" role="button"
+                            aria-expanded="false">
+                            <img src="./assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20" alt="">
+                        </a>
+                        <ul class="bg-white position-absolute">
+                            <li class="my-2">
+                                <a class="" href="#">
+                                    <img src="./assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20"
+                                        alt="">
+
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="" href="#">
+                                    <img src="./assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20"
+                                        alt="">
+
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="" href="#">
+                                    <img src="./assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20"
+                                        alt="">
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item ms-2">
+                    <a href="#login-modal" data-bs-toggle="modal" class="nav-link text-white p-0"><i
+                        class="bx fs-2 bxs-user-circle"></i></a>
+                </li>
+                <li class="nav-item ms-2">
+                    <a href="#" class="nav-link text-white p-0"><i class="bx bxs-cart fs-2"></i></a>
+                </li>
             </ul>
-          </div>
         </div>
-      </div>
-    </div>
-  </body>
-</html>
+        <!-- nav footer -->
+        <div class="w-100 pt-lg-2 pb-0 mt-lg-3 ">
+            <div class="container pb-0">
+                <div class="text-center d-block d-lg-none pb-3">
+                    <a role="button" href="#" class="py-0 link-light category-btn d-flex flex-column" data-open="false"
+                        type="button">
+                        <i class="bx bx-sm bx-chevron-up"></i>
+                    </a>
+                </div>
+                <!-- desktop category menu -->
+                <div class="d-none d-md-block">
+                    <ul class="nav categories-nav">
+                        <li class="nav-item ">
+                            <a href="men.html" class="top-link nav-link link-light">MEN <i
+                                    class="bx bx-chevron-down"></i></a>
+                            <div class="menu-wrapper">
+                                <ul class="menu">
+                                    <span class="arrow"></span>
+
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="women.html" class="top-link nav-link link-light">WOMEN <i
+                                    class="bx bx-chevron-down"></i></a>
+                            <div class="menu-wrapper">
+                                <ul class="menu">
+                                    <span class="arrow"></span>
+
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kids.html" class="top-link nav-link link-light">KIDS <i
+                                    class="bx bx-chevron-down"></i></a>
+                            <div class="menu-wrapper">
+                                <ul class="menu">
+                                    <span class="arrow"></span>
+
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="top-link nav-link link-light">WEDDING <i
+                                    class="bx bx-chevron-down"></i></a>
+                            <div class="menu-wrapper">
+                                <ul class="menu">
+                                    <span class="arrow"></span>
+
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="top-link nav-link link-light">FILIPINO GOODS <i
+                                    class="bx bx-chevron-down"></i></a>
+                            <div class="menu-wrapper">
+                                <ul class="menu">
+                                    <span class="arrow"></span>
+
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="top-link nav-link link-light">SIZE CHARTS <i
+                                    class="bx bx-chevron-down"></i></a>
+                            <div class="menu-wrapper">
+                                <ul class="menu">
+                                    <span class="arrow"></span>
+
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="top-link nav-link link-light">TESTIMONIALS <i
+                                    class="bx bx-chevron-down"></i></a>
+                            <div class="menu-wrapper">
+                                <ul class="menu">
+                                    <span class="arrow"></span>
+
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="nav-link link-light">Formal Barong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-light">HOW TO MEASURE <i
+                                    class="bx bx-chevron-down"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobile category menu -->
+                <div class="mobile-categories-wrapper" id="mobile-category-menu">
+                    <div class="top-arrow"></div>
+                    <ul class="nav mobile-categories-nav flex-column ">
+                        <li class="nav-item ">
+                            <div class="d-flex align-items-center">
+                                <a href="men.html" class="nav-link link-light">MEN</a>
+                                <a href="#men-menu" role="button" data-bs-toggle="collapse" class="p-0 link-light"><i
+                                        class="bx bx-chevron-down"></i></a>
+                            </div>
+                            <ul class="nav collapse" id="men-menu">
+                                <span class="arrow"></span>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <div class="d-flex align-items-center">
+                                <a href="women.html" class="nav-link link-light">WOMEN</a>
+                                <a href="#women-menu" role="button" data-bs-toggle="collapse" class="p-0 link-light"><i
+                                        class="bx bx-chevron-down"></i></a>
+                            </div>
+                            <ul class="nav collapse" id="women-menu">
+                                <span class="arrow"></span>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <div class="d-flex align-items-center">
+                                <a href="kids.html" class="nav-link link-light">KIDS</a>
+                                <a href="#kids-menu" role="button" data-bs-toggle="collapse" class="p-0 link-light"><i
+                                        class="bx bx-chevron-down"></i></a>
+                            </div>
+                            <ul class="nav collapse" id="kids-menu">
+                                <span class="arrow"></span>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="nav-link link-light">WEDDING</a>
+                                <a href="#wedding-menu" role="button" data-bs-toggle="collapse"
+                                    class="p-0 link-light"><i class="bx bx-chevron-down"></i></a>
+                            </div>
+                            <ul class="nav collapse" id="wedding-menu">
+                                <span class="arrow"></span>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="nav-link link-light">FILIPINO GOODS</a>
+                                <a href="#filipino-goods-menu" role="button" data-bs-toggle="collapse"
+                                    class="p-0 link-light"><i class="bx bx-chevron-down"></i></a>
+                            </div>
+                            <ul class="nav collapse" id="filipino-goods-menu">
+                                <span class="arrow"></span>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light"><i class="bx bx-chevron-right me-1"></i>
+                                        Formal Barong</a>
+                                </li>
+                                <li class="nav-item">
