@@ -69,14 +69,14 @@ section#product-info ul li:hover {
 section#hero-main,
 section#product-info,
 section#create-account {
-    background: url("../assets/background_img.png");
+    background: url("/masacupan-valdeabella/assets/background_img.png");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 section#products {
-    background: url("../assets/products-bg.jpg");
+    background: url("/masacupan-valdeabella/assets/background_img.png");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ section#create-account {
 }
 
 section#about-us {
-    background: url("../assets/diytailoring_edited.jpg");
+    background: url("/masacupan-valdeabella/assets/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -194,13 +194,13 @@ section#about-us .about-slider .content .slide.active {
 }
 
 section#contact-us {
-    background: url("../assets/contact-us-bg.jpg");
+    background: url("/masacupan-valdeabella/assets/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 section#newsletter {
-    background: url("../assets/contact-us-bg.jpg");
+    background: url("/masacupan-valdeabella/assets/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
