@@ -9,10 +9,19 @@ PROJECT NAME:VBL Embroidery
 Group Members
 
     Masacupan, Mark Jigger V.
-        -Homepage
-        -Product Page
+        - Homepage
+        - Product Page
+        - Kids Page
+        - Men Page
+        - Scripts
+        - Assets; bootstrap folder, File Manager_files,
+        - Styles (50% of Homepage)
 
 
     Valdeabella, Ariza B.
-        -Login Page
-        -Registration Page
+        - Login Page
+        - Registration Page
+        - Product Page
+        - Women Page
+        - Styles (50% of Homepage)
+        - Assets; footer and products folder
