@@ -15,27 +15,29 @@ body {
 .navbar {
     padding: 20px 0;
 }
-.navbar-brand
-{
+
+.navbar-brand {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 2em;
     color: #262626;
 }
-.nav-item
-{
+
+.nav-item {
     font-weight: 800;
     text-transform: uppercase;
 }
+
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
-.navbar-light .navbar-nav .nav-item.active .nav-link
-{
+.navbar-light .navbar-nav .nav-item.active .nav-link {
     background: #262626;
     color: #fff;
-}  
-  .navbar .navbar-collapse {
+}
+
+.navbar .navbar-collapse {
     text-align: center;
-  }
+}
+
 .sign {
     padding-top: 40px;
     color: #8C55AA;
@@ -44,28 +46,28 @@ body {
     font-size: 23px;
 }
 
-.align { 
+.align {
     text-align: center;
 }
 
 .un {
-width: 76%;
-color: rgb(38, 50, 56);
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 1px;
-background: rgba(136, 126, 126, 0.04);
-padding: 10px 20px;
-border: none;
-border-radius: 20px;
-outline: none;
-box-sizing: border-box;
-border: 2px solid rgba(0, 0, 0, 0.02);
-margin-bottom: 50px;
-margin-left: 46px;
-text-align: center;
-margin-bottom: 27px;
-font-family: 'Ubuntu', sans-serif;
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 form.form1 {
@@ -73,33 +75,34 @@ form.form1 {
 }
 
 .pass {
-        width: 76%;
-color: rgb(38, 50, 56);
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 1px;
-background: rgba(136, 126, 126, 0.04);
-padding: 10px 20px;
-border: none;
-border-radius: 20px;
-outline: none;
-box-sizing: border-box;
-border: 2px solid rgba(0, 0, 0, 0.02);
-margin-bottom: 50px;
-margin-left: 46px;
-text-align: center;
-margin-bottom: 27px;
-font-family: 'Ubuntu', sans-serif;
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
-.un:focus, .pass:focus {
+.un:focus,
+.pass:focus {
     border: 2px solid #00df64 !important;
-    
+
 }
 
 .submit {
-  cursor: pointer;
+    cursor: pointer;
     border-radius: 5em;
     color: #fff;
     background: linear-gradient(to right, #279b61, #3f7e60);
@@ -126,8 +129,12 @@ a {
     text-decoration: none
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {}
+
+.main {
+    border-radius: 0px;
 }
-    .main {
-        border-radius: 0px;
-    }
+
+.text-primary {
+    color: rgb(45, 156, 60);
+}
