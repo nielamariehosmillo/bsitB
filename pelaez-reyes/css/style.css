@@ -39,6 +39,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-        
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
-
+header .logo{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 500;
+}
+header.navbar a{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 0 1rem;
+}
+header.navbar a:hover{
+    color:orangered;
+}
+header.icons a {
+    font-size: 2rem;
+    color: #000;
+    margin-left: 1.5rem;
+}
+header.icons a:hover{
+    color: orangered;
+}
