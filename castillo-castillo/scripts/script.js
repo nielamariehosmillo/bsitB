@@ -82,20 +82,21 @@ async function getStudentsByGender(gender) {
   let loading = $("#loading");
   let tr = "";
   loading.text("Loading....")
+  var response = null
   if (gender != undefined || gender != null){
-    const { data, error } = await connection.from("students").select("*").eq('gender',gender);
+    response = await connection.from("students").select("*").eq('gender',gender);
   }else{
-    const { data, error } = await connection.from("students").select("*");
+    response = await connection.from("students").select("*");
   }
-  if (data) {
-      for (var i in data) {
+  if (response.data) {
+      for (var i in response.data) {
           tr += `<tr>
-            <td>${data[i].id}</td>
-            <td>${data[i].first_name}</td>
-            <td>${data[i].last_name}</td>
-            <td>${data[i].user_name}</td>
-            <td>${data[i].gender}</td>
-            <td><img src='${data[i].profile_pic}' height='100' width='100' ></td>
+            <td>${response.data[i].id}</td>
+            <td>${response.data[i].first_name}</td>
+            <td>${response.data[i].last_name}</td>
+            <td>${response.data[i].user_name}</td>
+            <td>${response.data[i].gender}</td>
+            <td><img src='${response.data[i].profile_pic}' height='100' width='100' ></td>
             </tr>`;
             }
       tbody.html(tr);
