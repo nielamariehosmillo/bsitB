@@ -1,64 +1,77 @@
-@font-face {
-    font-family: 'iran_sans_bold';
-    src: url('../Fonts/iran_sans_bold.woff') format('woff');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Color Variables */
+:root {
+  --white: #fff;
+  --black: #222;
+  --blue: #009cb8;
+  --grey1: #f0f0f0;
+  --grey2: #e9d7d3;
 }
 
-@font-face {
-    font-family: 'iran_sans_light';
-    src: url('../Fonts/iran_sans_light.woff') format('woff');
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-@font-face {
-    font-family: 'iran_sans_medi';
-    src: url('../Fonts/iran_sans_medi.woff') format('woff');
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 400;
+  font-style: normal;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .2s linear;
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
-html{
-    font-size: 60%;
-    overflow: hidden;
-    scroll-padding-top: 6rem;
-    scroll-behavior: smooth;
+
+li {
+  list-style: none;
 }
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: #fff;
-    padding: 2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 3rem;
 }
-header .logo{
-    font-size: 2rem;
-    color: #000;
-    font-weight: 500;
+
+.d-flex {
+  display: flex;
+  align-items: center;
 }
-header.navbar a{
-    font-size: 2rem;
-    color: #000;
-    font-weight: 0 1rem;
+
+/* 
+=================
+Header
+=================
+*/
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-header.navbar a:hover{
-    color:orangered;
+
+.top-nav {
+  background-color: var(--green);
+  font-size: 1.3rem;
+  color: var(--white);
 }
-header.icons a {
-    font-size: 2rem;
-    color: #000;
-    margin-left: 1.5rem;
-}
-header.icons a:hover{
-    color: orangered;
+
+.top-nav div {
+  justify-content: space-between;
+  height: 4.5rem;
 }
