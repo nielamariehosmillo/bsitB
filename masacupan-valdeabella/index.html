@@ -762,7 +762,12 @@
         })
         const loadData = async () => {
             const slider = $("#product-slider")
-            var featuredProduct = await findProduct("5");
+
+            // featured product 
+            var featuredProduct = await findProduct(1);
+            // product id of the featured product
+
+
             featuredProduct = featuredProduct.data[0];
 
             slider.find(".placeholder").addClass("d-none")
