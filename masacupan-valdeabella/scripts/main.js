@@ -521,7 +521,7 @@ const addProductDisplay = (product, container, method = "append") => {
                 <p class="text-dark text-truncate mt-2 mb-1 fw-bolder" title="${product.name}"><small>${product.name}</small></p>
                 <p class="text-center  mb-1"><span class="text-black-50 me-1"><small>${product.category.description}</small></span><span class="text-black-50"><small>${product.type.description}</small></span></p>
 
-                <p class="text-center text-danger fw-bolder mb-1">$. ${numberToPrice(product.price)}</p>
+                <p class="text-center text-danger fw-bolder mb-1">P ${numberToPrice(product.price)}</p>
 
             </div>
         </div>
@@ -669,8 +669,8 @@ $("#recover-form").on("submit", async function (e) {
     const { data, error } = await connection.auth.api
         .resetPasswordForEmail(email)
 
-    if(data){
-        localStorage.setItem("resetEmailAddress",email)
+    if (data) {
+        localStorage.setItem("resetEmailAddress", email)
         location.href = "reset-sent.html"
     }
 })
