@@ -1,7 +1,7 @@
 PROJECT NAME:
                   Liquid Galaxy
                   
-                  Is a online vape juice shop where you can pick the flavor that 
+                  Is an online vape juice shop where you can pick the flavor that 
                   you want for your vape at ease. There's a lot of categories to choose from.
                   
 GROUP MEMBERS:
