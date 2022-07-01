@@ -3,15 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background: url("../assets/background_img.png");
+  background: url("/masacupan-valdeabella/masacupan-valdeabella/assets/background_img.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 body.preloader-open {
   overflow-y: hidden;
 }
@@ -54,30 +56,37 @@ section {
   min-height: 85vh;
   color: white;
 }
+
 section#product-info {
   padding-top: 5vh;
 }
+
 section#product-info ul li {
   transition: 200ms opacity;
 }
+
 section#product-info ul li.active {
   border-top: 2px solid rgb(179, 28, 28);
 }
+
 section#product-info ul li:hover {
   transform: scale(1.02);
   opacity: 0.7;
 }
+
 section#products {
-  background: url("../assets/products-bg.jpg");
+  background: url("/masacupan-valdeabella/masacupan-valdeabella/assets/products-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-top: 150px;
 }
+
 section#products .sub-preloader {
   background: rgba(33, 37, 41, 0.4);
 }
+
 section#products .category-title {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -87,47 +96,58 @@ section#products .category-title {
   margin: auto;
   margin-bottom: 20px;
 }
+
 section#products .products-row {
   min-height: 70vh;
 }
+
 section#products .products-row.kids .product img {
   max-width: 100%;
   max-height: 200px;
   transition: 300ms ease-in-out;
   height: 200px;
 }
+
 section#products .products-row .product {
   position: relative;
   overflow: hidden;
   border: none;
   transition: 300ms ease-in-out;
 }
+
 section#products .products-row .product img {
   max-width: 100%;
   max-height: 200px;
   transition: 300ms ease-in-out;
 }
+
 section#products .products-row .product .add-to-cart {
   opacity: 0;
   transition: 300ms ease-in-out;
 }
+
 section#products .products-row .product .add-to-cart button {
   border-radius: 0;
 }
+
 section#products .products-row .product:hover {
   border: 1px solid rgb(207, 207, 207);
   box-shadow: 1px 1px 10px rgb(190, 190, 190);
 }
+
 section#products .products-row .product:hover .add-to-cart {
   opacity: 1;
 }
+
 section#products .products-row .product:hover img {
   transform: scale(1.06);
 }
+
 section#create-account {
   padding-top: 23vh;
   padding-bottom: 20vh;
 }
+
 section#about-us .about-slider {
   display: flex;
   align-items: center;
@@ -136,37 +156,45 @@ section#about-us .about-slider {
   min-height: 70vh;
   position: relative;
 }
+
 section#about-us .about-slider .control {
   position: absolute;
   font-size: 5rem;
   cursor: pointer;
   opacity: 0.4;
 }
+
 section#about-us .about-slider .control:hover {
   opacity: 1;
 }
+
 section#about-us .about-slider .control:first-child {
   left: 0;
 }
+
 section#about-us .about-slider .control:last-child {
   right: 0;
 }
+
 section#about-us .about-slider .content {
   max-width: 100%;
   overflow: hidden;
   position: relative;
 }
+
 section#about-us .about-slider .content .slide {
   text-align: center;
   display: none;
   -webkit-animation-name: fade;
-          animation-name: fade;
+  animation-name: fade;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
+
 section#about-us .about-slider .content .slide.active {
   display: block;
 }
+
 section .product-slider .slider {
   overflow: hidden;
   width: 100%;
@@ -175,6 +203,7 @@ section .product-slider .slider {
   position: relative;
   text-align: center;
 }
+
 section .product-slider .slider .slides {
   display: flex;
   transition: 0.3s ease-in-out;
@@ -182,14 +211,17 @@ section .product-slider .slider .slides {
   left: 0;
   margin: auto;
 }
+
 section .product-slider .slider .slides .slide {
   width: 400px;
   margin: 0 50px;
   transition: 0.5s;
 }
+
 section .product-slider .slider .slides .slide.active {
   opacity: 1;
 }
+
 section .product-slider .slider .slides .slide img {
   max-width: 100%;
 }
@@ -198,6 +230,7 @@ section .product-slider .slider .slides .slide img {
   box-sizing: border-box;
   position: relative;
 }
+
 .img-magnifier-container .img-magnifier-glass {
   position: absolute;
   border: 1px solid #000;
@@ -208,9 +241,11 @@ section .product-slider .slider .slides .slide img {
   height: 200px;
   opacity: 0;
 }
+
 .img-magnifier-container:hover {
   cursor: none;
 }
+
 .img-magnifier-container:hover .img-magnifier-glass {
   opacity: 1;
 }
@@ -226,6 +261,7 @@ section .product-slider .slider .slides .slide img {
   transition: 200ms ease-in-out;
   background: rgba(33, 37, 41, 0.7);
 }
+
 .page-preloader .wrapper {
   width: 100%;
   height: 100vh;
@@ -233,6 +269,7 @@ section .product-slider .slider .slides .slide img {
   justify-content: center;
   align-items: center;
 }
+
 .page-preloader.closed {
   opacity: 0;
   z-index: -1;
@@ -248,6 +285,7 @@ section .product-slider .slider .slides .slide img {
   transition: 100ms ease-in-out;
   background: rgba(33, 37, 41, 0.3);
 }
+
 .sub-preloader .content {
   width: 100%;
   height: 100%;
@@ -255,6 +293,7 @@ section .product-slider .slider .slides .slide img {
   justify-content: center;
   align-items: center;
 }
+
 .sub-preloader.closed {
   opacity: 0;
   z-index: -1;
@@ -264,17 +303,21 @@ section .product-slider .slider .slides .slide img {
   position: relative;
   display: inline-block;
 }
+
 .categories-nav li.nav-item .top-link {
   padding-bottom: 20px;
 }
+
 .categories-nav li.nav-item:hover .menu-wrapper {
   height: auto;
   z-index: 1300;
   overflow: unset;
 }
+
 .categories-nav li.nav-item:hover .top-link {
   color: rgb(179, 28, 28);
 }
+
 .categories-nav .menu-wrapper {
   top: 52px;
   position: absolute;
@@ -284,6 +327,7 @@ section .product-slider .slider .slides .slide img {
   overflow: hidden;
   transition: 200ms ease-in;
 }
+
 .categories-nav .menu-wrapper ul.menu {
   list-style: none;
   padding-left: 0;
@@ -294,13 +338,16 @@ section .product-slider .slider .slides .slide img {
   padding: 10px;
   max-height: 400px;
 }
+
 .categories-nav .menu-wrapper ul.menu li {
   text-align: left;
   margin-bottom: 5px;
 }
+
 .categories-nav .menu-wrapper ul.menu li a {
   text-align: left;
 }
+
 .categories-nav .menu-wrapper ul.menu span.arrow {
   background: grey;
   position: absolute;
@@ -317,10 +364,12 @@ section .product-slider .slider .slides .slide img {
   height: 0;
   overflow: hidden;
 }
+
 .mobile-categories-wrapper.open {
   height: auto;
   overflow: unset;
 }
+
 .mobile-categories-wrapper .top-arrow {
   background: grey;
   position: absolute;
@@ -339,18 +388,22 @@ section .product-slider .slider .slides .slide img {
   overflow: hidden;
   transition: 200ms ease-in;
 }
+
 .mobile-categories-nav li.nav-item {
   position: relative;
   display: inline-block;
 }
+
 .mobile-categories-nav li.nav-item.open .menu-wrapper {
   height: unset;
   z-index: 2;
   overflow: unset;
 }
+
 .mobile-categories-nav li.nav-item.open .top-link {
   color: rgb(179, 28, 28);
 }
+
 .mobile-categories-nav .menu-wrapper {
   top: 52px;
   position: absolute;
@@ -360,6 +413,7 @@ section .product-slider .slider .slides .slide img {
   overflow: hidden;
   transition: 200ms ease-in;
 }
+
 .mobile-categories-nav .menu-wrapper ul.menu {
   list-style: none;
   padding-left: 0;
@@ -370,10 +424,12 @@ section .product-slider .slider .slides .slide img {
   padding: 10px;
   max-height: 400px;
 }
+
 .mobile-categories-nav .menu-wrapper ul.menu li {
   text-align: left;
   margin-bottom: 5px;
 }
+
 .mobile-categories-nav .menu-wrapper ul.menu li a {
   text-align: left;
 }
@@ -397,10 +453,12 @@ button.menu-btn {
   transition: 300ms ease-in-out;
   max-width: 100%;
 }
+
 .main-nav.scrolling {
   transition: 300ms ease-in-out;
   background: #212529;
 }
+
 .main-nav .img-logo {
   width: 70px;
   height: 70px;
@@ -426,6 +484,7 @@ button.menu-btn {
   transition: 0.4s ease-in-out;
   height: 100%;
 }
+
 .mobile-menu-wrapper .mobile-menu {
   width: 80%;
   background: rgb(48, 48, 48);
@@ -434,6 +493,7 @@ button.menu-btn {
   padding-bottom: 20px;
   margin: 0;
 }
+
 .mobile-menu-wrapper.open {
   right: 0;
 }
@@ -450,8 +510,9 @@ button.menu-btn {
   transition: 200ms;
   overflow: hidden;
 }
+
 .side-menu .wrapper {
-  background: url("../assets/background_img.png");
+  background: url("/masacupan-valdeabella/masacupan-valdeabella/assets/background_img.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -460,12 +521,14 @@ button.menu-btn {
   position: relative;
   box-sizing: border-box;
 }
+
 .side-menu .wrapper.covered {
-  background: url("../assets/diytailoring_edited.jpg");
+  background: url("/masacupan-valdeabella/masacupan-valdeabella/assets/diytailoring_edited.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .side-menu .wrapper .menu {
   display: flex;
   flex-direction: column;
@@ -476,22 +539,27 @@ button.menu-btn {
   height: 80vh;
   z-index: 3;
 }
+
 .side-menu .wrapper .menu.covered {
   display: none;
 }
+
 .side-menu .wrapper .menu .flex-column li {
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .side-menu .wrapper .menu .flex-column li .line {
   width: 4rem;
   height: 5px;
   background: white;
 }
+
 .side-menu .wrapper .menu .flex-column li a {
   color: white;
 }
+
 .side-menu .wrapper .sub-menu {
   color: white;
   text-align: center;
@@ -506,9 +574,11 @@ button.menu-btn {
   opacity: 0;
   transition: 200ms;
 }
+
 .side-menu .wrapper .sub-menu.open {
   opacity: 1;
 }
+
 .side-menu.open {
   opacity: 1;
   height: 100vh;
@@ -518,6 +588,7 @@ button.menu-btn {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -527,10 +598,12 @@ button.menu-btn {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .quantity-group {
   width: 140px;
 }
@@ -539,15 +612,18 @@ button.menu-btn {
   background: white;
   overflow: hidden;
 }
+
 .language-dropdown ul {
   overflow: hidden;
   height: 0;
   padding: 0;
 }
+
 .language-dropdown ul.open {
   height: unset;
   padding: 5px;
 }
+
 .language-dropdown ul li {
   padding: 0;
 }
@@ -558,6 +634,7 @@ button.menu-btn {
   width: 330px;
   padding: 20px 10px;
 }
+
 .login-dropdown .dropdown-menu::before {
   content: "";
   position: absolute;
@@ -574,10 +651,12 @@ button.menu-btn {
   transition: 300ms ease-in-out;
   cursor: pointer;
 }
+
 .related-product *:hover {
   transform: scale(1.1);
   opacity: 0.8;
 }
+
 .related-product a {
   transform: scale(1.1);
 }
@@ -589,12 +668,15 @@ button.menu-btn {
 #products .categories {
   text-align: center;
 }
+
 #products .categories ul {
   justify-content: center;
 }
+
 #products .categories ul li {
   margin: 0 15px;
 }
+
 #products .categories ul li a {
   padding: 2px;
   color: white;
@@ -606,6 +688,7 @@ button.menu-btn {
     margin: 0 30px !important;
   }
 }
+
 @media screen and (max-width: 500px) {
   .img-logo {
     width: 50px !important;
@@ -625,6 +708,7 @@ button.menu-btn {
     padding-top: 15vh !important;
   }
 }
+
 @media screen and (max-width: 800px) {
   section#hero-main {
     padding-top: 40vh;
@@ -633,4 +717,6 @@ button.menu-btn {
   .login-dropdown .dropdown-menu {
     width: 280px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
