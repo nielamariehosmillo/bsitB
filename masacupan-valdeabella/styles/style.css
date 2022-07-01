@@ -185,8 +185,8 @@ section#about-us .about-slider .content {
 section#about-us .about-slider .content .slide {
   text-align: center;
   display: none;
-  -webkit-animation-name: fade;
-  animation-name: fade;
+  -webkit-animation-name: c-fade;
+  animation-name: c-fade;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
@@ -584,7 +584,7 @@ button.menu-btn {
   height: 100vh;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes c-fade {
   from {
     opacity: 0.4;
   }
@@ -594,7 +594,7 @@ button.menu-btn {
   }
 }
 
-@keyframes fade {
+@keyframes c-fade {
   from {
     opacity: 0.4;
   }
