@@ -1,14 +1,14 @@
-PROJECT NAME: SWIMMING SPORTS WEAR WEBSITE
- Give your swim a new style!
- Swimming is a sport.Everything else is just a game.
- Swimming Sportswear offers the highest quality swim team suits and equipment at competitive pricing, with tools to make your coaching job easier.
+<br>PROJECT NAME: SWIMMING SPORTS WEAR WEBSITE</br>
+ <p>Give your swim a new style!</p>
+ <p>Swimming is a sport.Everything else is just a game.</p>
+ <p>Swimming Sportswear offers the highest quality swim team suits and equipment at competitive pricing, with tools to make your coaching job easier.</p>
 
-Group Members
- Jeremie Parba
-    -
-    -
+<br>Group Members</br>
+ <br>Jeremie Parba</br>
+   <p> - </p>
+   <p> - </p>
 
 
- Matt Justin P. Echavaria
-    -
-    -
+ <br>Matt Justin P. Echavaria</br>
+   <p> - </p>
+   <p> - </p>
