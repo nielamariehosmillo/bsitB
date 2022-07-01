@@ -1,5 +1,5 @@
-const PROJECT_URL = "https://yywsctrigyuzgawkkiku.supabase.co"
-const PUBLIC_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5d3NjdHJpZ3l1emdhd2traWt1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTYzMjcwNjMsImV4cCI6MTk3MTkwMzA2M30.HGcl9G_Ai1ob806vFvBHKkeVCGlgUknDyZvXVTSDafc"
+const PROJECT_URL = "https://gnjmwcwsfmqjuuktbqsg.supabase.co"
+const PUBLIC_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imduam13Y3dzZm1xanV1a3RicXNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTYzOTU4ODIsImV4cCI6MTk3MTk3MTg4Mn0.wHq_IbEop8_EEY6DduUhRtvSynZsMRmyFKspZYVZB6s"
 
 const connection = supabase.createClient(PROJECT_URL, PUBLIC_ANON_KEY)
 
@@ -16,7 +16,7 @@ const registerUser = async (firstname, lastname, email, password) => {
       }
     }
   )
- 
+
   return user;
 }
 
@@ -33,7 +33,7 @@ const signInUser = async (email, password) => {
 }
 
 const getProducts = async (category, ascending = null) => {
-  console.log("ascending: ",ascending)
+  console.log("ascending: ", ascending)
   if (ascending == null) {
     alert("no sort")
     const { data, error } = await connection
@@ -43,12 +43,12 @@ const getProducts = async (category, ascending = null) => {
     return { data, error }
 
   } else {
-    
+
     const { data, error } = await connection
       .from('products')
       .select("*, category(*), product_images:product_images_productId_fkey(src),type(description)")
       .eq("categoryId", category)
-      .order("price", {ascending})
+      .order("price", { ascending })
     return { data, error }
 
   }
@@ -76,7 +76,7 @@ const addToCart = async (userId, productId, quantity) => {
   const cartItem = await connection
     .from('cart')
     .select("*", { count: 'exact' })
-    .match({productId, userId})
+    .match({ productId, userId })
 
   if (cartItem.count == 0) {
     // if product is not yet on cart
