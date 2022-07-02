@@ -16,10 +16,13 @@
     <link rel="stylesheet" href="style/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+       <!-- custom js file link  -->
+   <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <!-- header section starts  -->
+    
 
     <header>
 
@@ -43,21 +46,22 @@
     </header>
 
     <!-- header section ends -->
-    <!--Breadcrumbs-->
+       <!--Breadcrumbs-->
 
-    <section class="breadcrumb breadcrumb-bg">
+       <section class="breadcrumb breadcrumb-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="crumb-inner">
                         <div class="crumb-text">
-                            <p>Home / Category</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!---End of Navbar-->
     <!---Side bar-->
@@ -129,186 +133,131 @@
                         <div class="col-lg-12">
                             <div class="product-top d-flex justify-content-between align-items-center">
                                 <div class="product-sec product-item">
-                                    <h2 class="my-5">Juices</h2>
+                                    <h1 class="my-5">Juices</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/candy/bubblegum.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
+                        <div class="container">
 
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> Candy King Strawberry</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
+                        
+                         
+                            <div class="products-container">
+                         
+                               <div class="product" data-name="p-1">
+                                  <img src="photos/candy/bubblegum.jpg" alt="">
+                                  <h3>strawberries</h3>
+                                  <div class="price">Php132.00</div>
+                               </div>
+                         
+                               <div class="product" data-name="p-2">
+                                  <img src="photos/candy/cottoncandy.jpg" alt="">
+                                  <h3>onions</h3>
+                                  <div class="price">Php139.00</div>
+                               </div>
+                         
+                               <div class="product" data-name="p-3">
+                                  <img src="photos/candy/gush.jpg" alt="">
+                                  <h3>tomatoes</h3>
+                                  <div class="price">Php149.00</div>
+                               </div>
+                         
+                               <div class="product" data-name="p-4">
+                                  <img src="photos/candy/sour.jpg" alt="">
+                                  <h3>brinjal</h3>
+                                  <div class="price">Php169.00</div>
+                               </div>
+                         
+                               <div class="product" data-name="p-5">
+                                  <img src="photos/candy/worms.jpg" alt="">
+                                  <h3>broccoli</h3>
+                                  <div class="price">Php139.00</div>
+                               </div>
+                         
+                               <div class="product" data-name="p-6">
+                                  <img src="photos/dessert/bluecheesecake.jpg" alt="">
+                                  <h3>potatoes</h3>
+                                  <div class="price">Php149.00</div>
+                               </div>
+                         
                             </div>
+                         
                         </div>
-                        <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/candy/cottoncandy.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
+                        <div class="products-preview">
 
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> Zonk Cotton Candy</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
+                            <div class="preview" data-target="p-1">
+                               <i class="fas fa-times"></i>
+                               <img src="photos/candy/bubblegum.jpg" alt="">
+                               <h3>organic strawberries</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                               <div class="price">Php132.00</div>
+                               <div class="buttons">
+                                  <a href="#" class="buy">buy now</a>
+                                  <a href="#" class="cart">add to cart</a>
+                               </div>
                             </div>
-                        </div>
-                        <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/candy/gush.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> Candy King Gush</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
+                         
+                            <div class="preview" data-target="p-2">
+                               <i class="fas fa-times"></i>
+                               <img src="photos/candy/cottoncandy.jpg" alt="">
+                               <h3>organic onions</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                               <div class="price">Php139.00</div>
+                               <div class="buttons">
+                                  <a href="#" class="buy">buy now</a>
+                                  <a href="#" class="cart">add to cart</a>
+                               </div>
                             </div>
-                        </div>
-                        <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/candy/sour.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> Candy King Sour Straws</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
+                         
+                            <div class="preview" data-target="p-3">
+                               <i class="fas fa-times"></i>
+                               <img src="photos/candy/gush.jpg" alt="">
+                               <h3>organic tomatoes</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                               <div class="price">Php149.00</div>
+                               <div class="buttons">
+                                  <a href="#" class="buy">buy now</a>
+                                  <a href="#" class="cart">add to cart</a>
+                               </div>
                             </div>
-                        </div>
-                        <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/candy/worms.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> Candy King Worms</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
+                         
+                            <div class="preview" data-target="p-4">
+                               <i class="fas fa-times"></i>
+                               <img src="photos/candy/sour.jpg" alt="">
+                               <h3>organic brinjal</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                               <div class="price">Php169.00</div>
+                               <div class="buttons">
+                                  <a href="#" class="buy">buy now</a>
+                                  <a href="#" class="cart">add to cart</a>
+                               </div>
                             </div>
-                        </div>
-                        <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/dessert/bluecheesecake.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> Blueberry Cake</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
+                         
+                            <div class="preview" data-target="p-5">
+                               <i class="fas fa-times"></i>
+                               <img src="photos/candy/worms.jpg" alt="">
+                               <h3>organic broccoli</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                               <div class="price">Php139.00</div>
+                               <div class="buttons">
+                                  <a href="#" class="buy">buy now</a>
+                                  <a href="#" class="cart">add to cart</a>
+                               </div>
                             </div>
-                        </div>
-                        <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/dessert/cupcake.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> The Cupcake Man</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
+                         
+                            <div class="preview" data-target="p-6">
+                               <i class="fas fa-times"></i>
+                               <img src="photos/dessert/bluecheesecake.jpg" alt="">
+                               <h3>organic potatoes</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                               <div class="price">Php149.00</div>
+                               <div class="buttons">
+                                  <a href="#" class="buy">buy now</a>
+                                  <a href="#" class="cart">add to cart</a>
+                               </div>
                             </div>
-                        </div>
+                         
+                         </div>
                         <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/dessert/donut.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> Loaded Glazed Donut</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!----->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-cate">
-                                <div>
-                                    <img src="photos/dessert/icecream.jpg" alt="">
-                                    <div class="product-icon">
-                                        <ul>
-                                            <li><a href=""><i class="fas fa-shopping-cart"></i></a> </li>
-                                            <li><a href=""><i class="">buy now</i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!------>
-                                    <div class="product-des">
-                                        <h5> The Icecream Cake</h5>
-                                        <p>$1500.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!----->
-                        <div class="col-lg-12 text-center">
-                            <a href="" class="product-btn">More Items</a>
-                        </div>
                     </div>
                 </div>
             </div>
