@@ -624,7 +624,79 @@
             }
             verifySignIn();
         })
+        const setOrderSummary = () => {
+            console.log("summary")
+            let checkedItems = $(".item-checkbox:checked");
+            let count = 0
+            let subtotal = 0
+            for (let item of checkedItems) {
+                let cartItem = $("#cart-item-" + $(item).data("id"))
+                count += Number(cartItem.find("input[type=number]").val());
+                subtotal += count * $(item).data("price")
+            }
+            let shippingFee = count * 32;
+            let shippingDiscount = count > 3 ? shippingFee * 0.2 : 0
+            shippingFee -= shippingDiscount
+            $(".total-items").html(count)
 
+            $(".subtotal").html("P. " + numberToPrice(subtotal))
+            $(".shipping-fee").html("P. " + numberToPrice(shippingFee))
+            $(".total").html("P. " + numberToPrice(subtotal + shippingFee))
+
+            if (checkedItems.length <= 0) {
+                $("#checkout-btn").attr("disabled", true)
+            } else {
+                $("#checkout-btn").removeAttr("disabled")
+
+            }
+        }
+        var cartItemsLoaded = false;
+        async function loadCartItems() {
+            const user = await connection.auth.user();
+            const items = await getCartItems(user.id)
+
+            $(".user-id").val(user.id);
+
+            if (items.data) {
+                console.log("items: ", items.data)
+                let row = $(".cart-items-row");
+                //clear products row first
+                row.html("");
+                if (items.data.length <= 0) {
+                    row.addClass("text-dark").html("No items found in the cart.")
+                }
+                for (let item of items.data) {
+                    let cartItem = `
+                            <div class="row mb-3 align-items-center gx-1 gy-2" id="cart-item-${item.id}">
+                                <div class="col-lg-3 col-7">
+                                    <div class="row">
+                                        <div class="col-lg-9 col-8">
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check me-2">
+                                                    <input ${item.isChecked ? "checked" : ""} data-product-id="${item.products.id}" data-quantity="${item.quantity}" data-price="${item.products.price}" data-id="${item.id}"
+                                                        class="item-checkbox form-check-input border-primary"
+                                                        type="checkbox" value="" id="flexCheckDefault">
+                                                </div>
+                                                <a href="#" class="view-product link-dark"
+                                                    onclick="viewProduct(this)" data-id="${item.products.id}">
+                                                    <img src="${item.products.product_images[0].src}"
+                                                        class="img-fluid" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="view-product link-dark" onclick="viewProduct(this)"
+                                        data-id="1">
+                                        <p class="my-1 fs-4 text-break w-100 fw-bolder">${item.products.name}</p>
+                                        <p class="my-1 text-secondary">
+                                            <small><span class="text-black-50">${item.products.category.description}</span></small>
+                                            <small><span class="text-black-50">${item.products.type.description}</span></small>
+                                        </p>
+                                        <p class="text-danger fw-bold mt-4"><span class="price">P. ${numberToPrice(item.products.price * item.quantity)}</span></p>
+                                    </a>
 
 
                                 </div>
