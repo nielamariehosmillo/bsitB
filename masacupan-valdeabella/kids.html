@@ -403,7 +403,81 @@
             </div>
 
             <!-- confirm modal -->
+            <div class="modal" id="confirm-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-body">
+                            <h5 class="title"></h5>
+                            <p class="message">Modal body text goes here.</p>
 
+                            <div class="modal-footer border-0">
+                                <button class="confirm btn btn-danger" type="button">Confirm</button>
+                                <button class="cancel btn btn-dark" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- view modal -->
+            <div class="modal fade" tabindex="-1" id="view-modal">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content border-top border-dark bg-dark border-5 rounded-0 bg-light">
+                        <div class="modal-header border-0 mb-0 pb-3">
+                            <div class="text-end w-100">
+                                <button type="button" class="btn btn-link text-white text-decoration-none "
+                                    data-bs-dismiss="modal" aria-label="Close"><i class="bx bx-x bx-sm"></i></button>
+                            </div>
+                        </div>
+                        <div class="modal-body position-relative">
+                            <div class="sub-preloader">
+                                <div class="content text-center">
+                                    <div class="">
+                                        <div class="spinner-border spinner-border-lg text-white-50 mt-1" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p class="text-white-50 ">Please wait... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center gx-2 gy-3 px-3 justify-content-center">
+                                <div class="col-lg-7 order-lg-0 order-1">
+                                    <!-- product slider -->
+                                    <div class="product-slider row align-items-center justify-content-center gy-2"
+                                        id="hero-product-slider">
+                                        <div class="col-lg-2 col-7 order-lg-0 mt-0 mt-md-3 order-1"
+                                            data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                                            <div
+                                                class="products row row-cols-lg-1 row-cols-3 justify-content-center align-items-center ">
+                                                <div class="mb-3 placeholder">
+                                                    <a href="#" data-slide="0" class="placeholder placeholder-wave">
+                                                        <div class="card">
+                                                            <div class="card-body p-0">
+                                                                <img src="/masacupan-valdeabella/assets/grey.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="mb-3 placeholder">
+                                                    <a href="#" data-slide="1" class="placeholder placeholder-wave">
+                                                        <div class="card">
+                                                            <div class="card-body p-0">
+                                                                <img src="/masacupan-valdeabella/assets/grey.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="mb-3 placeholder">
+                                                    <a href="#" data-slide="2" class="placeholder placeholder-wave">
+                                                        <div class="card">
+                                                            <div class="card-body p-0">
+                                                                <img src="/masacupan-valdeabella/assets/grey.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-lg-9 order-lg-1 order-0 py-0 py-md-3">
                                             <div class="slider" data-aos="zoom-in" data-aos-duration="800"
                                                 data-aos-once="true">
