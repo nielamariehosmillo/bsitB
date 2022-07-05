@@ -1,4 +1,4 @@
-   PROJECT NAME:JOMALIG BEACH WEBSITE
+   PROJECT NAME:SWIMMING SPORTS E-COMMERCE WEBSITE
    
      Give your swim a new style!
      Swimming is a sport.Everything else is just a game.
@@ -8,10 +8,10 @@
 Group Members
 
     Jeremie Parba
-        -
-        -
+        -Home Page
+        -Product Page
 
 
     Matt Justin P. Echavaria
-        -
-        -
+        -Login Page
+        -Registration page
