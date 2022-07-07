@@ -200,3 +200,95 @@ section#featured .featured-products .img-wrapper img {
 .products-row .product .wrapper:hover .overlay {
   opacity: 1;
 }
+
+.anim-float {
+  -webkit-animation: 1s float linear infinite;
+  animation: 1s float linear infinite;
+}
+
+.anim-fade {
+  -webkit-animation: 200ms fade ease-in-out 1;
+  animation: 200ms fade ease-in-out 1;
+}
+
+@-webkit-keyframes float {
+  30% {
+    transform: translateY(5px);
+  }
+
+  70% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float {
+  30% {
+    transform: translateY(5px);
+  }
+
+  70% {
+    transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-fade-right {
+  from {
+    transform: translateX(500px);
+    opacity: 0.2;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-fade-right {
+  from {
+    transform: translateX(500px);
+    opacity: 0.2;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slider .slide img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .slider .control {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .slider .slide img {
+    width: 110px;
+    height: 110px;
+  }
+}
