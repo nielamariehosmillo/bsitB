@@ -1,7 +1,397 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom And Glow</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
 <body>
-  <h1>Final Project</h1>
+    <div class="navbar navbar-expand-lg bg-light main-nav fixed-top shadow" data-aos="fade-down">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo.png" class="img-logo sm" alt=""> <small>Bloom and
+                    Glow</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-6 fw-bolder" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-6 fw-bolder scroll-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-6 fw-bolder" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="">
+                            <div class="d-flex">
+                               <input type="search" class="form-control flex-1 form-control-sm">
+                               <a class="nav-link px-2 d-flex align-items-center btn btn-success rounded-0 text-white btn-sm" href="#"><i
+                                       class="bx bx-search "></i></a>
+                            </div>
+   
+                           </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#login-modal" data-bs-toggle="modal"><i
+                                class="bx bx-user bx-sm"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><i class="bx bx-basket bx-sm"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <main>
+        <section class="hero" id="hero-main">
+            <div class="container">
+                <div class="text-center text-white">
+                    <div class="d-flex align-items-end justify-content-center flex-wrap" data-aos="zoom-in">
+                        <img src="./assets/logo.png" class="img-logo lg m-0 mt-2" alt="logo">
+                        <h1 class=" bg-light text-secondary px-3 py-2 mt-2">BLOOM AND GLOW</h1>
+                    </div>
+
+                    <p class="fs-3 mt-5" data-aos="zoom-in">PLANTS AND DECORATIONS</p>
+                    <a data-aos="zoom-in" class="scroll-link btn btn-success rounded-1 mt-4 text-white btn-lg"
+                        href="#featured">SHOP NOW <i class="bx bxs-cart-alt"></i></a>
+
+
+                    <div data-slide-index="0" data-aos="fade-up" class="slider" id="home-product-slider">
+                        <button data-slider="#home-product-slider"
+                            class="control btn btn-link link-light text-decoration-none" data-control="prev"
+                            type="button">
+                            <i class="bx bx-chevron-left"></i>
+                        </button>
+                        <div class="content">
+                            <div class="slide active">
+                                <div class="inner">
+                                    <h6 class="title">Indoor</h6>
+                                    <div class="row row-cols-3 justify-content-center">
+                                        <div class="col">
+                                            <img src="./assets/products/1indoor/Peperomia.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/1indoor/pothos jade.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/1indoor/spider.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner">
+                                    <h6 class="title">Outdoor</h6>
+                                    <div class="row row-cols-3 justify-content-center">
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/dwarfsnakeplant.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/fiddleleaf.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/horsetale.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner">
+                                    <h6 class="title">Flower Pot</h6>
+                                    <div class="row row-cols-3">
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/dwarfsnakeplant.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/fiddleleaf.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/horsetale.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner">
+                                    <h6 class="title">Fertilizer</h6>
+                                    <div class="row row-cols-3">
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/dwarfsnakeplant.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/fiddleleaf.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="./assets/products/2outdoor/horsetale.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button data-slider="#home-product-slider"
+                            class="control btn btn-link link-light text-decoration-none" data-control="next"
+                            type="button">
+                            <i class="bx bx-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class=" py-5" id="featured">
+            <div class="container mb-5">
+                <div class="text-center text-white">
+                    <div class="d-flex justify-content-center" data-aos="zoom-in">
+                        <p class="fs-2 text-white border-light border-1 border py-2 px-5 mt-3">Featured Products</p>
+                    </div>
+                    <div class="mt-5" data-aos="fade-up">
+                        <div class="featured-products">
+                            <a href="indoor.html" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">Indoor</p>
+                                    </div>
+                                    <img src="./assets/products/1indoor/snakeplant/snakeplant.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="outdoor.html" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">outdoor</p>
+                                    </div>
+                                    <img src="./assets/products/1indoor/rubbertree/rubbertree.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="flower-pot.html" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">flower pot</p>
+                                    </div>
+                                    <img src="./assets/products/1indoor/Dracaena/Draceana.png" alt="">
+                                </div>
+                            </a>
+                            <a href="fertilizer.html" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">Fertilizer</p>
+                                    </div>
+                                    <img src="./assets/products/1indoor/peacelily/peacelily.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="about">
+            <div class="container mb-5">
+                <div class="text-center text-white fw-bold">
+                    <div class="d-flex justify-content-center mt-5" data-aos="fade-up">
+                        <h2 class="fs-2 border-light border border-2 text-uppercase text-light px-5 py-1 mt-2">About Us
+                        </h2>
+                    </div>
+                    <p class="fs-2 mt-5" data-aos="fade-up">
+                        We created Bloom and Glow Shop in 2022
+                        because quite simply, we love plants. When launching our shop,
+                        we wanted to created a space that felt warm and welcoming to all,
+                        from plant admirers to expert growers.
+                    </p>
+                    <p class="fs-2" data-aos="fade-up">
+                        One of your favorite parts of operating Bloom and Grow Shop is sourcing the most beautiful and
+                        exotic plants that we can get our hands on, and of course sharing them with all of you.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="py-5">
+            <div class="container">
+
+                <div class="text-center mt-5">
+                    <div class="row justify-content-center" data-aos="fade-up">
+                        <div class="col-md-8">
+                            <div class="card border-0 bg-transparent shadow-s">
+                                <div class="card-body">
+                                    <h2 class="mb-4 text-light">How can we help you?</h2>
+                                    <form action="#" autocomplete="off">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control shadow-" id="email-contact"
+                                                placeholder="First Name">
+                                            <label for="email-contact">Email</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control shadow-" id="subject"
+                                                placeholder="Last Name">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea name="" placeholder="Message" class="form-control" id="" cols="30"
+                                                rows="10"></textarea>
+                                        </div>
+
+                                        <div class="d-grid">
+                                            <button class="btn btn-success rounded-0" type="button">Send</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="mt-5">
+                    <div class="row text-white gy-4" data-aos="fade-up">
+                        <div class="col-md mb-3">
+                            <h3>Customer Service</h3>
+                            <div class="d-flex">
+                                <div>
+                                    <img src="/assets/footer/customer_service.png" class="img-fluid" alt="" width="50">
+                                </div>
+                                <div class="ms-3">
+                                    <p class="my-0">Free Shipping</p>
+                                    <p class="my-0">Return & Refund</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3">
+                            <h3>Follow Us</h3>
+                            <div class="d-flex">
+                                <div>
+                                    <img src="/assets/footer/instagram.png" class="img-fluid" alt="" width="50">
+                                </div>
+                                <div class="ms-3">
+                                    <p class="my-0">@janarybobadilla</p>
+                                    <p class="my-0">@johnkareborejon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3">
+                            <h3>Queries?</h3>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="/assets/footer/email.png" class="img-fluid" alt="" width="80">
+                                </div>
+                                <div class="ms-3">
+                                    <p class="my-0">bobadillajanary@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <img src="./assets/footer/gcash.png" width="130" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   <!-- login-modal -->
+   <div class="modal fade" tabindex="-1" id="login-modal">
+    <div class="modal-dialog modal-dialog-centered  modal-xl">
+        <div class="modal-content rounded-1">
+            <div class="modal-body position-relative">
+                <button data-bs-dismiss="modal"
+                    class="btn btn-link text-decoration-none position-absolute link-success end-0 py-0 m-0"
+                    type="button"><i class="bx bx-x fs-3"></i></button>
+                <div class="row">
+                    <div
+                        class="col-md-5 bg-light d-flex flex-column align-items-center justify-content-center col-0 p-3 text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <img src="./assets/logo.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <p class="fs-3 mt-4">Bloom And Glow</p>
+                    </div>
+                    <div class="col-md py-3 px-4">
+                        <form action="#" class="login-form anim-fade">
+                            <p class="fs-4 mt-3">Login To Your Account</p>
+                            <hr>
+                            <p class="fs-6">Provide your email address and password!</p>
+                            <div class="form-floating mb-3 mt-4">
+                                <input type="email" class="form-control" id="email-login"
+                                    placeholder="name@example.com">
+                                <label for="email-login">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password-login"
+                                    placeholder="Password">
+                                <label for="password-login">Password</label>
+                            </div>
+                            <a href="#" class="link-dark text-decoration-none">Forgot Password?</a>
+                            <div class="d-grid mt-3">
+                                <button class="btn btn-success" type="button">LOG IN</button>
+                            </div>
+                            <div class="text-center mt-3">
+                                <p>Or</p>
+                                <a href="#" class="link-dark  fs-5 text-decoration-none create-account">Create a new
+                                    account!</a>
+                            </div>
+                        </form>
+                        <form action="#" class="signup-form d-none anim-fade">
+                            <p class="fs-4 mt-3">Create Your Account</p>
+                            <hr>
+                            <p class="fs-6">Join us to enjoy shopping!</p>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control shadow-" id="fname" placeholder="First Name">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control shadow-" id="lname" placeholder="Last Name">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email-login"
+                                    placeholder="name@example.com">
+                                <label for="email-login">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password-login"
+                                    placeholder="Password">
+                                <label for="password-login">Password</label>
+                            </div>
+                            <a href="#" class="link-dark text-decoration-none">Forgot Password?</a>
+                            <div class="d-grid mt-3">
+                                <button class="btn btn-success" type="button">LOG IN</button>
+                            </div>
+                            <div class="text-center mt-3">
+                                <p>Or</p>
+                                <a href="#" class="link-dark  fs-5 text-decoration-none login">Already Have An
+                                    Account!</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-  
+
 </html>
