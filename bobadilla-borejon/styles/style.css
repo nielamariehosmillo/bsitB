@@ -30,3 +30,25 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+* {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+}
+
+.img-logo.sm {
+  width: 40px;
+}
+
+.img-logo.md {
+  width: 100px;
+}
+
+.img-logo.lg {
+  width: 200px;
+}
+
+.browse-btn {
+  border-radius: 35% 35% 0 0;
+  padding-top: 20px;
+}
