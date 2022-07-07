@@ -73,3 +73,25 @@ body {
   margin-bottom: 25px;
   padding: 5px 29px;
 }
+
+.slider .control {
+  font-size: 4rem;
+  margin-top: 70px;
+}
+
+.slider .slide {
+  display: none;
+  -webkit-animation: 300ms fade ease-in-out 1;
+  animation: 300ms fade ease-in-out 1;
+}
+
+.slider .slide img {
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 180px;
+  height: 180px;
+}
+
+.slider .slide.active {
+  display: block;
+}
