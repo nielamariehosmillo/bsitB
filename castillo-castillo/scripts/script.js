@@ -1,5 +1,5 @@
-const PROJECT_URL = "https://tsbysxjalagqqcvrhhzt.supabase.co"
-const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRzYnlzeGphbGFncXFjdnJoaHp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTU4NTkxMDcsImV4cCI6MTk3MTQzNTEwN30.C0qfsr7QymZH8eziIO3nfq9pCM8LTGACCf2AUCWQVbI"
+const PROJECT_URL = "https://zzivlqstynxhbfabxhpi.supabase.co"
+const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6aXZscXN0eW54aGJmYWJ4aHBpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTQ0MDE5NzAsImV4cCI6MTk2OTk3Nzk3MH0.wntGDWfy7wcuhepHw2XwbInty25vUG_6AI4U4GsJTKg"
 
 
 // Create a single supabase client for interacting with your database 
@@ -66,6 +66,7 @@ async function getStudents() {
             <td>${data[i].first_name}</td>
             <td>${data[i].last_name}</td>
             <td>${data[i].user_name}</td>
+            <td>${data[i].gender}</td>
             <td><img src='${data[i].profile_pic}' height='100' width='100' ></td>
             </tr>`;
             }
@@ -75,7 +76,38 @@ async function getStudents() {
   }
 
 }
+async function getStudentsByGender(gender) {
+  $('#students-table').show();
+  let tbody = $("#tbody");
+  let loading = $("#loading");
+  let tr = "";
+  loading.text("Loading....")
+  var response = null
+  if (gender != undefined || gender != null){
+    response = await connection.from("students").select("*").eq('gender',gender);
+  }else{
+    response = await connection.from("students").select("*");
+  }
+  if (response.data) {
+      for (var i in response.data) {
+          tr += `<tr>
+            <td>${response.data[i].id}</td>
+            <td>${response.data[i].first_name}</td>
+            <td>${response.data[i].last_name}</td>
+            <td>${response.data[i].user_name}</td>
+            <td>${response.data[i].gender}</td>
+            <td><img src='${response.data[i].profile_pic}' height='100' width='100' ></td>
+            </tr>`;
+            }
+      tbody.html(tr);
+      loading.text("")
+
+  }
+
+}
 $(document).ready(function(){
+
+  
     $('#students-table').hide();
     // jQuery methods go here
     $( "#registration" ).submit(function( event ) {
@@ -83,7 +115,12 @@ $(document).ready(function(){
       saveImage();
 
     });
-
+    $( "#male, #female" ).click(function( event ) {
+      event.preventDefault();
+      gender = $(this).val()
+      console.log();
+      getStudentsByGender(gender);
+    })
     $( "#get-students" ).click(function( event ) {
       event.preventDefault();
         getStudents();
