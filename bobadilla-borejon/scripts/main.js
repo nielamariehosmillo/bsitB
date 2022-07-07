@@ -38,3 +38,37 @@ $(function () {
 
     $("#login-modal .create-account").on("click", function (e) {
         e.preventDefault()
+        $(".login-form").addClass("d-none")
+        $(".signup-form").removeClass("d-none")
+    })
+    $("#login-modal .login").on("click", function (e) {
+        e.preventDefault()
+        $(".login-form").removeClass("d-none")
+        $(".signup-form").addClass("d-none")
+    })
+
+})
+
+$(function () {
+    //double the content of products-row
+    function loadProducts() {
+        function setEventHandler() {
+            $(".buy-now").on("click", function (e) {
+                e.preventDefault()
+                let name = $(this).siblings(".name")
+                let img = $(this).find("img")
+                console.log("name: ", name.html())
+                                //buy now modal
+                                const modal = $('#buy-modal')
+                                modal.find(".product-img").attr('src', img.attr("src"))
+                                modal.find(".product-name").html(name.html())
+                                modal.modal("show")
+                
+                            })
+                        }
+                        $(".products-row").html($(".products-row").html() + $(".products-row").html())
+                        setEventHandler()
+                    }
+                
+                    loadProducts()
+                })
