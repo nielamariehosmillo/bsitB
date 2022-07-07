@@ -15,3 +15,18 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(81, 82, 81);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
