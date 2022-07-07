@@ -95,3 +95,29 @@ body {
 .slider .slide.active {
   display: block;
 }
+
+#hero-main {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+}
+
+section {
+  padding: 100px 0 100px 0;
+}
+
+section#featured .featured-products {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section#featured .featured-products .img-wrapper {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
