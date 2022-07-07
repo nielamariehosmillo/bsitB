@@ -52,3 +52,24 @@ body {
   border-radius: 35% 35% 0 0;
   padding-top: 20px;
 }
+
+.slider {
+  overflow: hidden;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.slider .title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  border: 3px solid white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding: 5px 29px;
+}
