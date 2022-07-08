@@ -62,7 +62,7 @@ li {
 }
 
 .top-nav {
-  background-color: var(--green);
+  background-color: var(--black);
   font-size: 1.3rem;
   color: var(--white);
 }
