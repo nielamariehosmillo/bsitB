@@ -1,5 +1,5 @@
 .image-container{
-    background: url('photos/liquid.jpg') center no-repeat;
+    background: url('/casabal-singson/photos/liquid.jpg') center no-repeat;
     background-size: cover;
     height: 100vh;
 }
