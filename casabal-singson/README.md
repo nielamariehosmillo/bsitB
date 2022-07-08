@@ -9,7 +9,16 @@ GROUP MEMBERS:
                 Singson, Jhon Jovhiey
                 -Login Page
                 -Registration Page
+                - Cart
+                - Supabase (Tables)
+                - About Us
+                - Contact Us
+
+                
                 
                 Casabal, Ron Albert 
                 -Home page
                 -Product page
+                - Scripts (API)
+                - Cart
+                - Supabase (Storage)
