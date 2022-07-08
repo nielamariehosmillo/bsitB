@@ -28,8 +28,8 @@ a{
     top: 20px;
 }
 .navbar img{
-    width: 206px;
-	height: 206px;
+    width: 537px;
+	height: 537px;
     cursor: pointer;
 }
 .pages{
@@ -92,7 +92,8 @@ a{
     font-size: 50px;
     line-height: 40px;
     color: #94bd7b;
-    margin-top: 150px;
+    margin-top: 72px;
+    margin-left: 470px;
 }
 .header p{
     margin-left: 5px;
@@ -160,9 +161,10 @@ a{
 	border-radius: 12px;
 }
 .buy{
+    text-align: center;
     position: absolute;
     width: 100%;
-    top: 1180px;
+    top: 780px;
 }
 .buy h1{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -172,7 +174,7 @@ a{
     color: #9c9c94;
 }
 .buy p{
-    width: 50%;
+    width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -279,7 +281,7 @@ input[type="password"]{
 }
 .tail{
     position: absolute;
-    height: 155px;
+    height: 145px;
     width: 100%;
     bottom: 0;
     background: #f5f3ef;
