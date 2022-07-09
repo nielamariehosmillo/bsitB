@@ -10,8 +10,15 @@ Group Members
     Jeremie Parba
         -Home Page
         -Product Page
+        -Product Details Page
+        -Product Details Page 1
+        -Product Details Page 2
+        -Product Details Page 3
+        -Product Details Page 4
 
 
     Matt Justin P. Echavaria
-        -Login Page
-        -Registration page
+        -Account Page
+        -Cart page
+        -About Us Page
+        -Contact Us Page
