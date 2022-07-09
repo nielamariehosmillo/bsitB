@@ -1,472 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-   
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
-
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>E-commerce Website</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <header class="header" id="header">
-     
-      <div class="top-nav">
-        <div class="container d-flex">
-          <p>Order Online Or Call Us: (001) 2222-55555</p>
-          <ul class="d-flex">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="navigation">
-        <div class="nav-center container d-flex">
-        <a href="/" class="logo"><h1>Epic Shoes</h1></a>
+    <title>Epic Shoes | Home</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles/styles.css">
 
-          <ul class="nav-list d-flex">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--GlideJs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css" integrity="sha512-kcsVKF2zQWxpZox0QJTl40HBAhKLjfcUFw2LoTdHilSuHeOSg8uo8zf6ZiIUSHgHHl0H8zRkMcqJz2w4ZH57KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.theme.css" integrity="sha512-rF+FkLhdJu8p6NNoi0y30W5xPessa8yC8/3u3p5/biTeDpsxik1XfrgfqZG/mUmJ/2cA73nArDuWnX2JQLvlmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container">
+        <img class="logo image-responsive" src="./images/logo.png" alt="Epic Shoes">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i id="bar" class="bx bx-menu "></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
+              <a class="nav-link active" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a href="product.html" class="nav-link">Shop</a>
+              <a class="nav-link" href="./pages/shop.html">Shop</a>
             </li>
             <li class="nav-item">
-            <a href="#terms" class="nav-link">Terms</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="icons d-flex">
-            <a href="login.html" class="icon">
-              <i class="bx bx-user"></i>
-            </a>
-            <div class="icon">
-              <i class="bx bx-search"></i>
-            </div>
-            <div class="icon">
-              <i class="bx bx-heart"></i>
-              <span class="d-flex">0</span>
-            </div>
-            <a href="cart.html" class="icon">
-              <i class="bx bx-cart"></i>
-              <span class="d-flex">0</span>
-            </a>
+              <a class="nav-link" href="./pages/about.html">About</a>
           </li>
-          </ul>
-          <div class="icons d-flex">
-            <a href="login.html" class="icon">
-              <i class="bx bx-user"></i>
-            </a>
-            <div class="icon">
-              <i class="bx bx-search"></i>
-            </div>
-            <div class="icon">
-              <i class="bx bx-heart"></i>
-              <span class="d-flex">0</span>
-            </div>
-            <a href="cart.html" class="icon">
-              <i class="bx bx-cart"></i>
-              <span class="d-flex">0</span>
-            </a>
-          </div>
-
-          <div class="hamburger">
-            <i class="bx bx-menu-alt-left"></i>
-          </div>
-        </div>
-      </div>
-
-    <div class="hero">
-      <div class="glide" id="glide_1">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="center">
-                <div class="left">
-                  <span class="">New Inspiration 2020</span>
-                  <h1 class="">NEW COLLECTION!</h1>
-                  <p>Trending from men's and women's  style collection</p>
-                  <a href="#" class="hero-btn">SHOP NOW</a>
-                </div>
-                <div class="right">
-                    <img class="img1" src="./img/hero-1.png" alt="">
-                </div>
-              </div>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contact.html">Contact Us</a>
             </li>
-            <li class="glide__slide">
-              <div class="center">
-                <div class="left">
-                  <span>New Inspiration 2022</span>
-                  <h1>THE PERFECT MATCH!</h1>
-                  <p> Epic is a pretty simple concept. We carry sport shoes, from high grade running shoes to fashion sneakers. If you want the best shoes for your sport, come to Epic.</p>
-                  <a href="#" class="hero-btn">SHOP NOW</a>
-                </div>
-                <div class="right">
-                  <img class="img2" src="./img/hero-2.png" alt="">
-                </div>
-              </div>
+            <li class="nav-item">
+              <a href="./pages/login.html"><i class="fa-solid fa-user"></i></a>
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-    </header>
+    </nav>
 
-   
-    <section class="section category">
-      <div class="cat-center">
-        <div class="cat">
-          <img src="./img/cat3.jpg" alt="" />
-          <div>
-            <p>CASUAL SHOES</p>
+    <!-- Carousel -->
+      <div class="carousel">
+        <div class="glide" id="glide_1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="center">
+                  <div class="left">
+                    <span>NEW EXCLUSIVE</span>
+                    <h1>Best Price This Year</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <br>Aenean ipsum enim, vehicula nec ultricies eget,
+                    <br>finibus egestas lectus.</p>
+                    <a href="/pages/shop.html"><button class="caro-btn text-uppercase">Shop Now</button></a>
+                  </div>
+                  <div class="right">
+                    <img src="./images/slide/1.png" class="img1" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="center">
+                  <div class="left">
+                    <span>NEW EXCLUSIVE</span>
+                    <h1>Best Price This Year</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <br>Aenean ipsum enim, vehicula nec ultricies eget,
+                    <br>finibus egestas lectus.</p>
+                    <a href="/pages/shop.html"><button class="caro-btn text-uppercase">Shop Now</button></a>
+                  </div>
+                  <div class="right">
+                    <img src="./images/slide/2.png" class="img2" alt="">
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="cat">
-          <img src="./img/cat2.jpg" alt="" />
-          <div>
-            <p>RUNNING SHOES</p>
-          </div>
+      </div>
+
+    <!-- New Arrivals -->
+    <section id="arrivals" class="my-5 pb-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>NEW ARRIVALS</h3>
+        <hr class="mx-auto">
+        <p>Here you can check out our newly arrived products.</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/product4/1.jpg" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
         </div>
-        <div class="cat">
-          <img src="./img/cat1.jpg" alt="" />
-          <div>
-            <p>BASKETBALL SHOES</p>
-          </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/product4/2.jpg" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/product4/3.jpg" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/product4/5.jpg" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
         </div>
       </div>
     </section>
 
- <section class="section new-arrival">
-  <div class="title">
-    <h1>NEW ARRIVALS</h1>
-    <p>All the latest picked from designer of our store</p>
-  </div>
-
-  <div class="product-center">
-    <div class="product-item">
-      <div class="overlay">
-        <a href="productDetails.html" class="product-thumb">
-          <img src="./img/2.png" alt="" />
-        </a>
-      </div>
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="productDetails.html">Jordan Westbrook 1</a>
-        <h4>$167</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/Air Jordan XXXVI Low RIGHT.jpg" alt="" />
-        </a>
-        <span class="discount">50%</span>
-      </div>
-
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="">Air Jordan XXXVI Low RIGHT.jpg</a>
-        <h4>$196</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/kyrie 2.jpg" alt="" />
-        </a>
-      </div>
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="">Kyrie Infinity EP</a>
-        <h4>$131</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/pg right.jpg" alt="" />
-        </a>
-        <span class="discount">50%</span>
-      </div>
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="">EPG 6 EP</a>
-        <h4>$115</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/zion left.jpg" alt="" />
-        </a>
-      </div>
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="">Zion 1 PF</a>
-        <h4>$120</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/kyrie left.png" alt="" />
-        </a>
-      </div>
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="">Kyrie Infinity</a>
-        <h4>$95</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/luka left.jpg" alt="" />
-        </a>
-        <span class="discount">50%</span>
-      </div>
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="">Air Jordan XXXVI Low Luka</a>
-        <h4>$170</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/ENike Air Zoom G.T. Jump.jpg" alt="" />
-        </a>
-      </div>
-      <div class="product-info">
-        <span>MEN'S SHOES</span>
-        <a href="">ENike Air Zoom G.T. Jump</a>
-        <h4>$180</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="section banner">
-<div class="left">
-<span class="trend">Trend Design</span>
-<h1>New Collection 2021</h1>
-<p>New Arrival <span class="color">Sale 50% OFF</span> Limited Time Offer</p>
-<a href="#" class="btn btn-1">Discover Now</a>
-</div>
-<div class="right">
-<img src="./img/banner.png" alt="">
-</div>
-</section>
-
-<section class="section new-arrival">
-  <div class="title">
-    <h1>Featured</h1>
-    <p>All the latest picked from designer of our store</p>
-  </div>
-
-  <div class="product-center">
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/nike air rift left.jpg" alt="" />
-        </a>
-        <span class="discount">50%</span>
-      </div>
-      <div class="product-info">
-        <span>WOMEN'S SHOES</span>
-        <a href="">Nike Air Rift</a>
-        <h4>$95</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/Nike Go FlyEase left.jpg" alt="" />
-        </a>
-      </div>
-
-      <div class="product-info">
-        <span>WOMEN'S SHOES</span>
-        <a href="">Nike Go FlyEaset</a>
-        <h4>$130</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/Nike Air Zoom Pegasus 39 left.jpg" alt="" />
-        </a>
-        <span class="discount">40%</span>
-      </div>
-      <div class="product-info">
-        <span>WOMEN'S SHOES</span>
-        <a href="">Air Jordan 1 Mid</a>
-        <h4>$150</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-    <div class="product-item">
-      <div class="overlay">
-        <a href="" class="product-thumb">
-          <img src="./img/Air Jordan 1 Mid left.jpg" alt="" />
-        </a>
-      </div>
-      <div class="product-info">
-        <span>WOMEN'S SHOES</span>
-        <a href="">Nike Air Zoom Pegasus 39</a>
-        <h4>$150</h4>
-      </div>
-      <ul class="icons">
-        <li><i class="bx bx-heart"></i></li>
-        <li><i class="bx bx-search"></i></li>
-        <li><i class="bx bx-cart"></i></li>
-      </ul>
-    </div>
-
-</section>
-<section class="section contact">
-  <div class="row">
-    <div class="col">
-      <h2>EXCELLENT SUPPORT</h2>
-      <p>We love our customers and they can reach us any time
-      of day we will be at your service 24/7</p>
-      <a href="" class="btn btn-1">Contact</a>
-    </div>
-    <div class="col">
-      <form action="">
-        <div>
-          <input type="email" placeholder="Email Address">
-        <a href="">Send</a>
+    <!--Promo Banner -->
+    <section id="banner" class="my-5 pb-5">
+      <div class="center">
+        <h4>MID SEASON SALE</h4>
+        <h1>Autumn collection<br>UP TO 20% OFF</h1>
+        <div class="right">
+          <a href="./pages/shop.html"><button class="banner-btn text-uppercase">Shop Now</button></a>
         </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="row">
-    <div class="col d-flex">
-      <h4>INFORMATION</h4>
-      <a href="">About us</a>
-      <a href="">Contact Us</a>
-      <a href="">Term & Conditions</a>
-      <a href="">Shipping Guide</a>
-    </div>
-    <div class="col d-flex">
-      <h4>USEFUL LINK</h4>
-      <a href="">Online Store</a>
-      <a href="">Customer Services</a>
-      <a href="">Promotion</a>
-      <a href="">Top Brands</a>
-    </div>
-    <div class="col d-flex">
-      <span><i class='bx bxl-facebook-square'></i></span>
-      <span><i class='bx bxl-instagram-alt' ></i></span>
-      <span><i class='bx bxl-github' ></i></span>
-      <span><i class='bx bxl-twitter' ></i></span>
-      <span><i class='bx bxl-pinterest' ></i></span>
-    </div>
-  </div>
-</footer>
-<div class="popup hide-popup">
-  <div class="popup-content">
-    <div class="popup-close">
-      <i class='bx bx-x'></i>
-    </div>
-    <div class="popup-left">
-      <div class="popup-img-container">
-        <img class="popup-img" src="./img/popup.jpg" alt="popup">
       </div>
-    </div>
-    <div class="popup-right">
-      <div class="right-content">
-        <h1>Get Discount <span>50%</span> Off</h1>
-        <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
-        </p>
-        <form action="#">
-          <input type="email" placeholder="Enter your email..." class="popup-form">
-          <a href="#">Subscribe</a>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
+    <!-- Featured -->
+    <section id="featured" class="my-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>FEATURED</h3>
+        <hr class="mx-auto">
+        <p>Here you can check out our featured products.</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/product4/5.png" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/more products/Air Jordan 1 Mid left.jpg" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/more products/women-2.jpg" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./images/more products/men-2.jpg" alt="">
+          <h5 class="p-name">Nike Shoes</h5>
+          <h4 class="p-price">$99.99</h4>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img src="./images/logo.png" alt="" class="img-fluid w-15 h-18 m-2">
+          <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5>Information</h5>
+            <ul class="text-uppercase list-unstyled"></ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Shipping Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          
+            <h5>Useful Link</h5>
+            <ul class="text-uppercase list-unstyled"></ul>
+              <li><a href="">Online Store</a></li>
+              <li><a href="">Customer Services</a></li>
+              <li><a href="">Promotions</a></li>
+              <li><a href="">Top Brands</a></li>
+          </ul>
+        </div>
+          <div class="socials footer-one col-lg-3 col-md-6 col-12 mb-3">
+              <h5>Socials</h5>
+              <ul class="text-uppercase list-unstyled"></ul>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></i></a>
+            </ul>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- GlideJs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.js" integrity="sha512-BDOdVHygzrUniS5DJvYBzAHyw5WQRdeVfHSaQmufCfV5s6OFnprcxMsEOAs26Bx6eTGpmlFo4owWiPpr3Voc0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main.js -->
+    <script src="./scripts/main.js" async></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-<script src="./js/slider.js"></script>
-<script src="./js/index.js"></script>
 </html>
