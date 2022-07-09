@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products - Swimming Sports Wear Store</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/logo/logo1.png" width="125px"></a>
+        </div>
+        <nav>
+        <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="pages/about-us.html">About Us</a></li>
+            <li><a href="pages/contact-us.html">Contact Us</a></li>
+            <li><a href="pages/account.html">Account</a></li>
+        </ul>
+        </nav>
+        <a href="pages/cart.html"><img src="assets/logo/cart.png" width="60px" height="60px"></a>
+        <img src="assets/logo/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    
+    <section id="about">
+        <div class="about-1">
+            <h1>ABOUT US</h1>
+            <p>Lorem ipsum dolor sit  amet, consectetur adipisicing elit.</p>
+        </div>
+        <div id="about-2">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="about-item">
+                                <i class="fa fa-book"></i>
+                                <h3>MISSION</h3>
+                                <hr>
+                                <p>We strive to offer our customers the lowest possible prices, the best available selection, and the utmost convenience. Vision statement: To be Earth's most customer-centric company, where customers can find and discover anything they might want to buy online.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item">
+                                <i class="fa fa-globe"></i>
+                                <h3>VISSION</h3>
+                                <hr>
+                                <p>To be Earth’s most customer-centric company, where customers can find and discover anything they might want to buy online.<br>Our mission statement sums up the three things that have made them loved by millions: low prices, a huge selection, and incredible convenience.<br>Like all great mission statements, it shines a light on the values that bring success.<br>Our vision statement brings these elements together into one unified goal: “To be Earth’s most customer-centric company.”.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item">
+                                <i class="fa fa-pencil"></i>
+                                <h3>GOALS</h3>
+                                <hr>
+                                <p>The primary goal of e-commerce is to reach maximum customers at the right time to increase sales and profitability of the business. Functions of e-commerce include buying and selling goods, transmitting funds or data over the internet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App For Android and IOS Mobile Phone.</p>
+            <div class="app-logo">
+                <img src="assets/logo/playstore.jpg">
+                <img src="assets/logo/appstore.png">
+            </div>
+            </div>
+            <div class="footer-col-2">
+            <img src="assets/logo/logo1.png" alt="">
+            <p>Our Purpose Is To Suatainably<br>Make The Pleasure and Benefits of Sports Accesible To The Many.</p>
+            </div>
+            <div class="footer-col-3">
+            <h3>Useful Policy</h3>
+            <ul>
+                <li>Vouchers</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliates</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+            <h3>Folllow Us</h3>
+            <ul>
+                <a href=""><li>Facebook</li></a>
+                <a href=""><li>Instagram</li></a>
+                <li>Twitter</li>
+                <li>WhatsApp</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; 2022 - Swimming Sports Wear E-Commerce Website</p>
+        </div>
+    </div>
+    
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+    
+</body>
+</html>
