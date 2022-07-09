@@ -62,3 +62,8 @@ section{
     cursor: pointer;
     background: none;
 }
+
+.btn:hover{
+    background: var(--orange);
+    color:#fff;
+}
