@@ -1,8 +1,517 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARO Bicycle Company</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
 <body>
+    
+<!-- header section starts  -->
 
-<h1>final project</h1>
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> TARO Bicycle Shop </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/bamboo.jpeg" alt="">
+            <div class="content">
+                <h3>Bamboo Bike</h3>
+                <span class="price">$499/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/image2.jpg" alt="">
+            <div class="content">
+                <h3>BMX</h3>
+                <span class="price">$99.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/Mountains.jpeg" alt="">
+            <div class="content">
+                <h3>MOUNTAIN BIKE</h3>
+                <span class="price">$299.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : $898.98/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>BUY THE BEST <span> BIKES </span> FLY HIGH ON YOUR BIKE</h3>
+        <p>We are happy to serve you anytime everywhere.</p>
+        <a href="#" class="btn"> BUY NOW 10% OFF </a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/image25.jpeg" alt="">
+            <h3>BRAND NEW BIKE</h3>
+            <p>RIDE IN YOUR BEST MOMENT WITH THIS BRAND NEW BIKE!</p>
+            <a href="#" class="btn">Add to Cart Now!!</a>
+        </div>
+
+        <div class="box">
+            <img src="image/image14.webp" alt="">
+            <h3>MAKE YOUR RIDE SAFE</h3>
+            <p>Have a safety ride with this healmet everywhere!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/image16.jpg" alt="">
+            <h3>easy payments</h3>
+            <p>RIDE WITH COMFORTABLE</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/image1.jpg" alt="">
+                <h3>THE STYLE OF BMX</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image2.jpg" alt="">
+                <h3>BMX BLUE GREEN</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image3.jpeg" alt="">
+                <h3>ROAD BIKE</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image4.webp" alt="">
+                <h3>BMX Yellow SLIDE </h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/image5.jpg" alt="">
+                <h3>WHITE BMX/TRAINING WHEEL</h3>
+                <div class="price"> $66.99/- - 99.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image6.jpg" alt="">
+                <h3>BLACK & WHITE BMX 3.0</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image7.webp" alt="">
+                <h3>MOUNTAIN BIKE</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image8.webp" alt="">
+                <h3>Hybrid Bike</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/image9.jpg" alt="">
+            <h3>Vintage Bike</h3>
+            <p>upto 20% off</p>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/image10.jpg" alt="">
+            <h3>New Release!!!</h3>
+            <p>upto 50% off till nov,21 2022 Buy NOW!!</p>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/image11.jpg" alt="">
+            <h3>Bamboo Bike</h3>
+            <p>upto 15% off</p>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/orangemountainbike.jpg" alt="">
+            <h3>Mountain Bike</h3>
+            <p>upto 10% off</p>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/helmet.jpeg"alt="">
+                <p>the color of this helmet never fade </p>
+                <h3>Helmet</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image19.jpeg"alt="">
+                <p>its beautiful and and shining </p>
+                <h3>Bike Parts</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image20.jpeg"alt="">
+                <p>one of the best item ive'd ever buy.</p>
+                <h3>Handle bar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image21.webp"alt="">
+                <p>Take all your gadgets with this brandnew bag</p>
+                <h3>Aeroz x3 Bag</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span> blogs </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/tatel.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> ian tatel </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> july 6, 2022 </a>
+                </div>
+                <h3>The day of my graduation</h3>
+                <p>TARO bicycle Company focused on the development of high-end bicycles, spare parts, riding equipment, production and sales, the company adhering to the "focus on quality, lead the fashion" the core concept, is committed to the promotion of high quality riding sports products</p>
+                <a href="#" class="btn">Checkout</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/roco.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> jhon carlo </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> july 3, 2022 </a>
+                </div>
+                <h3>taking breaks</h3>
+                <p>TARO bicycle Company focused on the development of high-end bicycles, spare parts, riding equipment, production and sales, the company adhering to the "focus on quality, lead the fashion" the core concept, is committed to the promotion of high quality riding sports products</p>
+                <a href="#" class="btn">Checkout</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/tats.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> ian tatel </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> july 1, 2022 </a>
+                </div>
+                <h3>School day</h3>
+                <p>TARO bicycle Company focused on the development of high-end bicycles, spare parts, riding equipment, production and sales, the company adhering to the "focus on quality, lead the fashion" the core concept, is committed to the promotion of high quality riding sports products.</p>
+                <a href="#" class="btn">Checkout</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> TARO Bicycle Company <i class="fas fa-shopping-basket"></i> </h3>
+            <p>You can all follow us on.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +63967-426-2261 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +63975-352-5190 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> jhoncarlo.roco@lspu.edu.ph </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> iancristopher.tatel@lspu.edu.ph </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Pakil,laguna </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> About us </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Other Products </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/bayad.png" class="bayad-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Web designer <span> Mr.Tatel& Mr. Roco </span> | Thankyou for your Visit </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
-
 </html>
