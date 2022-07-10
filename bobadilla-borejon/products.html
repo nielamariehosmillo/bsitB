@@ -393,7 +393,7 @@
                             </div>
                         </a>
                         <p class="fw-bold fs-5 name">${name}</p>
-                        <p class="fw-bold price">P. ${price}</p>
+                        <p class="fw-bold price">₱ ${price}</p>
                     </div>
                     `
             return p;
@@ -466,7 +466,7 @@
             if (data) {
                 modal.find(".product-img").attr("src", data.images[0].src).removeClass("placeholder").removeClass("placeholder").removeClass("placeholder-wave")
                 modal.find(".name").html(data.name)
-                modal.find(".price").html("P. " + data.price)
+                modal.find(".price").html("₱ " + data.price)
                 modal.find(".description").html(data.description)
                 modal.find(".add-to-cart").removeAttr("disabled").removeClass("disabled")
                 $("#add-to-cart").attr("data-id", data.id).attr("data-price", data.price)
