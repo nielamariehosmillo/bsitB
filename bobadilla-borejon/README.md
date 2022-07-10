@@ -8,10 +8,18 @@ PROJECT NAME: Bloom and Glow
 Group Members
 
     Borejon, John Larel H.
-        -Homepage
-        -Product Page
+        - Homepage
+        - Styles
+        - Assets
+        - Product Page (Flower Pot & Fertilizer)
+        - Scripts
+        - Cart
 
 
     Bobadilla,Janary Mae DC.
-        -Login Page
-        -Registration Page
+        - Login Page
+        - Registration Page
+        - Cart
+        - Products (Indoor, & Outdoor)
+        - About Us
+        - Contact Us
