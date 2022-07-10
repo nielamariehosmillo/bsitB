@@ -290,3 +290,52 @@
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="https://unpkg.com/@supabase/supabase-js"></script>
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                AOS.init();
+                $(function () {
+                if(!connection.auth.user()){
+                location.href="index.html"
+                }
+                const urlParams = getUrlParams()
+                
+                if (urlParams.has("prev")) {
+                $(".back-link").attr("href", urlParams.get("prev"))
+                } else {
+                $(".back-link").attr("href", 'index.html')
+                
+                }
+                })
+                
+                const newOrderRow = (index,item) => {
+                let createdAt = new Date(item.created_at)
+                let row = `
+                <tr>
+                <td>${++index}</td>
+                <td>
+                <div class="d-flex justify-content-start align-items-center">
+                    <div class="">
+                        <img src="${item.products.images[0].src}"
+                            class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <p class="fs-5 ms-2">${item.products.name}</p>
+                </div>
+                </td>
+                <td>
+                <p class="fs-6 text-secondary">
+                ${item.quantity} ${item.quantity > 1?"items":"item"}
+                </p>
+                </td>
+                <td>
+                <p class="fs-6 text-success fw-bold">₱ ${item.price}</p>
+                </td>
+                <td>
+                <p>${createdAt.getDate() < 10 ? '0' + createdAt.getDate() : createdAt.getDate()}-${createdAt.getMonth() < 10 ? "0" : ""}${Number(createdAt.getMonth()) + 1}-${createdAt.getFullYear()}</p>
+                </td>
+                
+                </tr>
+                `
+                
+                return row;
+                }
+                
+                
