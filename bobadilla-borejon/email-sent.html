@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloom And Glow</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="shortcut icon" href="/bobadilla-borejon/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/bobadilla-borejon/styles/style.css">
+    <link rel="stylesheet" href="/bobadilla-borejon/styles/custom.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
 <body class="bg-white">
     <div class="navbar navbar-expand-lg bg-light main-nav fixed-top shadow" data-aos="fade-down">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./assets/logo.png" class="img-logo sm" alt="">
+            <a class="navbar-brand" href="/bobadilla-borejon/index.html"><img src="/bobadilla-borejon/assets/logo.png" class="img-logo sm" alt="">
                 <small>Bloom and
                     Glow</small></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item mx-3">
-                        <a class="nav-link active fs-6 fw-bolder" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active fs-6 fw-bolder" aria-current="page" href="/bobadilla-borejon/index.html">Home</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link fs-6 fw-bolder" href="index.html?section=about-us">About Us</a>
+                        <a class="nav-link fs-6 fw-bolder" href="/bobadilla-borejon/index.html?section=about-us">About Us</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link fs-6 fw-bolder" href="index.html?section=contact-us">Contact Us</a>
+                        <a class="nav-link fs-6 fw-bolder" href="/bobadilla-borejon/index.html?section=contact-us">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <form action="">
@@ -58,7 +58,7 @@
                         <div class="card-body py-5">
                             <div class="row mb-4 justify-content-center">
                                 <div class="col-md-2">
-                                    <img src="./assets/logo.png" alt="" class="img-fluid">
+                                    <img src="/bobadilla-borejon/assets/logo.png" alt="" class="img-fluid">
                                 </div>
                             </div>
                             <h3 class="mb-4 text-secondary">Thank you for signing up with us!</h3>
@@ -87,7 +87,7 @@
                             class="col-md-5 bg-light d-flex flex-column align-items-center justify-content-center col-0 p-3 text-center">
                             <div class="row justify-content-center">
                                 <div class="col-8">
-                                    <img src="./assets/logo.png" class="img-fluid" alt="">
+                                    <img src="/bobadilla-borejon/assets/logo.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <p class="fs-3 mt-4">Bloom And Glow</p>
@@ -169,11 +169,11 @@
                         <div class="row text-dark justify-content-center gy-3 align-items-center" data-aos="fade-up">
                             <div class="col-md-5 text-center">
                                 <div class="">
-                                    <img src="./assets/grey-lg.jpg"
+                                    <img src="/bobadilla-borejon/assets/grey-lg.jpg"
                                         class="placeholder-wave img-fluid img-thumbnail product-img placeholder" alt="">
                                     <div class="products-images-row mt-4">
                                         <div class="col">
-                                            <img class="" src="./assets/products/3flowerpot/heartshapepot.jpg" alt="">
+                                            <img class="" src="/bobadilla-borejon/assets/products/3flowerpot/heartshapepot.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -230,13 +230,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/@supabase/supabase-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="/bobadilla-borejon/scripts/main.js"></script>
     <script>
         AOS.init();
 
         const urlParams = getUrlParams()
         if (!urlParams.has('email'))
-            location.href = "index.html"
+            location.href = "/bobadilla-borejon/index.html"
         else
             $("#email").html(urlParams.get("email"))
         HidePreloader()
