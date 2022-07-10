@@ -26,8 +26,24 @@
             <a href="/masacupan-valdeabella/index.html" class="navbar-brand text-center me-lg-0 me-auto">
                 <img src="/masacupan-valdeabella/assets/VBella.png" class="img-logo" alt="">
             </a>
-            <a href="#login-modal" data-bs-toggle="modal" class="d-block d-lg-none btn btn-link text-white px-0"><i
-                    class="bx bxs-user-circle fs-2"></i></a>
+            <div class="dropdown d-block d-lg-none">
+                <a href="/masacupan-valdeabella/profile.html" class="profile-link nav-link text-white p-0"><i
+                        class="bx fs-2 bxs-user-circle"></i></a>
+
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile-dropdown">
+                    <li>
+                        <p class="px-3 my-0 fw-bold text-dark d-flex align-items-center user-name"><i
+                                class="me-2 bx-sm bx bx-user-circle"></i> John Doe</p>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item link-dark" href="/masacupan-valdeabella/orders.html"><i class="bx bxs-truck me-2"></i>
+                            My Orders</a></li>
+                    <li><a class="dropdown-item link-dark log-out" href="#"><i class="bx bxs-log-out-circle me-2"></i>
+                            Log Out</a></li>
+                </ul>
+            </div>
             <a href="#" role="button" data-open="false"
                 class="mobile-menu-btn d-block d-lg-none btn btn-link text-white"><i class="bx bx-menu bx-sm"></i></a>
             <ul class="align navbar-nav flex-row flex-wrap justify-content-center d-none d-lg-flex me-lg-auto">
@@ -35,13 +51,13 @@
                     <a href="/masacupan-valdeabella/index.html" class="nav-link fs-6 text-uppercase text-white">Home</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/men.html" class=" fs-6 nav-link link-light">MEN</a>
+                    <a href="#" data-category="1" class="category-link fs-6 nav-link link-light">MEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/women.html" class="top-link nav-link link-light">WOMEN</a>
+                    <a href="#" data-category="2" class="category-link top-link nav-link link-light">WOMEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/kids.html" class=" fs-6 nav-link link-light">KIDS</a>
+                    <a href="#" data-category="3" class="category-link fs-6 nav-link link-light">KIDS</a>
                 </li>
             </ul>
             <ul class="nav d-none d-lg-flex">
@@ -100,25 +116,22 @@
             </header>
             <hr>
             <div class="input-group mb-3 rounded-0 px-2">
-                <form action="#" class="search-form">
-                    <div class="input-group mb-3 rounded-0">
-                        <input type="text" class="search-box form-control rounded-0" placeholder="Search..."
-                            aria-label="Text input with dropdown button" required>
-                        <button class="btn btn-danger rounded-0" type="submit"><i class="bx bx-search"></i></button>
-                    </div>
-                </form>
+                <input type="text" class="form-control rounded-0" placeholder="Search..."
+                    aria-label="Text input with dropdown button">
+
+                <button class="btn btn-danger rounded-0" type="button"><i class="bx bx-search"></i></button>
             </div>
             <hr>
             <p class="ms-3"><small>Categories</small></p>
             <ul class="nav flex-column">
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/men.html" class=" fs-6 fw-bolder nav-link link-light">MEN</a>
+                    <a href="#" data-category="1" class="category-link fs-6 fw-bolder nav-link link-light">MEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/women.html" class="fs-6 fw-bolder nav-link link-light">WOMEN</a>
+                    <a href="#" data-category="2" class="category-link fs-6 fw-bolder nav-link link-light">WOMEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/kids.html" class=" fs-6 fw-bolder nav-link link-light">KIDS</a>
+                    <a href="#" data-category="3" class="category-link fs-6 fw-bolder nav-link link-light">KIDS</a>
                 </li>
             </ul>
             <hr>
@@ -141,6 +154,37 @@
             </ul>
             <hr>
             <ul class="nav flex-row justify-content-around">
+                <li class="nav-item">
+                    <div class="language-dropdown">
+                        <a class="btn btn-light btn-sm p-1 rounded-0 toggler" href="#" role="button"
+                            aria-expanded="false">
+                            <img src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20" alt="">
+                        </a>
+                        <ul class="bg-white position-absolute">
+                            <li class="my-2">
+                                <a class="" href="#">
+                                    <img src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20"
+                                        alt="">
+
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="" href="#">
+                                    <img src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20"
+                                        alt="">
+
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="" href="#">
+                                    <img src="/masacupan-valdeabella/assets/PH-Philippines-Flag-icon.png" class="my-0" width="30" height="20"
+                                        alt="">
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
                 <!-- <li class="nav-item">
                    
                 </li> -->
@@ -168,10 +212,31 @@
                 <p class="fs-5 fw-bold">Filters</p>
                 <form action="#">
                     <div class="mb-2">
+                        <p class="text-white">Sort by price</p>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input data-sort="ascending" checked data-sort-target="#ascending-row"
+                                    class="form-check-input" type="radio" name="sortBy" id="sort-sm-0">
+                                <label class="form-check-label" for="sort-sm-0">
+                                    <i class='bx bx-up-arrow-alt'></i> Lowest - Highest
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input data-sort="descending" data-sort-target="#descending-row"
+                                    class="form-check-input" type="radio" name="sortBy" id="sort-sm-1">
+                                <label class="form-check-label" for="sort-sm-1">
+                                    <i class='bx bx-down-arrow-alt'></i> Highest - Lowest
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
                         <p class="text-white">Product Type</p>
                         <div class="mb-3">
                             <div class="form-check">
-                                <input checked data-filter-target="#all-row"
+                                <input data-type="all" checked data-filter-target="#all-row"
                                     class="form-check-input form-check-danger mobile-filters" type="radio"
                                     name="productType" id="type-sm-0">
                                 <label class="form-check-label" for="type-sm-0">
@@ -182,8 +247,9 @@
                         <div class="mb-3">
 
                             <div class="form-check">
-                                <input data-filter-target="#cocoon-row" class="form-check-input mobile-filters"
-                                    type="radio" name="productType" id="type-sm-1">
+                                <input data-type="Cocoon" data-filter-target="#cocoon-row"
+                                    class="form-check-input mobile-filters" type="radio" name="productType"
+                                    id="type-sm-1">
                                 <label class="form-check-label" for="type-sm-1">
                                     Cocoon
                                 </label>
@@ -191,19 +257,11 @@
                         </div>
                         <div class="mb-3">
                             <div class="form-check">
-                                <input data-filter-target="#silk-row" class="form-check-input mobile-filters"
-                                    type="radio" name="productType" id="type-sm-2">
+                                <input data-type="Piña Silk" data-filter-target="#silk-row"
+                                    class="form-check-input mobile-filters" type="radio" name="productType"
+                                    id="type-sm-2">
                                 <label class="form-check-label" for="type-sm-2">
                                     Piña Silk
-                                </label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="form-check">
-                                <input data-filter-target="#organza-row" class="form-check-input mobile-filters"
-                                    type="radio" name="productType" id="type-sm-3">
-                                <label class="form-check-label" for="type-sm-3">
-                                    Organza
                                 </label>
                             </div>
                         </div>
@@ -219,8 +277,8 @@
         <section id="products">
             <div class="container">
                 <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="category-title">Search Products</h2>
-                    <p>Results for: <span class="search-query"></span></p>
+                    <h2 id="category-title" class="category-title">SHOP MEN</h2>
+                    <p id="category-description">Check out our men's barong tagalog, accessories, and other Filipino-inspired clothing.</p>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-2 p-3 bg-white text-dark border-start border-5 border-danger d-none d-md-block">
@@ -229,13 +287,33 @@
                             data-aos-once="true">
                             <p class="fs-5 fw-bold">Filters</p>
                             <form action="#">
-                                
+                                <div class="mb-2">
+                                    <p class="text-danger">Sort by price</p>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input data-sort="ascending" checked data-sort-target="#ascending-row"
+                                                class="form-check-input" type="radio" name="sortBy" id="sort-lg-0">
+                                            <label class="form-check-label" for="sort-lg-0">
+                                                <i class='bx bx-up-arrow-alt'></i> Lowest - Highest
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input data-sort="descending" data-sort-target="#descending-row"
+                                                class="form-check-input" type="radio" name="sortBy" id="sort-lg-1">
+                                            <label class="form-check-label" for="sort-lg-1">
+                                                <i class='bx bx-down-arrow-alt'></i> Highest - Lowest
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mb-2">
                                     <p class="text-danger">Product Type</p>
                                     <div class="mb-3">
                                         <div class="form-check">
-                                            <input checked data-filter-target="#all-row" class="form-check-input"
-                                                type="radio" name="productType" id="type-lg-0">
+                                            <input data-type="all" checked data-filter-target="#all-row"
+                                                class="form-check-input" type="radio" name="productType" id="type-lg-0">
                                             <label class="form-check-label" for="type-lg-0">
                                                 All
                                             </label>
@@ -244,8 +322,8 @@
                                     <div class="mb-3">
 
                                         <div class="form-check">
-                                            <input data-filter-target="#cocoon-row" class="form-check-input"
-                                                type="radio" name="productType" id="type-lg-1">
+                                            <input data-type="Cocoon" data-filter-target="#cocoon-row"
+                                                class="form-check-input" type="radio" name="productType" id="type-lg-1">
                                             <label class="form-check-label" for="type-lg-1">
                                                 Cocoon
                                             </label>
@@ -253,19 +331,10 @@
                                     </div>
                                     <div class="mb-3">
                                         <div class="form-check">
-                                            <input data-filter-target="#silk-row" class="form-check-input" type="radio"
-                                                name="productType" id="type-lg-2">
+                                            <input data-type="Piña Silk" data-filter-target="#silk-row"
+                                                class="form-check-input" type="radio" name="productType" id="type-lg-2">
                                             <label class="form-check-label" for="type-lg-2">
                                                 Piña Silk
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <input data-filter-target="#organza-row" class="form-check-input" type="radio"
-                                                name="productType" id="type-lg-3">
-                                            <label class="form-check-label" for="type-lg-3">
-                                                Organza
                                             </label>
                                         </div>
                                     </div>
@@ -281,7 +350,7 @@
                     </div>
                     <div class="col-md position-relative">
 
-                        <div class="bg-white shadow border-top border-5 border-dark position-relative">
+                        <div class="bg-white shadow border-top border-5 border-dark position-relative pb-4">
                             <!-- preloader -->
                             <div class="sub-preloader">
                                 <div class="content text-center">
@@ -302,9 +371,6 @@
                                             class="bx bx-filter-alt bx-sm me-2 "></i>
                                         Filter</a>
                                 </div>
-                                <div class="col-6 text-end px-3 pt-3">
-                                    <p class="text-dark">Sort By <i class="bx bx-chevron-down"></i></p>
-                                </div>
                             </div>
                             <div class="products-row row gx-1 gy-0 p-1" id="products-row">
 
@@ -319,12 +385,16 @@
                             <div class="products-row row gx-1 gy-0 p-1 d-none" id="silk-row">
 
                             </div>
-                              <!-- pina silk -->
-                              <div class="products-row row gx-1 gy-0 p-1 d-none" id="organza-row">
-
-                            </div>
                             <!-- all products -->
                             <div class="products-row row gx-1 gy-0 p-1 d-none" id="all-row">
+
+                            </div>
+                            <!-- asc products -->
+                            <div class="products-row row gx-1 gy-0 p-1 d-none" id="ascending-row">
+
+                            </div>
+                            <!-- desc products -->
+                            <div class="products-row row gx-1 gy-0 p-1 d-none" id="descending-row">
 
                             </div>
                         </div>
@@ -434,7 +504,10 @@
                                                     id="product-name"></span></h2>
                                             <p class="text-white-50 my-1"><small><span
                                                         class="placeholder-wave placeholder col-7"></span> <span
-                                                        id="category"></span></small>
+                                                        id="category"></span>, 
+                                                        <span class="ms-1"
+                                                        id="type"></span>
+                                                    </small>
                                             </p>
                                             <p class="text-light my-1"><small><span
                                                         class="placeholder-wave placeholder col-7"></span></small></p>
@@ -498,8 +571,8 @@
                                 </div>
                                 <hr>
                                 <div class="mt-3 text-center">
-                                    <p>New customer? <a href="#create-account"
-                                            class="link-primary create-account scroll-link">Create your account</a></p>
+                                    <p>New customer? <a href="/masacupan-valdeabella/signup.html"
+                                            class="link-primary">Create your account</a></p>
                                     <p>Lost Password? <a href="#" class="link-primary reset-pass">Recover Password</a>
                                     </p>
                                 </div>
@@ -519,8 +592,8 @@
                                 </div>
                                 <hr>
                                 <div class="mt-3 text-center">
-                                    <p>New customer? <a href="#create-account"
-                                            class="link-primary create-account scroll-link">Create your account</a></p>
+                                    <p>New customer? <a href="/masacupan-valdeabella/signup.html"
+                                            class="link-primary">Create your account</a></p>
                                     <p>Login Account? <a href="#" class="link-primary login-account">Click here</a></p>
 
                                 </div>
@@ -567,11 +640,87 @@
     <script src="/masacupan-valdeabella/assets/quicksand.js"></script>
     <script src="/masacupan-valdeabella/scripts/main.js"></script>
     <script>
+        
         AOS.init();
+        var selectedOrder = $('input[type=radio][name=sortBy]:checked')
+
+        async function initialLoad(categoryLink){
+            category = $(categoryLink).data("category");
+            const products = await getProducts(category, true);
+            console.log("product sort: ", products)
+            $("#ascending-row").html("")
+            $("#descending-row").html("")
+            $("#products-row").empty()
+            $("#products-row").data("category",category)
+            if(category == "1"){
+                $('#category-title').text('SHOP MEN');
+                $('#category-description').text('Check out our men\'s barong tagalog, accessories, and other Filipino-inspired clothing.');
+                
+            }else if (category == "2"){
+                $('#category-title').text('SHOP WOMEN');
+                $('#category-description').text('Check out our women\'s barong tagalog, accessories, and other Filipino-inspired clothing.');
+
+            }
+            else{
+                $('#category-title').text('SHOP KIDS');
+                $('#category-description').text('Check out our kids\' barong tagalog, accessories, and other Filipino-inspired clothing.');
+                
+            }
+            for (let product of products.data) {
+                addProductDisplay(product, $("#products-row"))
+            }
+        }
+        $('.category-link').click(function(){
+            initialLoad(this);
+        })
+
+
+        async function sortProducts(row, type, category) {
+            let target = selectedOrder.data("sort-target");
+            let sort = selectedOrder.data("sort")
+            console.log("sort: ", sort)
+            if (sort == "ascending") {
+                const products = await getProducts(category, true);
+                console.log("product sort: ", products)
+
+                $("#ascending-row").html("")
+                $("#descending-row").html("")
+                for (let product of products.data) {
+                    if (product.type.description == type) {
+                        console.log("matched type")
+                        addProductDisplay(product, $(target))
+                        //addProductDisplay(product, $("#descending-row"))
+                    } else if (type == "all") {
+                        console.log("matched all")
+
+                        addProductDisplay(product, $(target))
+                        //addProductDisplay(product, $("#descending-row"))
+                    }
+                }
+
+            } else {
+                const products = await getProducts(category, false);
+                console.log("product sort desc: ", products)
+
+                $("#ascending-row").html("")
+                $("#descending-row").html("")
+                for (let product of products.data) {
+                    if (product.type.description == type) {
+                        addProductDisplay(product, $(target))
+
+                    } else if (type == "all") {
+                        addProductDisplay(product, $(target))
+
+                    }
+                }
+            }
+
+
+            row.quicksand($(target + " .product-card"))
+        }
+
         async function loadProducts() {
-            const searchQuery = localStorage.getItem("searchQuery");
-            $(".search-query").html(searchQuery);
-            const products = await findProducts(searchQuery);
+            const products = await getProducts("1", true);
 
             if (products.data) {
                 let row = $("#products-row");
@@ -581,15 +730,16 @@
                 for (let product of products.data) {
                     addProductDisplay(product, row)
                     addProductDisplay(product, $("#all-row"))
+                    addProductDisplay(product, $("#ascending-row"))
+                    addProductDisplay(product, $("#descending-row"))
+
                     if (product.type.description == "Cocoon") {
                         addProductDisplay(product, $("#cocoon-row"))
-                    }else if(product.type.description == "Organza"){
-                        addProductDisplay(product, $("#organza-row"))
-                    }
-                     else {
+                    } else {
                         addProductDisplay(product, $("#silk-row"))
                     }
                 }
+                //sort products by price
             } else {
                 console.log("products.error: ", products.error)
             }
@@ -600,11 +750,24 @@
         }
         $(function () {
             loadProducts();
+            var selectedType = $('input[type=radio][name=productType]:checked');
+            $('input[type=radio][name=productType]').on("change", async function (e) {
+                selectedType = $(this)
+                let target = $(this).data("filter-target");
+                const type = $(this).data("type")
+                //$('#products-row').quicksand($(target + " .product-card"));
+                sortProducts($('#products-row'), type, $("#products-row").data('category'))
+            })
+            $('input[type=radio][name=sortBy]').on("change", async function (e) {
+                selectedOrder = $(this)
+                const checkbox = selectedType;
+                let target = checkbox.data("filter-target");
+                let type = checkbox.data("type")
+                let items = $(target + " .product-card");
 
-            $('input[type=radio][name=productType]').on("change", function (e) {
-                if (this.checked) {
-                    let target = $(this).data("filter-target");
-                    $('#products-row').quicksand($(target + " .product-card"));
+                if (items.length > 1) {
+                    //$('#products-row').quicksand($(target + " .product-card"));
+                    sortProducts($('#products-row'), type, $("#products-row").data('category'))
 
                 }
             })
