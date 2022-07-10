@@ -498,3 +498,53 @@
             $(".total").html("P. " + subtotal)
             $(".subtotal").html("P. " + subtotal)
             $(".order-count").html(count)
+            
+            if (count > 0) {
+                $("#checkout-btn").removeClass('disabled')
+            } else {
+                $("#checkout-btn").addClass('disabled')
+            }
+
+        }
+
+        //load cart items
+        const loadProducts = async () => {
+            const table = $("#cart-table")
+            const tbBody = table.find("tbody")
+            const user = connection.auth.user()
+            const { data, error } = await connection
+                .from("cart")
+                .select("*, products(*, images(*))")
+                .eq("userId", user.id)
+                .order("id", { ascending: false })
+            tbBody.html("")
+            for (let item of data) {
+                let row = newCartItem(item)
+                tbBody.append(row)
+            }
+            if (data.length > 0) {
+                $("#order-summary-bar").removeClass("d-none")
+            } else {
+                if ($("#check-all")[0].checked) {
+                    $("#check-all").trigger("click")
+                }
+                $("#order-summary-bar").addClass("d-none")
+
+            }
+
+            let allChecked = true
+            $.each($('.cart-checkbox'), function (i, item) {
+                if (!item.checked) {
+                    allChecked = false;
+                    return;
+                }
+            })
+
+            if (allChecked) {
+                $("#check-all").prop("checked", true)
+            } else {
+                $("#check-all").prop("checked", false)
+
+            }
+            setEventHandlers()
+            setSummary()
