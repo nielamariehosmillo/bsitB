@@ -758,7 +758,7 @@
         async function loadProduct() {
             let id = localStorage.getItem("view-product-id")
             if (id == null || id == undefined) {
-                location.href = "/masacupan-valdeabella/products/products.html"
+                location.href = "/masacupan-valdeabella/products.html"
             }
             const product = await findProduct(id);
             console.log(product)
