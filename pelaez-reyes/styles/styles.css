@@ -1,0 +1,937 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+h6 {
+    color: #D8D8D8;
+}
+
+span {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a3833;
+}
+
+hr {
+    width: 40px;
+    height: 3px;
+    background-color: #42ADE2;
+}
+
+/*  Navigation  */
+section{
+    padding: 2rem 10%;
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    margin: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+    color: #42ADE2;
+}
+
+.navbar a,
+.navbar i {
+    color: black;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    cursor: pointer;
+    margin-left: 1.5;
+    transition: 0.3s ease;
+}
+
+
+/* Mobile Navigation */
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+#bar {
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+
+#bar:hover,
+#bar.active {
+    color: white;
+}
+
+@media only screen and (max-width: 911px) {
+    body > nav > div > button:hover,
+    body > nav > div > button:focus {
+        background-color: #42ADE2;
+    }
+
+    body > nav > div > button:hover #bar, 
+    body > nav > div > button:focus #bar{
+        background-color: #42ADE2;
+    }
+
+    #navbarNav > ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right
+    }
+
+    #navbarNav > ul > li.nav-item:nth-child(n) a {
+        padding: 10px 0;
+    }
+}
+
+/* Carousel */
+.carousel, 
+.carousel .glide__slides {
+    background-color: #42ADE2;;
+    position: relative;
+    height: calc(95vh - 6rem);
+    margin: 0 5rem;
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.carousel .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.carousel .left {
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+}
+.carousel .left span {
+    color: white;
+    margin: 1rem 0;
+}
+
+.carousel .left h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.carousel .left p {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+
+.carousel .left .caro-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.carousel .right {
+    flex: 0 0 50%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.carousel .right img {
+    position: absolute;
+    width: 55rem;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+}
+
+.center .right img.img1 {
+    width: 85%;
+    right: -25%;
+    bottom: -40%;
+}
+
+.center .right img.img2 {
+    width: 85%;
+    right: -25%;
+    bottom: -40%;
+}
+
+.glide__slide--active .center .right img {
+    bottom: -3%;
+    opacity: 1;
+}
+
+.glide__slide--active .left {
+    opacity: 1;
+    top: 35%;
+}
+
+/* Carousel Mobile */
+@media only screen and (max-width: 1500px) {
+    .carousel .left {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .glide__slide--active .left {
+        top: 15%;
+    }
+
+    .center .right img.img1 {
+        width: 90%;
+    }
+
+    .center .right img.img2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .center .right img.img1 {
+        width: 20rem;
+    }
+
+    .center .right img.img2 {
+        width: 20rem;
+    }
+
+    .carousel,
+    .carousel .glide__slides {
+        margin: 0;
+        padding: 0 3rem;
+    }
+
+    .carousel .left h1 {
+        font-size: 1.5rem;
+    }
+
+
+
+    .carousel .left span {
+        font-size: 1.2rem;
+    }
+    .carousel .left p {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+}
+
+/* Arrivals */
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    width: 20rem;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .add-btn {
+    background-color: #42ADE2;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .add-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Moble New Arrivals */
+@media only screen and (max-width: 567px) {
+    #arriavals .product {
+        max-width: 100%;
+        width: 40%;
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+    
+    #arriavals .product img {
+        height: 20rem;
+    }
+    
+}
+
+/* Promo Banner */
+#banner {
+    background-image: url(../images/pink-training-shoes.jpg);
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background-size: 1472px 981px;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#banner h4, 
+#banner h1 {
+    color: white;
+}
+
+#banner .center .banner-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    background-color: #42ADE2;
+}
+
+/* Mobile Promo Banner */
+@media only screen and (max-width: 1500px) {
+    .banner {
+        padding: 14rem;
+    }
+    .banner .right img {
+        width: 70rem;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .banner {
+        padding: 8rem 2rem;
+    }
+
+    .banner span,
+    .banner p {
+        font-size: 0.9;
+    }
+
+    .banner h1 {
+        font-size: 1.1;
+    }
+
+    .banner .right img {
+        right: 6%;
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 80vh;
+    }
+
+    .banner .left {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .banner .right {
+        flex: 0 0 50%;
+    }
+
+    .banner .right img {
+        right: 0;
+        width: 50rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Media Banner */
+@media only screen and (max-width: 567px) {
+    .banner {
+        padding: 8rem 5rem;
+    }
+
+    .banner .trend,
+    .banner p {
+        font-size: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner h1 {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .banner .right img {
+        width: 25rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222222;
+}
+
+footer h5{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+footer li {
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+
+footer li a {
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: #D8D8D8;
+}
+
+footer p {
+    color: #999;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+footer .socials a {
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    background-color: #42ADE2;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 40%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+    
+}
+
+/* Mobile Footer */
+@media only screen and (max-width: 567px) {
+    footer .row {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+}
+
+/* All Products */
+
+#page-nav > nav > ul > li.page-item:nth-child(2) > a {
+    background-color: black;
+}
+
+#page-nav > nav > ul > li:nth-child(n):hover > a {
+    background-color: #42ADE2;
+    color: white;
+}
+
+/* Mobile All Products */
+
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0 5rem 0;
+}
+
+.pagination a {
+    color: black;
+}
+
+.pagination span {
+    display:  flex;
+    padding: 0 10px 0 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+/* SProduct details */
+
+.sproduct .buy-btn {
+    background-color: #42ADE2;
+}
+
+.sproduct:hover .buy-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sproduct span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sproduct select {
+    display: block;
+    padding: 5px 10px;
+}
+.sproduct input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.sproduct input:focus {
+    outline: none;
+}
+
+/* Login Form */
+#loginForm h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#loginForm a,
+#loginForm label {
+    color: #495057;
+}
+
+#loginForm .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125em;
+}
+
+#loginForm label {
+    display: inline-block;
+}
+
+#loginForm .form-check-label:hover {
+    cursor: pointer;
+}
+
+#loginForm .form-check-input[type="checkbox"]:checked {
+    background-color: #42ADE2;
+    border: 0;
+}
+
+#loginForm .form-check-label {
+    padding-left: .15rem;
+}
+
+#loginForm .row {
+    --mdb-gutter-x: 1.5rem;
+    --mdb-gutter-y: 0;
+}
+
+#loginForm .btn-primary {
+    background-color: #42ADE2;
+}
+
+#loginForm .btn-block {
+    display: block;
+    width: 100%;
+}
+
+#loginForm .btn {
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0,0,0,.1);
+    font-weight: 500;
+    padding: .625rem 1.5rem .5rem;
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+#loginForm .btn:hover {
+    cursor: pointer;
+    background-color: #3282aa;
+    transition: 0.3s ease;
+}
+
+#loginForm .btn i {
+    color: #42ADE2;
+}
+
+/* Register Form */
+#regsiterForm h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#registerForm a,
+#registerForm label {
+    color: #495057;
+}
+
+#registerForm .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125em;
+}
+
+#registerForm label {
+    display: inline-block;
+}
+
+#registerForm .form-check-label:hover {
+    cursor: pointer;
+}
+
+#registerForm .form-check-input[type="checkbox"]:checked {
+    background-color: #42ADE2;
+    border: 0;
+}
+
+#registerForm .form-check-label {
+    padding-left: .15rem;
+}
+
+#registerForm .row {
+    --mdb-gutter-x: 1.5rem;
+    --mdb-gutter-y: 0;
+}
+
+#registerForm .btn-primary {
+    background-color: #42ADE2;
+}
+
+#registerForm .btn-block {
+    display: block;
+    width: 100%;
+}
+
+#registerForm .btn {
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0,0,0,.1);
+    font-weight: 500;
+    padding: .625rem 1.5rem .5rem;
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+#registerForm .btn:hover {
+    cursor: pointer;
+    background-color: #3282aa;
+    transition: 0.3s ease;
+}
+
+#registerForm .btn i {
+    color: #42ADE2;
+}
+
+/* Shopping Cart */
+#cart-container {
+    margin: 60px auto   ;
+}
+
+#cart-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#cart-container th {
+    font-weight: 700;
+    text-align: left;
+    padding: 10px;
+    color: white;
+    background: #42ADE2;
+    
+    
+}
+
+#cart-container .cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cart-container td {
+    padding: 10px 5px;
+}
+
+#cart-container td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+#cart-container td a {
+    color: #42ADE2;
+    font-size: 12px;
+}
+
+#cart-container .cart-image {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    position: relative;
+}
+
+#cart-container .total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cart-container .total-price table {
+    border-top: 3px solid #42ADE2 ;
+    width: 100%;
+    max-width: 410px;
+    margin-top: 1rem;
+}
+
+#cart-container td:last-child {
+    text-align: right;
+}
+
+#cart-container th:last-child {
+    text-align: right;
+}
+
+#cart-container .checkout-btn {
+    float: right;
+    background-color: #42ADE2;
+    border: none;
+}
+
+#cart-container .btn-danger {
+    background-color: #42ADE2;
+    border: none;
+}
+
+#cart-container .btn-danger:hover {
+    cursor: pointer;
+    background-color: #3282aa;
+    transition: 0.3s ease;
+}
+
+#cart-container .btn-danger.focus {
+    color: #3282aa;
+}
+
+#cart-container .cart-info a {
+    color: white;
+} 
+
+/* Mobile Shopping Cart */
+@media only screen and (max-width: 567px) {
+    #cart-container .cart-info p {
+        display: none;
+    }
+} 
+/* About Page */
+#about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .content img {
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+#about .about-text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+#about .content {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Mobile About */
+@media only screen and (max-width: 1180px) {
+    #about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #about .content img {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+/* Contact Page */
+#contact h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#contact a,
+#contactlabel {
+    color: #495057;
+}
+
+#contact .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125em;
+}
+
+#contact label {
+    display: inline-block;
+}
+
+#contact .form-check-label:hover {
+    cursor: pointer;
+}
+
+#contact .form-check-input[type="checkbox"]:checked {
+    background-color: #42ADE2;
+    border: 0;
+}
+
+#contact .form-check-label {
+    padding-left: .15rem;
+}
+
+#contact .row {
+    --mdb-gutter-x: 1.5rem;
+    --mdb-gutter-y: 0;
+}
+
+#contact .btn-primary {
+    background-color: #42ADE2;
+}
+
+#contact .btn-block {
+    display: block;
+    width: 100%;
+}
+
+#contact .btn {
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0,0,0,.1);
+    font-weight: 500;
+    padding: .625rem 1.5rem .5rem;
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+#contact .btn:hover {
+    cursor: pointer;
+    background-color: #3282aa;
+    transition: 0.3s ease;
+}
+
+#contact .btn i {
+    color: #42ADE2;
+}
