@@ -1,0 +1,16 @@
+@-webkit-keyframes float {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+@keyframes float {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}/*# sourceMappingURL=utilities.css.map */
