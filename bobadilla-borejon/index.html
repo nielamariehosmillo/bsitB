@@ -48,3 +48,221 @@
                         <a class="nav-link fs-6 fw-bolder" data-bs-toggle="modal" href="#login-modal">Sign In</a>
                     </li>
                     <li class="nav-item d-none account-item">
+
+                        <div class="dropdown">
+                            <a class="btn btn-link link-secondary" href="#" role="button" id="account-link"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bx bx-user bx-sm"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end" id="account-dropdown"
+                                aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item sign-in" href="#login-modal" data-bs-toggle="modal">Sign
+                                        In</a></li>
+                                <li>
+                                    <h6 class="dropdown-header d-none">John Doe</h6>
+                                </li>
+                                <li><a class="dropdown-item d-none orders-link" href="/bobadilla-borejon/orders.html">My Orders</a></li>
+                                <li><a class="dropdown-item d-none logout" href="#">Log Out</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none cart-item">
+                        <a class="nav-link d-flex align-items-center position-relative cart-link" href="cart.html">
+                            <i class="bx bx-basket bx-sm"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-count bg-success">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <main>
+        <section class="hero" id="hero-main">
+            <div class="container">
+                <div class="text-center text-white">
+                    <div class="d-flex align-items-end justify-content-center flex-wrap" data-aos="zoom-in">
+                        <img src="/bobadilla-borejon/assets/logo.png" class="img-logo lg m-0 mt-2" alt="logo">
+                        <h1 class=" bg-light text-secondary px-3 py-2 mt-2">BLOOM AND GLOW</h1>
+                    </div>
+
+                    <p class="fs-3 mt-5" data-aos="zoom-in">PLANTS AND DECORATIONS</p>
+                    <a data-aos="zoom-in" class="scroll-link btn btn-success rounded-1 mt-4 text-white btn-lg"
+                        href="#featured">SHOP NOW <i class="bx bxs-cart-alt"></i></a>
+
+
+                    <div data-slide-index="0" data-aos="fade-up" class="slider" id="home-product-slider">
+                        <button data-slider="#home-product-slider"
+                            class="control btn btn-link link-light text-decoration-none" data-control="prev"
+                            type="button">
+                            <i class="bx bx-chevron-left"></i>
+                        </button>
+                        <div class="content">
+                            <div class="slide active">
+                                <div class="inner">
+                                    <h6 class="title">Indoor</h6>
+                                    <div class="row row-cols-3 justify-content-center">
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/1indoor/Peperomia.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/1indoor/pothosjade.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/1indoor/spider.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner">
+                                    <h6 class="title">Outdoor</h6>
+                                    <div class="row row-cols-3 justify-content-center">
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/2outdoor/dwarfsnakeplant.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/2outdoor/fiddleleaf.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/2outdoor/horsetale.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner">
+                                    <h6 class="title">Flower Pot</h6>
+                                    <div class="row row-cols-3">
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/3flowerpot/antiqueceramicpot.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/3flowerpot/heartshapepot.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/3flowerpot/hexagonceramic.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner">
+                                    <h6 class="title">Fertilizer</h6>
+                                    <div class="row row-cols-3">
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/4fertilizer/compound.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/4fertilizer/growliguidplantfood.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img src="/bobadilla-borejon/assets/products/4fertilizer/hibong.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button data-slider="#home-product-slider"
+                            class="control btn btn-link link-light text-decoration-none" data-control="next"
+                            type="button">
+                            <i class="bx bx-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class=" py-5" id="featured">
+            <div class="container mb-5">
+                <div class="text-center text-white">
+                    <div class="d-flex justify-content-center" data-aos="zoom-in">
+                        <p class="fs-2 text-white border-light border-1 border py-2 px-5 mt-3">PRODUCT CATEGORIES</p>
+                    </div>
+                    <div class="mt-5" data-aos="fade-up">
+                        <div class="featured-products">
+                            <a href="/bobadilla-borejon/products.html?category=1" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">Indoor</p>
+                                    </div>
+                                    <img src="/bobadilla-borejon/assets/products/1indoor/snakeplant.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="/bobadilla-borejon/products.html?category=2" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">outdoor</p>
+                                    </div>
+                                    <img src="/bobadilla-borejon/assets/products/1indoor/rubbertree.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="/bobadilla-borejon/products.html?category=3" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">flower pot</p>
+                                    </div>
+                                    <img src="/bobadilla-borejon/assets/products/1indoor/draceana.png" class="bg-white" alt="">
+                                </div>
+                            </a>
+                            <a href="/bobadilla-borejon/products.html?category=4" class="link-light">
+                                <div class="img-wrapper">
+                                    <div class="overlay">
+                                        <p class="fs-5">Fertilizer</p>
+                                    </div>
+                                    <img src="/bobadilla-borejon/assets/products/1indoor/peacelily.jpg" alt="">
+                                    </div>
+                                    </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </section>
+                                    <section class="py-5" id="about-us">
+                                    <div class="container mb-5">
+                                    <div class="text-center text-white fw-bold">
+                                    <div class="d-flex justify-content-center mt-5" data-aos="fade-up">
+                                    <h2 class="fs-2 border-light border border-2 text-uppercase text-light px-5 py-1 mt-2">About Us
+                                    </h2>
+                                    </div>
+                                    <p class="fs-2 mt-5" data-aos="fade-up">
+                                    We created Bloom and Glow Shop in 2022
+                                    because quite simply, we love plants. When launching our shop,
+                                    we wanted to created a space that felt warm and welcoming to all,
+                                    from plant admirers to expert growers.
+                                    </p>
+                                    <p class="fs-2" data-aos="fade-up">
+                                    One of your favorite parts of operating Bloom and Grow Shop is sourcing the most beautiful and
+                                    exotic plants that we can get our hands on, and of course sharing them with all of you.
+                                    </p>
+                                    </div>
+                                    </div>
+                                    </section>
+                                    <section id="contact-us" class="py-5">
+                                    <div class="container">
+                                    
+                                    <div class="text-center mt-5">
+                                    <div class="row justify-content-center" data-aos="fade-up">
+                                    <div class="col-md-8">
+                                    <div class="card border-0 bg-transparent shadow-s">
+                                    <div class="card-body">
+                                    <h2 class="mb-4 text-light">How can we help you?</h2>
+                                    <form action="#" autocomplete="off">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control shadow-" id="email-contact"
+                                                placeholder="First Name">
+                                            <label for="email-contact">Email</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control shadow-" id="subject"
+                                                placeholder="Last Name">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                        <div class="mb-3">
