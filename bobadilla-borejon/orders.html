@@ -295,14 +295,14 @@
         AOS.init();
         $(function () {
             if(!connection.auth.user()){
-                location.href="/bobadilla-borejon/index.html"
+                location.href="index.html"
             }
             const urlParams = getUrlParams()
 
             if (urlParams.has("prev")) {
                 $(".back-link").attr("href", urlParams.get("prev"))
             } else {
-                $(".back-link").attr("href", '/bobadilla-borejon/index.html')
+                $(".back-link").attr("href", 'index.html')
 
             }
         })
@@ -374,7 +374,7 @@
             if(urlParams.has('prev')){
                 $(".back-link").attr("href",urlParams.get("prev"))
             }else{
-                $(".back-link").attr('href','/bobadilla-borejon/index.html')
+                $(".back-link").attr('href','index.html')
             }
         })
     </script>

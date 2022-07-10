@@ -120,7 +120,7 @@
                                         <span class="bx bx-sm bx-cart"></span>
                                         <p class="fw-bold my-0 ms-2">Buy Now</p>
                                     </div>
-                                    <img src="assets/grey.jpg" alt="" class="img-fluid placeholder placeholder-wave">
+                                    <img src="/bobadilla-borejon/assets/grey.jpg" alt="" class="img-fluid placeholder placeholder-wave">
                                 </div>
                             </a>
                             <div class="placeholder-wave  mt-2 ">
@@ -441,7 +441,7 @@
                 categoryId = urlParams.get('category')
             }
 
-            $(".cart-link").attr("href", `/bobadilla-borejon/cart.html?prev=products.html?categoryId=${categoryId}`)
+            $(".cart-link").attr("href", `cart.html?prev=products.html?categoryId=${categoryId}`)
 
             //if category exist load products
             console.log("category: ", categoryId)
@@ -496,7 +496,7 @@
             <span class="placeholder col-10"></span>
             <span class="placeholder col-10"></span>
             `)
-            $(this).find(".product-img").attr("src", "/bobadilla-borejon/assets/grey-lg.jpg").addClass("placeholder-wave")
+            $(this).find(".product-img").attr("src", "assets/grey-lg.jpg").addClass("placeholder-wave")
             $(".products-images-row").addClass("d-none")
 
         })

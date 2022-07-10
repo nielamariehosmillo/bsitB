@@ -291,8 +291,8 @@
             `
         }
         const loadProducts = async (query) => {
-            $(".cart-link").attr("href",`/bobadilla-borejon/cart.html?prev=search.html?query=${query}`)
-            $(".orders-link").attr("href",`/bobadilla-borejon/orders.html?prev=search.html?query=${query}`)
+            $(".cart-link").attr("href",`cart.html?prev=search.html?query=${query}`)
+            $(".orders-link").attr("href",`orders.html?prev=search.html?query=${query}`)
             //categories list
             const { data, error } = await connection
                 .from("products")
@@ -330,7 +330,7 @@
                 query = urlParams.get('query')
             }
 
-            $(".cart-link").attr("href",`/bobadilla-borejon/cart.html?prev=query.html?query=${query}`)
+            $(".cart-link").attr("href",`cart.html?prev=query.html?query=${query}`)
             loadProducts(query)
             $('.query').html(query)
         })
@@ -379,7 +379,7 @@
             <span class="placeholder col-10"></span>
             <span class="placeholder col-10"></span>
             `)
-            $(this).find(".product-img").attr("src", "/bobadilla-borejon/assets/grey-lg.jpg").addClass("placeholder-wave")
+            $(this).find(".product-img").attr("src", "assets/grey-lg.jpg").addClass("placeholder-wave")
             $(".products-images-row").addClass("d-none")
 
         })
