@@ -38,7 +38,7 @@
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item link-dark" href="/masacupan-valdeabella/orders.html"><i class="bx bxs-truck me-2"></i>
+                    <li><a class="dropdown-item link-dark" href="/masacupan-valdeabella/products/orders.html"><i class="bx bxs-truck me-2"></i>
                             My Orders</a></li>
                     <li><a class="dropdown-item link-dark log-out" href="#"><i class="bx bxs-log-out-circle me-2"></i>
                             Log Out</a></li>
@@ -51,13 +51,13 @@
                     <a href="/masacupan-valdeabella/index.html" class="nav-link fs-6 text-uppercase text-white">Home</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/men.html" class=" fs-6 nav-link link-light">MEN</a>
+                    <a href="#" data-category="1" class="category-link fs-6 nav-link link-light">MEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/women.html" class="top-link nav-link link-light">WOMEN</a>
+                    <a href="#" data-category="2" class="category-link top-link nav-link link-light">WOMEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/kids.html" class=" fs-6 nav-link link-light">KIDS</a>
+                    <a href="#" data-category="3" class="category-link fs-6 nav-link link-light">KIDS</a>
                 </li>
             </ul>
             <ul class="nav d-none d-lg-flex">
@@ -94,7 +94,7 @@
                     </div>
                 </li>
                 <li class="nav-item ms-2">
-                    <a href="/masacupan-valdeabella/cart.html" class="cart-link nav-link text-white p-0 position-relative"><i
+                    <a href="/masacupan-valdeabella/products/cart.html" class="cart-link nav-link text-white p-0 position-relative"><i
                             class="bx bxs-cart fs-2"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="cart-items-count">0</span>
@@ -125,13 +125,13 @@
             <p class="ms-3"><small>Categories</small></p>
             <ul class="nav flex-column">
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/men.html" class=" fs-6 fw-bolder nav-link link-light">MEN</a>
+                    <a href="#" data-category="1" class="category-link fs-6 fw-bolder nav-link link-light">MEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/women.html" class="fs-6 fw-bolder nav-link link-light">WOMEN</a>
+                    <a href="#" data-category="2" class="category-link fs-6 fw-bolder nav-link link-light">WOMEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/kids.html" class=" fs-6 fw-bolder nav-link link-light">KIDS</a>
+                    <a href="#" data-category="3" class="category-link fs-6 fw-bolder nav-link link-light">KIDS</a>
                 </li>
             </ul>
             <hr>
@@ -140,7 +140,7 @@
                     <a href="/masacupan-valdeabella/index.html" class=" nav-link fs-6 text-uppercase fw-bolder text-white">Home</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/products.html" class=" nav-link fs-6 text-uppercase fw-bolder text-white">Products</a>
+                    <a href="/masacupan-valdeabella/products/products/products.html" class=" nav-link fs-6 text-uppercase fw-bolder text-white">Products</a>
                 </li>
 
                 <li class="nav-item mx-lg-4 mx-2">
@@ -189,7 +189,7 @@
                    
                 </li> -->
                 <li class="nav-item ms-2">
-                    <a href="/masacupan-valdeabella/cart.html" class="cart-link nav-link text-white p-0 position-relative"><i
+                    <a href="/masacupan-valdeabella/products/cart.html" class="cart-link nav-link text-white p-0 position-relative"><i
                             class="bx bxs-cart fs-2"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="cart-items-count">0</span>
@@ -277,8 +277,8 @@
         <section id="products">
             <div class="container">
                 <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="category-title">SHOP MEN</h2>
-                    <p>Check out our men's barong tagalog, accessories, and other Filipino-inspired clothing.</p>
+                    <h2 id="category-title" class="category-title">SHOP MEN</h2>
+                    <p id="category-description">Check out our men's barong tagalog, accessories, and other Filipino-inspired clothing.</p>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-2 p-3 bg-white text-dark border-start border-5 border-danger d-none d-md-block">
@@ -640,8 +640,41 @@
     <script src="/masacupan-valdeabella/assets/quicksand.js"></script>
     <script src="/masacupan-valdeabella/scripts/main.js"></script>
     <script>
+        
         AOS.init();
         var selectedOrder = $('input[type=radio][name=sortBy]:checked')
+
+        async function initialLoad(categoryLink){
+            category = $(categoryLink).data("category");
+            const products = await getProducts(category, true);
+            console.log("product sort: ", products)
+            $("#ascending-row").html("")
+            $("#descending-row").html("")
+            $("#products-row").empty()
+            $("#products-row").data("category",category)
+            if(category == "1"){
+                $('#category-title').text('SHOP MEN');
+                $('#category-description').text('Check out our men\'s barong tagalog, accessories, and other Filipino-inspired clothing.');
+                
+            }else if (category == "2"){
+                $('#category-title').text('SHOP WOMEN');
+                $('#category-description').text('Check out our women\'s barong tagalog, accessories, and other Filipino-inspired clothing.');
+
+            }
+            else{
+                $('#category-title').text('SHOP KIDS');
+                $('#category-description').text('Check out our kids\' barong tagalog, accessories, and other Filipino-inspired clothing.');
+                
+            }
+            for (let product of products.data) {
+                addProductDisplay(product, $("#products-row"))
+            }
+        }
+        $('.category-link').click(function(){
+            initialLoad(this);
+        })
+
+
         async function sortProducts(row, type, category) {
             let target = selectedOrder.data("sort-target");
             let sort = selectedOrder.data("sort")
@@ -723,7 +756,7 @@
                 let target = $(this).data("filter-target");
                 const type = $(this).data("type")
                 //$('#products-row').quicksand($(target + " .product-card"));
-                sortProducts($('#products-row'), type, 1)
+                sortProducts($('#products-row'), type, $("#products-row").data('category'))
             })
             $('input[type=radio][name=sortBy]').on("change", async function (e) {
                 selectedOrder = $(this)
@@ -734,7 +767,7 @@
 
                 if (items.length > 1) {
                     //$('#products-row').quicksand($(target + " .product-card"));
-                    sortProducts($('#products-row'), type, 1)
+                    sortProducts($('#products-row'), type, $("#products-row").data('category'))
 
                 }
             })

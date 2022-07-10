@@ -38,7 +38,7 @@
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item link-dark" href="/masacupan-valdeabella/orders.html"><i class="bx bxs-truck me-2"></i>
+                    <li><a class="dropdown-item link-dark" href="/masacupan-valdeabella/products/orders.html"><i class="bx bxs-truck me-2"></i>
                             My Orders</a></li>
                     <li><a class="dropdown-item link-dark log-out" href="#"><i class="bx bxs-log-out-circle me-2"></i>
                             Log Out</a></li>
@@ -51,13 +51,13 @@
                     <a href="/masacupan-valdeabella/index.html" class="nav-link fs-6 text-uppercase text-white">Home</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/men.html" class=" fs-6 nav-link link-light">MEN</a>
+                    <a href="/masacupan-valdeabella/products/men.html" class=" fs-6 nav-link link-light">MEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/women.html" class="top-link nav-link link-light">WOMEN</a>
+                    <a href="/masacupan-valdeabella/products/women.html" class="top-link nav-link link-light">WOMEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/kids.html" class=" fs-6 nav-link link-light">KIDS</a>
+                    <a href="/masacupan-valdeabella/products/kids.html" class=" fs-6 nav-link link-light">KIDS</a>
                 </li>
                 <!-- <li class="nav-item mx-lg-4 mx-3">
                     <form action="#">
@@ -96,7 +96,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item link-dark" href="/masacupan-valdeabella/orders.html"><i class="bx bxs-truck me-2"></i>
+                            <li><a class="dropdown-item link-dark" href="/masacupan-valdeabella/products/orders.html"><i class="bx bxs-truck me-2"></i>
                                     My Orders</a></li>
                             <li><a class="dropdown-item link-dark log-out" href="#"><i
                                         class="bx bxs-log-out-circle me-2"></i> Log Out</a></li>
@@ -104,7 +104,7 @@
                     </div>
                 </li>
                 <li class="nav-item ms-2">
-                    <a href="/masacupan-valdeabella/cart.html" class="nav-link text-white p-0 position-relative"><i
+                    <a href="/masacupan-valdeabella/products/cart.html" class="nav-link text-white p-0 position-relative"><i
                             class="bx bxs-cart fs-2"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="cart-items-count">0</span>
@@ -135,13 +135,13 @@
             <p class="ms-3"><small>Categories</small></p>
             <ul class="nav flex-column">
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/men.html" class=" fs-6 fw-bolder nav-link link-light">MEN</a>
+                    <a href="/masacupan-valdeabella/products/men.html" class=" fs-6 fw-bolder nav-link link-light">MEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/women.html" class="fs-6 fw-bolder nav-link link-light">WOMEN</a>
+                    <a href="/masacupan-valdeabella/products/women.html" class="fs-6 fw-bolder nav-link link-light">WOMEN</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/kids.html" class=" fs-6 fw-bolder nav-link link-light">KIDS</a>
+                    <a href="/masacupan-valdeabella/products/kids.html" class=" fs-6 fw-bolder nav-link link-light">KIDS</a>
                 </li>
             </ul>
             <hr>
@@ -150,7 +150,7 @@
                     <a href="/masacupan-valdeabella/index.html" class=" nav-link fs-6 text-uppercase fw-bolder text-white">Home</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-2">
-                    <a href="/masacupan-valdeabella/products.html" class=" nav-link fs-6 text-uppercase fw-bolder text-white">Products</a>
+                    <a href="/masacupan-valdeabella/products/products.html" class=" nav-link fs-6 text-uppercase fw-bolder text-white">Products</a>
                 </li>
 
                 <li class="nav-item mx-lg-4 mx-2">
@@ -262,27 +262,56 @@
         <!-- cart -->
         <section class="cart-section">
             <div class="container">
-                <div class="card text-dark rounded-1">
-                    <div class="card-body p-4">
-                        <h4 class="fw-bold text-dark">My Orders</h4>
-                        <hr>
-                        <div class="table-responsive-md">
-                            <table class="table align-middle">
-                                <thead class="shadow-sm text-secondary">
-                                  <tr>
-                                    <th class="px-lg-0 px-sm-5">#</th>
-                                    <th class="px-lg-0 px-sm-5">Product Name</th>
-                                    <th class="px-lg-0 px-sm-5">Address</th>
-                                    <th class="px-lg-0 px-sm-5">Quantity</th>
-                                    <th class="px-lg-0 px-sm-5">Price</th>
-                                    <th class="px-lg-0 px-sm-5">Date</th>
+                <div class="row gx-2 ">
+                    <div class="col-md shadow border-top bg-white border-dark border-5 mx-1">
+                        <div class="card rounded-0 border-0">
+                            <div class="card-body text-dark p-lg-4">
+                                <div class="d-flex">
+                                    <h4 class="fw-bold">Shopping Cart</h4>
+                                    <button class="ms-auto btn btn-link remove-item text-danger"><i
+                                            class="bx bx-sm bxs-trash"></i></button>
+                                </div>
+                                <hr>
+                                <div class="cart-items-row">
 
-                                  </tr>
-                                </thead>
-                                <tbody id="orders-tb" class="shadow-s">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of cart items card -->
+                    <div class="col-md-3 bg-white shadow mt-1 mx-1">
+                        <div class="card rounded-0  border-0">
+                            <div class="card-body text-dark">
+                                <form action="#" id="checkout-form">
+                                    <p class="text-black-50"><small>Location</small></p>
+                                    <p class="fs-6 d-flex align-items-center">
+                                        <i class="bx bx-map me-2"></i>
+                                        <small class="shipping-address">Add Shipping Address</small>
+                                    </p>
+                                    <hr>
+                                    <p class="fw-bold">Order Summary</p>
+                                    <div class="d-flex">
+                                        <p class=""><small>Subtotal (<span class="total-items">0</span> items)</small>
+                                        </p>
+                                        <p class="ms-auto"><small class="subtotal">P 0.00</small></p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class=""><small>Shipping Fee</small></p>
+                                        <p class="ms-auto"><small class="shipping-fee">P 0.00</small></p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex">
+                                        <p class="fw-bolder">Total</p>
+                                        <p class="ms-auto fw-bolder text-danger total">P 0.00</p>
+                                    </div>
 
-                                </tbody>
-                            </table>
+                                    <div class="d-grid mt-2">
+                                        <button class="btn btn-danger rounded-1" id="checkout-btn" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#order-modal"><small>CHECKOUT
+                                                (<span class="total-items">0</span>)</small></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -446,7 +475,7 @@
                                     <input type="text" class="form-control" placeholder="Password...">
                                 </div>
                                 <div class="d-grid mb-3">
-                                    <button class="btn btn-secondary" type="button">LOGIN</button>
+                                    <button class="btn btn-danger" type="button">LOGIN</button>
                                 </div>
                                 <hr>
                                 <div class="mt-3 text-center text-white">
@@ -514,7 +543,7 @@
                             <hr>
                             <div class="mb-3">
                                 <label for="" class="form-label">Shipping Address:</label>
-                                <input type="text" class="form-control form-control-sm shipping-address">
+                                <input type="text" class="form-control form-control-sm shipping-address" required>
                             </div>
                             <p class="fs-6 fw-bolder">Payment Info.</p>
                             <hr>
@@ -523,7 +552,7 @@
                                 <label for="" class="form-label text-white-50"><small>Payment Method:</small></label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" value="credit-card"
-                                        name="paymentMethod" checked id="credit-card">
+                                        name="paymentMethod" checked id="credit-card" checked>
                                     <label class="form-check-label" for="credit-card">
                                         Credit Card
                                     </label>
@@ -538,11 +567,11 @@
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label text-white-50"><small>Name On Card:</small></label>
-                                <input type="text" class="form-control form-control-sm">
+                                <input type="text" class="form-control form-control-sm" required>
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label text-white-50"><small>Card Number:</small></label>
-                                <input type="number" class="form-control form-control-sm">
+                                <input type="number" class="form-control form-control-sm" required>
                             </div>
                             <hr>
                             <div class="d-grid mt-3">
@@ -586,66 +615,255 @@
     <script src="/masacupan-valdeabella/scripts/main.js"></script>
     <script>
         AOS.init();
-
-        const loadOrders = async () => {
-            const user = await connection.auth.user();
-            const orders = await getOrders();
-            console.log("orders: ", orders)
-            var table = $("#orders-tb")
-            table.html("")
-            let index = 0;
-            for (let order of orders.data) {
-                for (let suborder of order.suborders) {
-                    let date = new Date(order.created_at);
-                    let row = `
-                        <tr>
-                            <td class="px-lg-0 px-sm-5">
-                                <p class="my-2 text-secondary fw-bold"><small>${++index}</small></p>
-                            </td>
-                            <td class="px-lg-0 px-sm-5">
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="${suborder.products.product_images[0].src}" width="35" alt="">
-                                    <p class="ms-3 my-0 fw-bold text-secondary text-truncate">${suborder.products.name}</small></p>
-                                </div>
-                            </td>
-                            <td class="px-lg-0 px-sm-5">
-                                <p class="my-2 text-secondary fw-bold text-truncate">
-                                    <small>${order.address}</small>
-                                </p>
-                            </td>
-                          
-                            <td class="px-lg-0 px-sm-5">
-                                <p class="my-2 text-secondary fw-bold">
-                                <small>${suborder.quantity} item(s)</small>
-                                </p> 
-                            </td>
-                            <td class="px-lg-0 px-sm-5">
-                                <p class="my-2 text-secondary fw-bold">
-                                    <small>P ${numberToPrice(suborder.price * suborder.quantity)}</small>
-                                </p> 
-                            </td>
-                            <td class="px-lg-0 px-sm-5">
-                                <p class="my-2 text-secondary fw-bold">
-                                    <small>${date.getFullYear()}/${date.getMonth() < 10?"0"+date.getMonth():date.getMonth()}/${date.getDate()}</small>
-                                </p>
-                            </td>
-                            
-                         
-                           
-                        </tr>
-                        `
-                    table.append(row);
+        $(function () {
+            const verifySignIn = async () => {
+                let user = await connection.auth.user();
+                if (!user) {
+                    location.href = "/masacupan-valdeabella/index.html";
                 }
-                let row = `<tr><td colspan="6"></td></tr>`
-                table.append(row);
+            }
+            verifySignIn();
+        })
+        const setOrderSummary = () => {
+            console.log("summary")
+            let checkedItems = $(".item-checkbox:checked");
+            let count = 0
+            let subtotal = 0
+            for (let item of checkedItems) {
+                let cartItem = $("#cart-item-" + $(item).data("id"))
+                count += Number(cartItem.find("input[type=number]").val());
+                subtotal += count * $(item).data("price")
+            }
+            let shippingFee = count * 32;
+            let shippingDiscount = count > 3 ? shippingFee * 0.2 : 0
+            shippingFee -= shippingDiscount
+            $(".total-items").html(count)
+
+            $(".subtotal").html("P. " + numberToPrice(subtotal))
+            $(".shipping-fee").html("P. " + numberToPrice(shippingFee))
+            $(".total").html("P. " + numberToPrice(subtotal + shippingFee))
+
+            if (checkedItems.length <= 0) {
+                $("#checkout-btn").attr("disabled", true)
+            } else {
+                $("#checkout-btn").removeAttr("disabled")
 
             }
-            closePreloader();
+        }
+        var cartItemsLoaded = false;
+        async function loadCartItems() {
+            const user = await connection.auth.user();
+            const items = await getCartItems(user.id)
+
+            $(".user-id").val(user.id);
+
+            if (items.data) {
+                console.log("items: ", items.data)
+                let row = $(".cart-items-row");
+                //clear products row first
+                row.html("");
+                if (items.data.length <= 0) {
+                    row.addClass("text-dark").html("No items found in the cart.")
+                }
+                for (let item of items.data) {
+                    let cartItem = `
+                            <div class="row mb-3 align-items-center gx-1 gy-2" id="cart-item-${item.id}">
+                                <div class="col-lg-3 col-7">
+                                    <div class="row">
+                                        <div class="col-lg-9 col-8">
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check me-2">
+                                                    <input ${item.isChecked ? "checked" : ""} data-product-id="${item.products.id}" data-quantity="${item.quantity}" data-price="${item.products.price}" data-id="${item.id}"
+                                                        class="item-checkbox form-check-input border-primary"
+                                                        type="checkbox" value="" id="flexCheckDefault">
+                                                </div>
+                                                <a href="#" class="view-product link-dark"
+                                                    onclick="viewProduct(this)" data-id="${item.products.id}">
+                                                    <img src="${item.products.product_images[0].src}"
+                                                        class="img-fluid" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="view-product link-dark" onclick="viewProduct(this)"
+                                        data-id="1">
+                                        <p class="my-1 fs-4 text-break w-100 fw-bolder">${item.products.name}</p>
+                                        <p class="my-1 text-secondary">
+                                            <small><span class="text-black-50">${item.products.category.description}</span></small>
+                                            <small><span class="text-black-50">${item.products.type.description}</span></small>
+                                        </p>
+                                        <p class="text-danger fw-bold mt-4"><span class="price">P. ${numberToPrice(item.products.price * item.quantity)}</span></p>
+                                    </a>
+
+
+                                </div>
+                                <div class="col-md ms-lg-0 ms-auto">
+                                    <div class="btn-group w-75 mx-auto justify-content-center btn-group-sm my-1"
+                                        role="group" aria-label="Basic example">
+                                        <button type="button"
+                                            class="btn btn-light border-1 border-secondary fw-bold rounded-0 quantity-down"><i
+                                                class="bi-dash fs-5"></i></button>
+                                        <input type="number" data-id="${item.id}" readonly name="" min="1"
+                                            class="form-control form-control-sm rounded-0 quantity-box text-center" value="${item.quantity}">
+                                        <button type="button"
+                                            class="btn btn-light border-1 border-secondary fw-bold rounded-0 quantity-up"><i
+                                                class="bi-plus fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            `
+                    row.append(cartItem)
+
+                    setOrderSummary();
+
+
+                    // set events
+                    $(".quantity-up").on("click", function (e) {
+                        showPreloader();
+                        let itemId = $(this).siblings("input").data("id")
+                        let quantity = Number($(this).siblings("input").val()) + 1;
+
+                        updateCart({ itemId, quantity })
+                    })
+                    $(".quantity-down").on("click", function (e) {
+                        let itemId = $(this).siblings("input").data("id")
+                        let quantity = $(this).siblings("input").val() - 1;
+
+                        if (quantity >= 1) {
+                            showPreloader();
+
+                            updateCart({ itemId, quantity })
+                        }
+                    })
+                    $(".quantity-box").change(async function (e) {
+
+                        console.log('changed')
+                        let itemId = $(this).data("id");
+                        let quantity = $(this).val();
+
+                        await updateCart({ itemId, quantity });
+
+                    })
+
+                    //when items gets checked
+                    $(".item-checkbox").on("click", function (e) {
+                        //e.preventDefault();
+                        showPreloader()
+                        let itemId = $(this).data("id");
+                        let isChecked = $(this)[0].checked
+                        updateCart({ itemId, isChecked })
+                    })
+                }
+                cartItemsLoaded = true
+            } else {
+                setOrderSummary();
+
+                $(".cart-items-row").addClass("text-dark").html("No items in the cart.")
+            }
 
         }
 
+        const loadOtherInfo = async () => {
+            const user = await connection.auth.user();
+            let shippingAddress = user.user_metadata.shippingAddress ? user.user_metadata.shippingAddress : "Add Shipping Address"
+
+            $(".shipping-address").html(shippingAddress)
+
+            $("#order-form").find(".shipping-address").val(shippingAddress)
+        }
+
+
         $(function () {
-            loadOrders();
+            async function loadData() {
+                await loadCartItems();
+                await loadOtherInfo();
+                closePreloader();
+            }
+            setOrderSummary();
+            loadData();
+
+            const mySubscription = connection
+                .from('cart')
+                .on('*', payload => {
+
+                    loadCartItems();
+                    setCartItemsCount();
+                    closePreloader();
+                })
+                .subscribe()
+        })
+
+        $(function () {
+            $("#order-form").on("submit", async function (e) {
+                e.preventDefault();
+                const form = $("#order-form");
+                let checkedItems = $(".item-checkbox:checked");
+                let count = 0
+                let subtotal = 0
+                let products = []
+                let cart = [];
+                for (let item of checkedItems) {
+                    let cartItem = $("#cart-item-" + $(item).data("id"))
+                    let items = Number(cartItem.find("input[type=number]").val())
+                    count += items;
+                    subtotal += count * $(item).data("price")
+                    products.push({ id: $(item).data("product-id"), quantity: items, price: $(item).data("price"), cartId: $(item).data("id") });
+
+                }
+                let shippingFee = count * 32;
+                let shippingDiscount = count > 3 ? shippingFee * 0.2 : 0
+                shippingFee -= shippingDiscount
+                let total = subtotal + shippingFee
+                let address = form.find(".shipping-address").val();
+
+                showPreloader();
+                let result = await addToOrders({
+                    products,
+                    price: total,
+                    address
+                })
+
+                closePreloader();
+
+                if (result.data) {
+                    location.href = "/masacupan-valdeabella/products/orders.html"
+                }
+
+            })
+        })
+
+        $(function () {
+            $(".remove-item").on("click", async function (e) {
+                let checkedItems = $(".item-checkbox:checked");
+                if (checkedItems.length <= 0) {
+                    return;
+                }
+                Swal.fire({
+                    title: 'Remove Item?',
+                    text: "Selected items will be remove from your cart!",
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#801515',
+                    cancelButtonColor: '#000',
+                    confirmButtonText: 'Confirm',
+                }).then(async (result) => {
+                    if (result.isConfirmed) {
+                        showPreloader();
+                        for (let item of checkedItems) {
+                            await removeCartItem($(item).data('id'));
+                        }
+
+                        $(".subtotal").html("P. " + 0)
+                        $(".shipping-fee").html("P. " + 0)
+                        $(".total").html("P. " + 0)
+                $("#checkout-btn").attr("disabled", true)
+
+                    }
+                })
+            })
         })
     </script>
 </body>
