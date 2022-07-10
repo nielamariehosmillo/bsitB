@@ -548,3 +548,53 @@
             }
             setEventHandlers()
             setSummary()
+            HidePreloader()
+        }
+
+        loadProducts()
+        $("#check-all").on("click", function (e) {
+            //if checked
+            const checked = this.checked
+
+            if (checked) {
+                $(".cart-checkbox").filter((i, item) => {
+                    return !item.checked
+                }).trigger("click")
+            } else {
+                $(".cart-checkbox").filter((i, item) => {
+                    return item.checked
+                }).trigger("click")
+
+            }
+        })
+
+
+
+
+
+        //subscribe to cart updates
+        const cartSubscription = connection
+            .from('cart')
+            .on('*', payload => {
+                loadProducts();
+                UpdateCartCount()
+
+                HidePreloader()
+
+            })
+            .subscribe()
+
+        $("#checkout-btn").click(function (e) {
+            $("#checkout-modal").modal("show")
+        })
+
+        //when user submits order
+        $("#checkout-form").on("submit", async function (e) {
+            e.preventDefault()
+            $("#checkout-modal").modal('hide')
+            //get address
+            let address = $(this).find(".address").val()
+            //get checked items
+            const itemsToCheckout = $(".cart-checkbox").filter((i, item) => {
+                return item.checked
+            })
