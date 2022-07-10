@@ -398,3 +398,103 @@
                 </td>
                 <td>
                     <p>${createdAt.getDate() < 10 ? '0' + createdAt.getDate() : createdAt.getDate()}-${createdAt.getMonth() < 10 ? "0" : ""}${Number(createdAt.getMonth()) + 1}-${createdAt.getFullYear()}</p>
+                </td>
+                <td>
+                    <a href="#" data-id="${item.id}" class="link-dark remove-item text-decoration-none ">Remove</a>
+                </td>
+            </tr>
+            `
+
+            return row;
+        }
+        function setEventHandlers() {
+            $(".remove-item").on('click', async function (e) {
+                e.preventDefault()
+                let id = $(this).data('id')
+
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "Item will be remove from your cart!",
+                    icon: 'warning',
+                    iconColor: "rgb(45, 160, 0)",
+                    showCancelButton: true,
+                    confirmButtonColor: 'rgb(45, 160, 0)',
+                    cancelButtonColor: '#000',
+                    confirmButtonText: 'Yes, remove it!'
+                }).then(async (result) => {
+                    if (result.isConfirmed) {
+                        ShowPreloader()
+
+                        const { data, error } = await connection
+                            .from('cart')
+                            .delete()
+                            .match({ id })
+                    }
+                })
+
+            })
+
+            $(".quantity-up").on('click', async function (e) {
+                ShowPreloader()
+                let box = $(this).siblings('input')
+                let id = box.data("id")
+
+                const { data, error } = await connection
+                    .from("cart")
+                    .update({
+                        quantity: Number(box.val()) + 1,
+                    })
+                    .match({ id })
+                console.log({ data, error })
+            })
+            $(".quantity-down").on('click', async function (e) {
+                let box = $(this).siblings('input')
+                let id = box.data("id")
+
+                if (box.val() > 1) {
+                    ShowPreloader()
+
+                    const { data, error } = await connection
+                        .from("cart")
+                        .update({
+                            quantity: Number(box.val()) - 1,
+                        })
+                        .match({ id })
+                    console.log({ data, error })
+                }
+            })
+
+            $(".cart-checkbox").on("change", async function () {
+                ShowPreloader()
+
+                let id = $(this).val()
+
+                const { data, error } = await connection
+                    .from("cart")
+                    .update({
+                        isChecked: this.checked
+                    })
+                    .match({ id })
+
+
+            })
+        }
+
+        const setSummary = () => {
+            //get checked items
+            let count = 0
+            let subtotal = 0
+
+            let checked = $(".cart-checkbox").filter((i, item) => {
+                return item.checked
+            })
+
+
+            for (let item of checked) {
+                count += $(item).data("quantity")
+                subtotal += $(item).data("price")
+            }
+
+            $(".total").html("P. " + subtotal)
+            $(".subtotal").html("P. " + subtotal)
+            $(".order-count").html(count)
