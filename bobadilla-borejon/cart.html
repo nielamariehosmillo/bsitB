@@ -48,3 +48,53 @@
 
                         <div class="dropdown">
                             <a class="btn btn-link link-secondary" href="#" role="button" id="account-link"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bx bx-user bx-sm"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end" id="account-dropdown"
+                            aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item sign-in" href="#login-modal" data-bs-toggle="modal">Sign
+                                    In</a></li>
+                            <li>
+                                <h6 class="dropdown-header d-none">John Doe</h6>
+                            </li>
+                            <li><a class="dropdown-item d-none orders-link" href="/bobadilla-borejon/orders.html?prev=cart.html">My Orders</a></li>
+                            <li><a class="dropdown-item d-none logout" href="#">Log Out</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center position-relative cart-link" href="/bobadilla-borejon/cart.html">
+                        <i class="bx bx-basket bx-sm"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-count bg-success">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- main content -->
+<main>
+    <section id="cart">
+        <div class="container">
+            <div class="card rounded-0">
+                <div class="card-body">
+                    <a href="" class="back-link link-secondary text-decoration-none">
+                        <div class="d-flex text-secondary align-items-center">
+                            <span class="bx bx-chevron-left bx-sm"></span>
+                            <h4 class="text-secondary my-0">Cart</h4>
+                        </div>
+                    </a>
+                    <hr>
+                    <div class="table-responsive-sm">
+                        <table class="table align-middle" id="cart-table">
+                            <thead class="">
+                                <tr>
+                                    <th></th>
