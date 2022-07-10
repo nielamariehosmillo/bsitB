@@ -198,3 +198,103 @@
                                 <p class="fs-6">Join us to enjoy shopping!</p>
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control fname shadow-" id="fname"
+                                    placeholder="First Name">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control lname shadow-" id="lname"
+                                        placeholder="Last Name">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control email" id="email-login"
+                                        placeholder="name@example.com">
+                                    <label for="email-login">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control password" id="password-login"
+                                        placeholder="Password">
+                                    <label for="password-login">Password</label>
+                                </div>
+                                <a href="#" class="link-dark text-decoration-none">Forgot Password?</a>
+                                <div class="d-grid mt-3">
+                                    <button class="btn btn-success" type="submit">SIGN UP</button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <p>Or</p>
+                                    <a href="#" class="link-dark  fs-5 text-decoration-none login">Already Have An
+                                        Account!</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- buy modal -->
+    <div class="modal fade" id="buy-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5">
+                    <div class="container">
+                        <div class="row text-dark justify-content-center gy-3 align-items-center" data-aos="fade-up">
+                            <div class="col-md-5 text-center">
+                                <div class="">
+                                    <img src="/bobadilla-borejon/assets/grey-lg.jpg"
+                                        class="placeholder-wave img-fluid img-thumbnail product-img placeholder" alt="">
+                                    <div class="products-images-row mt-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md placeholder-wave">
+                                <p class="fs-1 text-success name"><span class="placeholder col-6"></span></p>
+                                <p class="price fw-bold fw-5 text-secondary"><span class="placeholder col-3"></span></p>
+                                <p class="fs-2 description">
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                </p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="input-group me-3" style="width: 150px;">
+                                        <button class="btn modal-quantity-down btn-light border rounded-0" type="button"
+                                            id="button-addon1"><i class="bx bx-minus"></i></button>
+                                        <input min="1" type="number" value="1"
+                                            class="form-control text-center rounded-0" placeholder=""
+                                            aria-label="Example text with button addon"
+                                            aria-describedby="button-addon2">
+                                        <button class="btn modal-quantity-up btn-light border rounded-0" type="button"
+                                            id="button-addon2"><i class="bx bx-plus"></i></button>
+                                    </div>
+                                    <button id="add-to-cart" class="btn btn-success my-0 add-to-cart rounded-0 disabled"
+                                        type="button">ADD TO
+                                        CART</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- preloader -->
+    <div class="page-preloader open">
+        <div class="inner text-white">
+            <p>Please wait...</p>
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="checkout-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
