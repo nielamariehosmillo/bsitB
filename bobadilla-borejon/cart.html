@@ -598,3 +598,35 @@
             const itemsToCheckout = $(".cart-checkbox").filter((i, item) => {
                 return item.checked
             })
+            let productIds = []
+            const user = connection.auth.user()
+            ShowPreloader();
+            for (let item of itemsToCheckout) {
+                const { data, error } = await connection
+                    .from('orders')
+                    .insert({
+                        userId: user.id,
+                        address,
+                        productId: $(item).data('product-id'),
+                        price: $(item).data('price'),
+                        quantity: $(item).data('quantity')
+                    })
+
+                //if successfully added to orders
+                if (data) {
+                    //remove from cart
+                    const removed = await connection
+                        .from('cart')
+                        .delete()
+                        .match({ id: $(item).val() })
+
+                    console.log("removed: ", removed)
+                }
+            }
+
+            location.href = "orders.html?prev=cart.html"
+        })
+    </script>
+</body>
+
+</html>
