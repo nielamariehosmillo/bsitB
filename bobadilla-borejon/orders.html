@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom And Glow</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="navbar navbar-expand-lg bg-light main-nav fixed-top shadow py-3 px-3" data-aos="fade-down">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo.png" class="img-logo sm" alt="">
+                <small>Bloom and
+                    Glow</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-6 fw-bolder" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-6 fw-bolder" href="index.html?section=about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-6 fw-bolder" href="index.html?section=contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="search.html" method="get">
+                            <div class="d-flex">
+                                <input type="search" required name="query" class="form-control rounded-0 flex-1 form-control-sm">
+                                <button class="px-2 d-flex align-items-center btn btn-success rounded-0 text-white btn-sm"
+                                    type="submit"><i class="bx bx-search "></i></button>
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link d-flex align-items-center" href="#login-modal" data-bs-toggle="modal"><i
+                                class="bx bx-user bx-sm"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center position-relative cart-link" href="cart.html">
+                            <i class="bx bx-basket bx-sm"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-count bg-success">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <main>
+        <section id="cart">
+            <div class="container">
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <a href="#" class="back-link link-secondary text-decoration-none">
+                            <div class="d-flex text-secondary align-items-center">
+                                <span class="bx bx-chevron-left bx-sm"></span>
+                                <h4 class="text-secondary my-0">Orders</h4>
+                            </div>
+                        </a>
+                        <hr>
+                        <div class="table-responsive-sm">
+                            <table class="table align-middle" id="order-table">
+                                <thead class="">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Product</th>
+                                        <th>Quantity</th>
+                                        <th>Total Price</th>
+                                        <th>Date Ordered</th>
+                                    </tr>
+                                <tbody>
+                                </tbody>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- login-modal -->
+    <div class="modal fade" tabindex="-1" id="login-modal">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content rounded-1">
+                <div class="modal-body position-relative">
+                    <button data-bs-dismiss="modal"
+                        class="btn btn-link text-decoration-none position-absolute link-success end-0 py-0 m-0"
+                        type="button"><i class="bx bx-x fs-3"></i></button>
+                    <div class="row">
+                        <div
+                            class="col-md-5 bg-light d-flex flex-column align-items-center justify-content-center col-0 p-3 text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-8">
+                                    <img src="./assets/logo.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <p class="fs-3 mt-4">Bloom And Glow</p>
+                        </div>
+                        <div class="col-md py-3 px-4">
+                            <form action="#" class="login-form anim-fade">
+                                <p class="fs-4 mt-3">Login To Your Account</p>
+                                <hr>
+                                <p class="fs-6">Provide your email address and password!</p>
+                                <div class="form-floating mb-3 mt-4">
+                                    <input type="email" class="form-control email" id="email-login"
+                                        placeholder="name@example.com">
+                                    <label for="email-login">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control password" id="password-login"
+                                        placeholder="Password">
+                                    <label for="password-login">Password</label>
+                                </div>
+                                <a href="#" class="link-dark text-decoration-none">Forgot Password?</a>
+                                <div class="d-grid mt-3">
+                                    <button class="btn btn-success" type="button">LOG IN</button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <p>Or</p>
+                                    <a href="#" class="link-dark  fs-5 text-decoration-none create-account">Create a new
+                                        account!</a>
+                                </div>
+                            </form>
+                            <form action="#" class="signup-form d-none anim-fade">
+                                <p class="fs-4 mt-3">Create Your Account</p>
+                                <hr>
+                                <p class="fs-6">Join us to enjoy shopping!</p>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control fname shadow-" id="fname"
+                                        placeholder="First Name">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control lname shadow-" id="lname"
+                                        placeholder="Last Name">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control email" id="email-login"
+                                        placeholder="name@example.com">
+                                    <label for="email-login">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control password" id="password-login"
+                                        placeholder="Password">
+                                    <label for="password-login">Password</label>
+                                </div>
+                                <a href="#" class="link-dark text-decoration-none">Forgot Password?</a>
+                                <div class="d-grid mt-3">
+                                    <button class="btn btn-success" type="submit">SIGN UP</button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <p>Or</p>
+                                    <a href="#" class="link-dark  fs-5 text-decoration-none login">Already Have An
+                                        Account!</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- buy modal -->
+    <div class="modal fade" id="buy-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5">
+                    <div class="container">
+                        <div class="row text-dark justify-content-center gy-3 align-items-center" data-aos="fade-up">
+                            <div class="col-md-5 text-center">
+                                <div class="">
+                                    <img src="./assets/grey-lg.jpg"
+                                        class="placeholder-wave img-fluid img-thumbnail product-img placeholder" alt="">
+                                    <div class="products-images-row mt-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md placeholder-wave">
+                                <p class="fs-1 text-success name"><span class="placeholder col-6"></span></p>
+                                <p class="price fw-bold fw-5 text-secondary"><span class="placeholder col-3"></span></p>
+                                <p class="fs-2 description">
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                </p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="input-group me-3" style="width: 150px;">
+                                        <button class="btn modal-quantity-down btn-light border rounded-0" type="button"
+                                            id="button-addon1"><i class="bx bx-minus"></i></button>
+                                        <input min="1" type="number" value="1"
+                                            class="form-control text-center rounded-0" placeholder=""
+                                            aria-label="Example text with button addon"
+                                            aria-describedby="button-addon2">
+                                        <button class="btn modal-quantity-up btn-light border rounded-0" type="button"
+                                            id="button-addon2"><i class="bx bx-plus"></i></button>
+                                    </div>
+                                    <button id="add-to-cart" class="btn btn-success my-0 add-to-cart rounded-0 disabled"
+                                        type="button">ADD TO
+                                        CART</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- preloader -->
+    <div class="page-preloader open">
+        <div class="inner text-white">
+            <p>Please wait...</p>
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="checkout-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="checkout-form">
+                        <div class="mb-3">
+                            <label for="" class="form-label fw-bold">Shipping Address:</label>
+                            <input type="text" required class="form-control address">
+                        </div>
+                        <h5>Payment Information</h5>
+                        <hr>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Payment Method</label>
+                            <select name="" id="method" class="form-select">
+                                <option value="">Debit Card</option>
+                                <option value="">Paypal</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Name:</label>
+                            <input type="text" required class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Card Number: </label>
+                            <input type="number" required class="form-control">
+                        </div>
+                        <hr>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Submit Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        AOS.init();
+        $(function () {
+            if(!connection.auth.user()){
+                location.href="index.html"
+            }
+            const urlParams = getUrlParams()
+
+            if (urlParams.has("prev")) {
+                $(".back-link").attr("href", urlParams.get("prev"))
+            } else {
+                $(".back-link").attr("href", 'index.html')
+
+            }
+        })
+
+        const newOrderRow = (index,item) => {
+            let createdAt = new Date(item.created_at)
+            let row = `
+            <tr>
+                <td>${++index}</td>
+                <td>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <div class="">
+                            <img src="${item.products.images[0].src}"
+                                class="img-fluid img-thumbnail" alt="">
+                        </div>
+                        <p class="fs-5 ms-2">${item.products.name}</p>
+                    </div>
+                </td>
+                <td>
+                <p class="fs-6 text-secondary">
+                    ${item.quantity} ${item.quantity > 1?"items":"item"}
+                </p>
+                </td>
+                <td>
+                    <p class="fs-6 text-success fw-bold">P. ${item.price}</p>
+                </td>
+                <td>
+                    <p>${createdAt.getDate() < 10 ? '0' + createdAt.getDate() : createdAt.getDate()}-${createdAt.getMonth() < 10 ? "0" : ""}${Number(createdAt.getMonth()) + 1}-${createdAt.getFullYear()}</p>
+                </td>
+             
+            </tr>
+            `
+
+            return row;
+        }
+   
+
+        //load orders
+        const loadOrders = async () => {
+            const table = $("#order-table")
+            const tbBody = table.find("tbody")
+            const user = connection.auth.user()
+            const { data, error } = await connection
+                .from("orders")
+                .select("*, products(*, images(*))")
+                .eq("userId", user.id)
+                .order("id", { ascending: false })
+            console.log('orders: ', data)
+            tbBody.html("")
+            $.each(data,(index,item)=>{
+                let row = newOrderRow(index,item)
+                tbBody.append(row)
+            })
+            HidePreloader()
+        }
+
+        loadOrders()
+        //subscribe to cart updates
+        const orderSubscription = connection
+            .from('orders')
+            .on('*', payload => {
+                loadOrders();
+                HidePreloader()
+
+            })
+            .subscribe()
+        $(function(){
+            const urlParams = getUrlParams()
+            if(urlParams.has('prev')){
+                $(".back-link").attr("href",urlParams.get("prev"))
+            }else{
+                $(".back-link").attr('href','index.html')
+            }
+        })
+    </script>
+</body>
+
+</html>

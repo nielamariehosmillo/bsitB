@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom And Glow</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg bg-light main-nav fixed-top shadow py-3 px-4" data-aos="fade-down">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo.png" class="img-logo sm" alt="">
+                <small class="d-lg-inline d-sm-inline d-md-inline d-none">Bloom and
+                    Glow</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link  fs-6 fw-bolder" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-6 fw-bolder" href="index.html?section=about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fs-6 fw-bolder" href="index.html?section=contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 fw-bolder" href="products.html">Shop now</a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="search.html" method="get">
+                            <div class="d-flex">
+                                <input type="search" required name="query" class="form-control rounded-0 flex-1 form-control-sm">
+                                <button class="px-2 d-flex align-items-center btn btn-success rounded-0 text-white btn-sm"
+                                    type="submit"><i class="bx bx-search "></i></button>
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item mx-3 login-item">
+                        <a class="nav-link fs-6 fw-bolder" data-bs-toggle="modal" href="#login-modal">Sign In</a>
+                    </li>
+                    <li class="nav-item d-none account-item">
+
+                        <div class="dropdown">
+                            <a class="btn btn-link link-secondary" href="#" role="button" id="account-link"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bx bx-user bx-sm"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end" id="account-dropdown"
+                                aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item sign-in" href="#login-modal" data-bs-toggle="modal">Sign
+                                        In</a></li>
+                                <li>
+                                    <h6 class="dropdown-header d-none">John Doe</h6>
+                                </li>
+                                <li><a class="dropdown-item d-none orders-link" href="orders.html">My Orders</a></li>
+                                <li><a class="dropdown-item d-none logout" href="#">Log Out</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none cart-item">
+                        <a class="nav-link d-flex align-items-center position-relative cart-link" href="cart.html">
+                            <i class="bx bx-basket bx-sm"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-count bg-success">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <main>
+        <section class="" id="products-main">
+            <div class="container">
+                <div class="text-center text-white">
+                    <h2 class="title text-uppercase " id="category-title" data-aos="fade-up" data-aos-delay="100">
+                        Search
+                    </h2>
+                    <p class="text-center fs-5 text-white">Results for: <span class="query fw-bold"></span></p>
+                    <div class="row products-row mt-5 gy-4" id="products-row" data-aos="fade-up">
+                       
+                    </div>
+                    <p id="no-result" class="fs-6 fw-bold d-none">No result found.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- login-modal -->
+    <div class="modal fade" tabindex="-1" id="login-modal">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content rounded-1">
+                <div class="modal-body position-relative">
+                    <button data-bs-dismiss="modal"
+                        class="btn btn-link text-decoration-none position-absolute link-success end-0 py-0 m-0"
+                        type="button"><i class="bx bx-x fs-3"></i></button>
+                    <div class="row">
+                        <div
+                            class="col-md-5 bg-light d-flex flex-column align-items-center justify-content-center col-0 p-3 text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-8">
+                                    <img src="./assets/logo.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <p class="fs-3 mt-4">Bloom And Glow</p>
+                        </div>
+                        <div class="col-md py-3 px-4">
+                            <form action="#" class="login-form anim-fade">
+                                <p class="fs-4 mt-3">Login To Your Account</p>
+                                <hr>
+                                <p class="fs-6">Provide your email address and password!</p>
+                                <div class="form-floating mb-3 mt-4">
+                                    <input type="email" class="form-control email" id="email-login"
+                                        placeholder="name@example.com">
+                                    <label for="email-login">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control password" id="password-login"
+                                        placeholder="Password">
+                                    <label for="password-login">Password</label>
+                                </div>
+                                <a href="#" class="link-dark text-decoration-none">Forgot Password?</a>
+                                <div class="d-grid mt-3">
+                                    <button class="btn btn-success" type="submit">LOG IN</button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <p>Or</p>
+                                    <a href="#" class="link-dark  fs-5 text-decoration-none create-account">Create a new
+                                        account!</a>
+                                </div>
+                            </form>
+                            <form action="#" class="signup-form d-none anim-fade">
+                                <p class="fs-4 mt-3">Create Your Account</p>
+                                <hr>
+                                <p class="fs-6">Join us to enjoy shopping!</p>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control fname shadow-" id="fname"
+                                        placeholder="First Name">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control lname shadow-" id="lname"
+                                        placeholder="Last Name">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control email" id="email-login"
+                                        placeholder="name@example.com">
+                                    <label for="email-login">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control password" id="password-login"
+                                        placeholder="Password">
+                                    <label for="password-login">Password</label>
+                                </div>
+                                <a href="#" class="link-dark text-decoration-none">Forgot Password?</a>
+                                <div class="d-grid mt-3">
+                                    <button class="btn btn-success" type="submit">SIGN UP</button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <p>Or</p>
+                                    <a href="#" class="link-dark  fs-5 text-decoration-none login">Already Have An
+                                        Account!</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- buy modal -->
+    <div class="modal fade" id="buy-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5">
+                    <div class="container">
+                        <div class="row text-dark justify-content-center gy-3 align-items-center" data-aos="fade-up">
+                            <div class="col-md-5 text-center">
+                                <div class="">
+                                    <img src="./assets/grey-lg.jpg"
+                                        class="placeholder-wave img-fluid img-thumbnail product-img placeholder" alt="">
+                                    <div class="products-images-row mt-4">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md placeholder-wave">
+                                <p class="fs-1 text-success name"><span class="placeholder col-6"></span></p>
+                                <p class="price fw-bold fw-5 text-secondary"><span class="placeholder col-3"></span></p>
+                                <p class="fs-2 description">
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                    <span class="placeholder col-10"></span>
+                                </p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="input-group me-3" style="width: 150px;">
+                                        <button class="btn modal-quantity-down btn-light border rounded-0" type="button"
+                                            id="button-addon1"><i class="bx bx-minus"></i></button>
+                                        <input min="1" type="number" value="1"
+                                            class="form-control text-center rounded-0" placeholder=""
+                                            aria-label="Example text with button addon"
+                                            aria-describedby="button-addon2">
+                                        <button class="btn modal-quantity-up btn-light border rounded-0" type="button"
+                                            id="button-addon2"><i class="bx bx-plus"></i></button>
+                                    </div>
+                                    <button id="add-to-cart" class="btn btn-success my-0 add-to-cart rounded-0 disabled"
+                                        type="button">ADD TO
+                                        CART</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader -->
+    <div class="page-preloader open">
+        <div class="inner">
+            <p>Please wait...</p>
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        AOS.init();
+
+        const newProduct = ({ id, name, price, images }) => {
+            let p = `
+                    <div class="col-md-3 product">
+                        <a href="#buy-modal" data-bs-toggle="modal" data-id="${id}" class="link-light buy-now">
+                            <div class="wrapper">
+                                <div class="overlay">
+                                    <span class="bx bx-sm bx-cart"></span>
+                                    <p class="fw-bold my-0 ms-2">Buy Now</p>
+                                </div>
+                                <img src="${images[0].src}" alt=""
+                                    class="img-fluid img-thumbnail">
+    
+                            </div>
+                        </a>
+                        <p class="fw-bold fs-5 name">${name}</p>
+                        <p class="fw-bold price">P. ${price}</p>
+                    </div>
+                    `
+            return p;
+        }
+        const newProductImage = (image) => {
+            return `
+            <div class="col">
+                <img class="" src="${image.src}" alt="" >
+            </div>
+            `
+        }
+        const loadProducts = async (query) => {
+            $(".cart-link").attr("href",`cart.html?prev=search.html?query=${query}`)
+            $(".orders-link").attr("href",`orders.html?prev=search.html?query=${query}`)
+            //categories list
+            const { data, error } = await connection
+                .from("products")
+                .select("*, images(*),category(*)")
+                .ilike('name', `%${query}%`)
+            console.log('products: ', data)
+
+            //display products
+
+            const row = $("#products-row")
+            row.html("")
+            for (let product of data) {
+                const { name, images, price } = product
+                let col = newProduct(product)
+                row.append(col)
+            }
+
+            if(!data || data.length == 0){
+                $("#no-result").removeClass('d-none')
+            }else{
+                $("#no-result").addClass('d-none')
+
+            }
+
+            HidePreloader()
+        }
+
+        $(function () {
+
+
+            const urlParams = getUrlParams()
+            var query = ""
+            //get category param if none redirect to home
+            if (urlParams.has('query')) {
+                query = urlParams.get('query')
+            }
+
+            $(".cart-link").attr("href",`cart.html?prev=query.html?query=${query}`)
+            loadProducts(query)
+            $('.query').html(query)
+        })
+
+        $("#buy-modal").on("show.bs.modal", async function (e) {
+            let toggler = e.relatedTarget
+            const id = $(toggler).data("id")
+            const modal = $(this)
+            const { data, error } = await connection
+                .from("products")
+                .select("*, images(*),category(*)")
+                .eq("id", id)
+                .single()
+                .limit(1)
+            console.log("product: ", data)
+            if (data) {
+                modal.find(".product-img").attr("src", data.images[0].src).removeClass("placeholder").removeClass("placeholder").removeClass("placeholder-wave")
+                modal.find(".name").html(data.name)
+                modal.find(".price").html("P. " + data.price)
+                modal.find(".description").html(data.description)
+                modal.find(".add-to-cart").removeAttr("disabled").removeClass("disabled")
+                $("#add-to-cart").attr("data-id", data.id).attr("data-price", data.price)
+                let row = $(".products-images-row")
+                row.html("")
+
+                if (data.images.length > 1) {
+                    row.removeClass("d-none")
+                    for (let img of data.images) {
+                        let col = newProductImage(img);
+                        row.append(col)
+                    }
+
+                    row.find("img").on("mouseover", function (e) {
+                        modal.find(".product-img").attr("src", $(this).attr("src"))
+                    })
+                }
+            }
+        })
+
+        $("#buy-modal").on("hide.bs.modal", function () {
+            $(this).find(".name").html(`<span class="placeholder col-6"></span>`)
+            $(this).find(".price").html(`<span class="placeholder col-3"></span>`)
+            $(this).find(".description").html(`
+            <span class="placeholder col-10"></span>
+            <span class="placeholder col-10"></span>
+            <span class="placeholder col-10"></span>
+            <span class="placeholder col-10"></span>
+            `)
+            $(this).find(".product-img").attr("src", "./assets/grey-lg.jpg").addClass("placeholder-wave")
+            $(".products-images-row").addClass("d-none")
+
+        })
+
+        $(".add-to-cart").on("click", async function (e) {
+            e.preventDefault
+            const modal = $("#buy-modal")
+            const user = connection.auth.user()
+
+            if (user) {
+                let quantity = modal.find("input[type=number]").val()
+                let productId = $(this).data("id")
+                let price = $(this).data("price")
+
+                //check if item is already in the cart
+                const items = await connection
+                    .from("cart")
+                    .select("*", { count: 'exact' })
+                    .eq('productId', productId)
+
+                if (items.count > 0) {
+                    //item is already in cart
+                    const { data, error } = await connection
+                        .from('cart')
+                        .update({ quantity: items.data[0].quantity + 1 })
+                        .match({ productId })
+                    console.log('already: ', data)
+
+                } else {
+                    const { data, error } = await connection
+                        .from('cart')
+                        .insert({
+                            quantity,
+                            productId,
+                            price,
+                            userId: user.id
+                        })
+                    console.log('inserted: ', data)
+
+                }
+
+                Swal.fire("Success", "Successfully added to cart!", "success")
+                //.then(() => $("#buy-modal").modal("hide"))
+
+            } else {
+                $("#buy-modal").modal("hide")
+                $("#login-modal").modal("show")
+            }
+
+        })
+
+        $(".modal-quantity-up").on("click", function (e) {
+
+            $(this).siblings("input")[0].stepUp()
+        })
+        $(".modal-quantity-down").on("click", function (e) {
+
+            $(this).siblings("input")[0].stepDown()
+        })
+
+        $(".category-item").on("click", function (e) {
+            e.preventDefault()
+            let categoryId = $(this).attr('href')
+            ShowPreloader()
+            loadProducts(categoryId)
+        })
+
+
+    </script>
+</body>
+
+</html>
