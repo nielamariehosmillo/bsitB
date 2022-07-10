@@ -10,16 +10,15 @@ Group Members
     Borejon, John Larel H.
         - Homepage
         - Styles
-        - Assets
         - Product Page (Flower Pot & Fertilizer)
         - Scripts
+        - Assets
         - Cart
-
-
+        
     Bobadilla,Janary Mae DC.
         - Login Page
         - Registration Page
-        - Cart
         - Products (Indoor, & Outdoor)
         - About Us
         - Contact Us
+        - Cart
